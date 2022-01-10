@@ -73,7 +73,7 @@ create_vaccine_coverage_routine_sia <- function (vaccine_coverage_folder    = ""
   routine <- vaccov [activity_type != "campaign", ..keep_cols_routine]
 
   # only select campaigns with coverage > 0 and with information of target population size
-  keep_cols_sia <- c("vaccine", "country_code", "country", "year",
+  keep_cols_sia <- c("vaccine", "country_code", "country", "year", "start_m",
                      "age_first", "age_last", "age_range_verbatim", "target", "coverage")
   sia <- vaccov [activity_type == "campaign" & ( !is.na(target) & !is.na(coverage) & coverage != 0 ),
                  ..keep_cols_sia]

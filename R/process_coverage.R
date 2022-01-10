@@ -1,5 +1,5 @@
 # generate vaccine coverage files
-# update: 2022/01/04
+# update: 2022/01/10
 
 library(data.table)
 library(readxl)
@@ -47,8 +47,24 @@ cov_file_routine [, `:=` (coverage           = coverage/100,
                           age_range_verbatim = character(),
                           target             = numeric())]
 cov_file_routine [, dose := vaccine]
-setcolorder (cov_file_routine, sel_cols)
 
+
+# add data for missing years
+sim_years <- 1980:2020
+for (ivac in c("MCV1","MCV2")){
+  for(ictry in sel_ctries){
+    single_vac_ctry  <- cov_file_routine [vaccine == ivac & country_code == ictry]
+    miss_yrs <- sim_years[!(sim_years %in% single_vac_ctry$year)]
+
+    if (length (miss_yrs) > 0){
+      for (imiss in miss_yrs){
+         cov_file_routine <- rbind (cov_file_routine, copy(single_vac_ctry[1][, `:=` (year = imiss, coverage = 0)]))
+      }
+    }
+    remove(single_vac_ctry, miss_yrs)
+  }
+}
+setorder (cov_file_routine, vaccine, country_code, year)
 
 # # get expected coverage without COVID-related disruptions in 2020
 # # by assigning 2020 estimate or 2019 estimate +1%, whichever is larger
@@ -313,6 +329,7 @@ cov_who_sia [, `:=` (dose = vaccine, activity_type = "campaign")]
 cov_who_sia [, vaccine := "SIA"]
 cov_file_sia <- cov_who_sia [, .SD, .SDcols = c(sel_cols, "start_m")]
 
+setorder (cov_file_sia, vaccine, country_code, year)
 
 # ------------------------------------------------------------------------------
 ## output coverage files
@@ -334,7 +351,7 @@ fwrite (outfile_mcv1, "coverage/coverage_mcv1.csv")
 
 outfile_mcv1_sia <- copy (outfile_mcv1_mcv2_sia) [vaccine == "MCV2", coverage := 0]
 outfile_mcv1_sia [, scenario := "mcv1-sia"]
-fwrite (outfile_mcv1, "coverage/coverage_mcv1-sia.csv")
+fwrite (outfile_mcv1_sia, "coverage/coverage_mcv1-sia.csv")
 
 outfile_nomcv <- copy (outfile_mcv1_mcv2) [, coverage := 0]
 outfile_nomcv [, scenario := "nomcv"]
@@ -343,7 +360,7 @@ fwrite (outfile_nomcv, "coverage/coverage_nomcv.csv")
 ## plot general trend
 pdf ("plot/coverage_check.pdf", width = 12, height = 6)
 for (ictry in 0:3){
-  plt_cov <- ggplot (data = outfile_mcv1_mcv2_sia [country_code %in% sel_ctries [ictry*5 + (0:4)]],
+  plt_cov <- ggplot (data = outfile_mcv1_mcv2_sia [country_code %in% sel_ctries [ictry*5 + (1:5)]],
                      aes (x = year, y = coverage, colour = dose)) +
     scale_x_continuous (breaks = pretty_breaks ()) +
     facet_grid(rows = vars(vaccine), cols = vars(country)) +
@@ -358,6 +375,9 @@ for (ictry in 0:3){
 }
 dev.off()
 
+# check years and months of implementation
+temp_sum <- outfile_mcv1_mcv2_sia [activity_type == "campaign"][, .N, by = c("year", "start_m", "country_code")]
+temp_sum [N > 1]
 
 # # ------------------------------------------------------------------------------
 # ## compare results with VIMC version
