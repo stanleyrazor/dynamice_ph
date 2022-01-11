@@ -345,7 +345,7 @@ outfile_mcv1_mcv2 <- copy (outfile_mcv1_mcv2_sia) [activity_type == "routine"]
 outfile_mcv1_mcv2 [, scenario := "mcv1-mcv2"]
 fwrite (outfile_mcv1_mcv2, "coverage/coverage_mcv1-mcv2.csv")
 
-outfile_mcv1 <- copy (outfile_mcv1_mcv2) [vaccine == "MCV1", coverage := 0]
+outfile_mcv1 <- copy (outfile_mcv1_mcv2) [vaccine == "MCV2", coverage := 0]
 outfile_mcv1 [, scenario := "mcv1"]
 fwrite (outfile_mcv1, "coverage/coverage_mcv1.csv")
 
