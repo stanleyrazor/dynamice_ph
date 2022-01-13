@@ -97,7 +97,8 @@ runCountry_rcpp <- function (
   case_out    <- array(0, c(254, n_years))
   pop_out     <- array(0, c(254, n_years))
   dose_out    <- array(0, c(254, n_years))       # number of doses administrated
-  reach0_out  <- array(0, c(254, n_years))       # number of fully vaccinated population
+  reach0_out  <- array(0, c(254, n_years))       # number of zero-dose population reached
+  fvp_out     <- array(0, c(254, n_years))       # number of fully vaccinated population reached
 
   init_Comp     <- matrix(0, 254, 14)
   init_Comp[,2] <- 0.95
@@ -191,15 +192,15 @@ runCountry_rcpp <- function (
       country_year_mcv2 <- 0
     }
 
-    if ( length (country_year_mcv2) == 0 || is.na(country_year_mcv2) ) {
-      country_year_mcv2 <- 0
-    }
+    # if ( length (country_year_mcv2) == 0 || is.na(country_year_mcv2) ) {
+    #   country_year_mcv2 <- 0
+    # }
 
 
     # set up SIA inputs
     setorder(c_coverage_sia, year, start_m)
     if ((using_sia == 1) && (dim(c_coverage_sia [year == y])[1] > 0)) {
-      # set up timestep based on mid-month
+      # set up timesteps based on mid-month
       sia_mn <- c_coverage_sia [year == y, start_m]
       t_sia_m <- c()
       for (im in unique(sia_mn)){
@@ -208,11 +209,11 @@ runCountry_rcpp <- function (
       }
 
       sia_input <- list (
-        sia_implement = 1, # use Portnoy's method for SIA distribution
+        sia_implement = 2, # use 7.7% never-reach assumption
         a0 = c_coverage_sia [year == y, a0],
         a1 = c_coverage_sia [year == y, a1],
         sia_cov = c_coverage_sia [year == y, coverage],
-        sia_mt = t_sia_m # Inf, add a positive infinity number for Rcpp model run
+        sia_mt = c(t_sia_m, 2000) # add a larger-than-timestep number for Rcpp model run
       )
     } else {
       sia_input <- list (
@@ -240,6 +241,7 @@ runCountry_rcpp <- function (
     pop_out    [, (y-years[1])+1] <- rowSums(out_Comp[, 1:13])*pop.vector_full  # all compartments
     dose_out   [, (y-years[1])+1] <- outp$doses*pop.vector_full
     reach0_out [, (y-years[1])+1] <- outp$reach0s*pop.vector_full
+    fvp_out    [, (y-years[1])+1] <- outp$fvps*pop.vector_full
 
     #if(y %% 20 == 0) {print (paste0 ('year ', y, ' finished'))}
   }
@@ -247,7 +249,8 @@ runCountry_rcpp <- function (
   saveRDS (list(cases   = rbind (colSums(  case_out[1:52,]), colSums(  case_out[53:104,]), colSums(  case_out[105:156,]),   case_out[157:254,]),
                 pops    = rbind (colSums(   pop_out[1:52,]), colSums(   pop_out[53:104,]), colSums(   pop_out[105:156,]),    pop_out[157:254,]),
                 doses   = rbind (colSums(  dose_out[1:52,]), colSums(  dose_out[53:104,]), colSums(  dose_out[105:156,]),   dose_out[157:254,]),
-                reach0s = rbind (colSums(reach0_out[1:52,]), colSums(reach0_out[53:104,]), colSums(reach0_out[105:156,]), reach0_out[157:254,])),
+                reach0s = rbind (colSums(reach0_out[1:52,]), colSums(reach0_out[53:104,]), colSums(reach0_out[105:156,]), reach0_out[157:254,]),
+                fvps    = rbind (colSums(   fvp_out[1:52,]), colSums(   fvp_out[53:104,]), colSums(   fvp_out[105:156,]),    fvp_out[157:254,])),
            file = ifelse (psa > 0,
                           paste0 ("outcome/", save_scenario, "/", foldername, "/", iso3, "_", r, ".RDS"),
                           paste0 ("outcome/", save_scenario, "/", foldername, "/", iso3, ".RDS"))
@@ -613,7 +616,8 @@ merge_case_csv <- function (vaccine_coverage_folder,
                           cases       = as.vector(res$cases),
                           cohort_size = as.vector(res$pops),
                           doses       = as.vector(res$doses),
-                          reach0s     = as.vector(res$reach0s)
+                          reach0s     = as.vector(res$reach0s),
+                          fvps        = as.vector(res$fvps)
       )
 
       res2 [country == "XKX", country := "XK"]
@@ -639,13 +643,13 @@ merge_case_csv <- function (vaccine_coverage_folder,
 
     if (psa > 0) {
       all_runs <- lexp_remain [all_runs,
-                               .(i.country, run_id, year, age, cases, cohort_size, doses, reach0s, country_name, disease, value),
+                               .(i.country, run_id, year, age, cases, cohort_size, doses, reach0s, fvps, country_name, disease, value),
                                on = .(country_code = country,
                                       age          = age,
                                       year         = year)]
     } else {
       all_runs <- lexp_remain [all_runs,
-                               .(i.country, year, age, cases, cohort_size, doses, reach0s, country_name, disease, value),
+                               .(i.country, year, age, cases, cohort_size, doses, reach0s, fvps, country_name, disease, value),
                                on = .(country_code = country,
                                       age          = age,
                                       year         = year)]
@@ -662,12 +666,12 @@ merge_case_csv <- function (vaccine_coverage_folder,
 
     if (psa > 0) {
       all_runs <- coverage_routine_MCV1 [all_runs,
-                                         .(i.country, run_id, i.year, age, cases, cohort_size, doses, reach0s, country_name, disease, coverage, remain_lexp),
+                                         .(i.country, run_id, i.year, age, cases, cohort_size, doses, reach0s, fvps, country_name, disease, coverage, remain_lexp),
                                          on = .(country_code = country,
                                                 year         = year) ]
     } else {
       all_runs <- coverage_routine_MCV1 [all_runs,
-                                         .(i.country, i.year, age, cases, cohort_size, doses, reach0s, country_name, disease, coverage, remain_lexp),
+                                         .(i.country, i.year, age, cases, cohort_size, doses, reach0s, fvps, country_name, disease, coverage, remain_lexp),
                                          on = .(country_code = country,
                                                 year         = year) ]
     }
@@ -690,7 +694,7 @@ merge_case_csv <- function (vaccine_coverage_folder,
       } else {
         mean_runs <- all_runs [ , lapply(.SD, mean),
                                 by = c("disease", "year", "age", "country", "country_name", "MCV1", "remain_lexp"),
-                                .SDcols = c("cohort_size", "doses", "reach0s", "cases")]
+                                .SDcols = c("cohort_size", "doses", "reach0s", "fvps","cases")]
 
         fwrite (x     = mean_runs [order (country, year, age)],
                 file  = paste0 (burden_estimate_folder,
@@ -763,7 +767,7 @@ estimate_deaths_dalys_21 <- function (antigen,
     if (psa > 0) {
       burden <- data_cfr_21 [burden,
                              .(disease, run_id, year, age, country, country_name,
-                               cohort_size, doses, reach0s, cases, cfr, remain_lexp),
+                               cohort_size, doses, reach0s, fvps, cases, cfr, remain_lexp),
                              on = .(country = country,
                                     year    = year,
                                     age     = age)]
@@ -778,7 +782,7 @@ estimate_deaths_dalys_21 <- function (antigen,
     } else {
       burden <- data_cfr_21 [burden,
                              .(disease, year, age, country, country_name,
-                               cohort_size, doses, reach0s, cases, cfr, remain_lexp),
+                               cohort_size, doses, reach0s, fvps, cases, cfr, remain_lexp),
                              on = .(country = country,
                                     year    = year,
                                     age     = age)]
@@ -794,11 +798,11 @@ estimate_deaths_dalys_21 <- function (antigen,
     if (psa > 0) {
       save.cols <- c(names(data_template)[1], "run_id",
                      names(data_template)[2:6],
-                     "doses", "reach0s",
+                     "doses", "reach0s", "fvps",
                      names(data_template)[7:9] )
     } else {
       save.cols <- c(names(data_template)[1:6],
-                     "doses", "reach0s",
+                     "doses", "reach0s", "fvps",
                      names(data_template)[7:9] )
     }
     burden <- subset (burden, select = save.cols)
@@ -820,7 +824,7 @@ estimate_deaths_dalys_21 <- function (antigen,
     if (psa > 0){
       central_burden <- burden [ , lapply(.SD, mean),
                                  by = c("disease", "year", "age", "country", "country_name"),
-                                 .SDcols = c("cohort_size", "doses", "reach0s", "cases", "dalys", "deaths")]
+                                 .SDcols = c("cohort_size", "doses", "reach0s", "fvps", "cases", "dalys", "deaths")]
 
       fwrite (x     = central_burden [order (country, year, age)],
               file  = paste0 (burden_estimate_folder,

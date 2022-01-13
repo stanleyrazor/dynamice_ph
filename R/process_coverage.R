@@ -1,5 +1,5 @@
 # generate vaccine coverage files
-# update: 2022/01/10
+# update: 2022/01/13
 
 library(data.table)
 library(readxl)
@@ -321,7 +321,7 @@ ggsave ("plot/coverage_sia.pdf", plt_sia, width = 28, height = 16, units = "cm")
 cov_who_sia [, `:=` (start_m = as.numeric (format(`Start date`,"%m")))]
 # cov_who_sia [is.na (start_m)][, .N, by = c("country", "year")]
 # assume missing values = mid-year
-cov_who_sia [is.na (start_m), start_m := 7]
+cov_who_sia [is.na (start_m), start_m := 6.5]
 
 # merge with template coverage file
 setnames (x = cov_who_sia, old = c("Intervention"), new = c("vaccine"))

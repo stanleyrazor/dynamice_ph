@@ -1,6 +1,6 @@
 # run_scenario
 # execute simulations for MR-MAPs scenarios
-# update: 2022/01/08
+# update: 2022/01/13
 
 rm(list = ls())
 
@@ -30,8 +30,8 @@ load(file = "data/data_lexp_remain_maps.rda") # to include Turkey
 load(file = "data/data_template.rda")
 
 # assume a fixed R0 for the central run
-# use mean of the lognormal distribution from Guerra et al. (2017)
-adj.fixR0 = 15.17642  # NA
+# median R0 for least developed countries, vaccine era, from Guerra et al. (2017)
+adj.fixR0 = 15.9  # NA
 if (!is.na(adj.fixR0)){
   data_r0 [ , r0 := adj.fixR0]
   # add r0 for Turkey
@@ -41,6 +41,7 @@ if (!is.na(adj.fixR0)){
 }
 
 # assume Turkey has the same CFR as Syria
+# use Portnoy 2021 estimates - no difference by scenario
 data_cfr_portnoy_21 <- rbind (data_cfr_portnoy_21,
                               copy(data_cfr_portnoy_21[country == "SYR"])[, country := "TUR"])
 
@@ -157,7 +158,7 @@ for (index in 1:length(vaccine_strategies)){
                   psa                        = var$psa,
                   vaccination                = set_vaccination [index],
                   using_sia                  = set_sia         [index],
-                  folder_date                = "20220110",
+                  folder_date                = "20220113",
                   sim_years                  = 1980:2020,
                   chunksize                  = 1)
 

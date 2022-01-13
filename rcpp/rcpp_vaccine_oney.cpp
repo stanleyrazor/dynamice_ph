@@ -35,7 +35,8 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 	NumericVector cyc(254);              // case prevalence (adjusted for seasonality), 254 age groups
 	NumericVector newinfect(254);        // new infections/cases, 254 age groups
 	NumericVector newdose(254);          // newly implemented doses, 254 age groups
-	NumericVector newreach(254);         // newly reached zeo-dose population, 254 age groups
+	NumericVector newreach(254);         // newly reached zero-dose population, 254 age groups
+	NumericVector newfvp(254);           // newly added fully vaccinated popualation, 254 age groups
 	double tcycle = 0.0;                 // seasonality
 	double lambda = 0.0;                 // force of infection
 	double pop_fert_SR = 0.0;            // population of S and R at fertility age
@@ -271,7 +272,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				// calculate administrated doses and zero-dose population reached
 				newdose[a]  += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
 				newreach[a] += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
-			    
+			    newfvp[a] += age_w*(trans_Comp(a-1,i_V1S)+trans_Comp(a-1,i_V1I)+trans_Comp(a-1,i_V1R))*cov1[a-1];
 				//Rcout << a+1 << " ";
 			}
 
@@ -309,7 +310,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		// =================================================
 		if (sia_implement >= 1) 
 		{
-			if ((t - t_start + 1) == allsiamt[sia_index])
+			if ((t - t_start + 1) >= allsiamt[sia_index])
 			{
 				int a0 = alla0[sia_index];                // starting target age group for a specific SIA round
 				int a1 = alla1[sia_index];                // ending target age group for a specific SIA round
@@ -460,19 +461,20 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				                         + in_Comp(a,i_V2S)+in_Comp(a,i_V2I)+in_Comp(a,i_V2R)
 										 + in_Comp(a,i_V3S)+in_Comp(a,i_V3I)+in_Comp(a,i_V3R));
 					newreach[a] += siacov1*(in_Comp(a,i_M)+in_Comp(a,i_S)+in_Comp(a,i_I)+in_Comp(a,i_R));
-					
+					newfvp[a] += siacov2*(in_Comp(a,i_V1S)+in_Comp(a,i_V1I)+in_Comp(a,i_V1R));
 					//Rcout << "age = " << a+1 << ", " << "newdose = " << newdose[a] << ", newreach = " << newreach[a] << "\n"; 
 				}
                 ++sia_index;				
 			}
-		in_Comp = clone(out_Comp);
 		}
+		in_Comp = clone(out_Comp);
 		//Rcout << "time = " << t << " finished\n";
     }
 
 	outp["cases"]    = newinfect;
 	outp["doses"]    = newdose;
 	outp["reach0s"]  = newreach;
+	outp["fvps"]     = newfvp;
     outp["out_Comp"] = in_Comp;
 
   return outp;

@@ -1639,7 +1639,7 @@ ZAF,South Africa,2017,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2-sia
 ZAF,South Africa,2018,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2-sia
 ZAF,South Africa,2019,MCV2,0.79,routine,,,,,MCV2,,mcv1-mcv2-sia
 ZAF,South Africa,2020,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2002,SIA,0.836533292671642,campaign,0.5,14,6m-14y,10509482.5,Measles,7,mcv1-mcv2-sia
+AFG,Afghanistan,2002,SIA,0.836533292671642,campaign,0.5,14,6m-14y,10509482.5,Measles,6.5,mcv1-mcv2-sia
 AFG,Afghanistan,2003,SIA,1,campaign,0.75,4,9-59m,3899052.25,Measles,7,mcv1-mcv2-sia
 AFG,Afghanistan,2006,SIA,0.251629531799978,campaign,0.75,4,9-59m,4228438.5,Measles,8,mcv1-mcv2-sia
 AFG,Afghanistan,2006,SIA,0.428012137341007,campaign,0.75,4,9-59m,4228438.5,Measles,11,mcv1-mcv2-sia
@@ -1750,7 +1750,7 @@ ETH,Ethiopia,2001,SIA,0.153834520499254,campaign,0.75,4,9-59m,10701993.25,Measle
 ETH,Ethiopia,2002,SIA,0.0744307483993997,campaign,0.75,14,9m-14y,30605469.5,Measles,11,mcv1-mcv2-sia
 ETH,Ethiopia,2003,SIA,0.158258466777573,campaign,0.5,14,6m-14y,32232127,Measles,4,mcv1-mcv2-sia
 ETH,Ethiopia,2004,SIA,0.223726909515153,campaign,0.5,14,6m-14y,33174704,Measles,3,mcv1-mcv2-sia
-ETH,Ethiopia,2005,SIA,0.00401505156879047,campaign,0.5,14,6m-14y,34105415,Measles,7,mcv1-mcv2-sia
+ETH,Ethiopia,2005,SIA,0.00401505156879047,campaign,0.5,14,6m-14y,34105415,Measles,6.5,mcv1-mcv2-sia
 ETH,Ethiopia,2005,SIA,0.0860674631806133,campaign,0.75,4,9-59m,11470316,Measles,9,mcv1-mcv2-sia
 ETH,Ethiopia,2006,SIA,0.879276436847265,campaign,0.75,4,9-59m,11565403.75,Measles,3,mcv1-mcv2-sia
 ETH,Ethiopia,2007,SIA,0.086737920207414,campaign,0.5,4,6-59m,12367151.5,Measles,11,mcv1-mcv2-sia
@@ -1769,13 +1769,13 @@ ETH,Ethiopia,2016,SIA,0.640929118568297,campaign,0.5,13,6m-<15y,38984949,Measles
 ETH,Ethiopia,2017,SIA,0.51315296637047,campaign,0.75,14,9m-14y,41362323.5,Measles,2,mcv1-mcv2-sia
 ETH,Ethiopia,2017,SIA,0.0598230476822085,campaign,0.5,14,6-179m,42205155,Measles,7,mcv1-mcv2-sia
 ETH,Ethiopia,2020,SIA,0.984992075140391,campaign,0.75,4,9-59m,14183689.75,Measles,6,mcv1-mcv2-sia
-IDN,Indonesia,2000,SIA,0.20810941921344,campaign,6,12,6-12y,30471504,Measles,7,mcv1-mcv2-sia
-IDN,Indonesia,2000,SIA,0.0493763412141161,campaign,0.5,4,6-59m,19199721.5,Measles,7,mcv1-mcv2-sia
+IDN,Indonesia,2000,SIA,0.20810941921344,campaign,6,12,6-12y,30471504,Measles,6.5,mcv1-mcv2-sia
+IDN,Indonesia,2000,SIA,0.0493763412141161,campaign,0.5,4,6-59m,19199721.5,Measles,6.5,mcv1-mcv2-sia
 IDN,Indonesia,2002,SIA,0.0079491990516067,campaign,0.5,4,0-59m,19511525.5,Measles,9,mcv1-mcv2-sia
 IDN,Indonesia,2002,SIA,0.110090825124509,campaign,0.75,4,9-59m,18448667.25,Measles,10,mcv1-mcv2-sia
 IDN,Indonesia,2003,SIA,0.0314303190025764,campaign,6,12,6-12y,31204074,Measles,10,mcv1-mcv2-sia
-IDN,Indonesia,2004,SIA,0.0654839283308738,campaign,6,12,6-12y,31497133,Measles,7,mcv1-mcv2-sia
-IDN,Indonesia,2005,SIA,0.00880489980944818,campaign,0.5,15,6m-15y,69913004.5,Measles,7,mcv1-mcv2-sia
+IDN,Indonesia,2004,SIA,0.0654839283308738,campaign,6,12,6-12y,31497133,Measles,6.5,mcv1-mcv2-sia
+IDN,Indonesia,2005,SIA,0.00880489980944818,campaign,0.5,15,6m-15y,69913004.5,Measles,6.5,mcv1-mcv2-sia
 IDN,Indonesia,2005,SIA,0.0664061004558887,campaign,0.5,15,6m-15y,69913004.5,Measles,1,mcv1-mcv2-sia
 IDN,Indonesia,2006,SIA,0.0958473925865824,campaign,6,12,6-12y,31819791,Measles,1,mcv1-mcv2-sia
 IDN,Indonesia,2006,SIA,0.0089262861614667,campaign,0.5,5,6m-5y,24733354.5,Measles,4,mcv1-mcv2-sia
@@ -1793,8 +1793,8 @@ IDN,Indonesia,2011,SIA,0.578034783502912,campaign,0.75,4,9-59m,19662597,Measles,
 IDN,Indonesia,2016,SIA,0.173492319744711,campaign,0.75,4,9-59m,20970282.75,Measles,8,mcv1-mcv2-sia
 IDN,Indonesia,2017,SIA,0.488906457186584,campaign,0.75,15,9m-15y,72216571.25,MR,8,mcv1-mcv2-sia
 IDN,Indonesia,2018,SIA,0.324818199084394,campaign,0.75,15,9m-15y,72206182,MR,8,mcv1-mcv2-sia
-IND,India,2000,SIA,0.0068386744107864,campaign,0.75,4,9-59m,108122854.75,Measles,7,mcv1-mcv2-sia
-IND,India,2001,SIA,0.0088295536842089,campaign,0.75,4,9-59m,109005962.75,Measles,7,mcv1-mcv2-sia
+IND,India,2000,SIA,0.0068386744107864,campaign,0.75,4,9-59m,108122854.75,Measles,6.5,mcv1-mcv2-sia
+IND,India,2001,SIA,0.0088295536842089,campaign,0.75,4,9-59m,109005962.75,Measles,6.5,mcv1-mcv2-sia
 IND,India,2010,SIA,0.0357683735480284,campaign,0.75,10,9m-10y,261902375.5,Measles,11,mcv1-mcv2-sia
 IND,India,2011,SIA,0.0103566270021053,campaign,0.75,10,9m-10y,261573000.5,Measles,1,mcv1-mcv2-sia
 IND,India,2011,SIA,0.1067367119184,campaign,0.75,10,9m-10y,261573000.5,Measles,9,mcv1-mcv2-sia
@@ -1871,7 +1871,7 @@ NGA,Nigeria,2016,SIA,0.712210468650819,campaign,0.75,4,9-59m,26769877.5,Measles,
 NGA,Nigeria,2017,SIA,1,campaign,0.75,4,9-59m,27287426.75,Measles,11,mcv1-mcv2-sia
 NGA,Nigeria,2017,SIA,0.0755186247054185,campaign,0.5,10,6m-10y,61916858.5,Measles,1,mcv1-mcv2-sia
 NGA,Nigeria,2018,SIA,0.611365411697241,campaign,0.75,4,9-59m,27733584,Measles,3,mcv1-mcv2-sia
-NGA,Nigeria,2019,SIA,0.00803769077548458,campaign,0.5,9,6m-9y,59193369.5,Measles,7,mcv1-mcv2-sia
+NGA,Nigeria,2019,SIA,0.00803769077548458,campaign,0.5,9,6m-9y,59193369.5,Measles,6.5,mcv1-mcv2-sia
 NGA,Nigeria,2019,SIA,0.760514189544134,campaign,0.75,4,9-59m,28162435.75,Measles,10,mcv1-mcv2-sia
 PAK,Pakistan,2005,SIA,0.0681761070745605,campaign,1,4,12-59m,18070847,Measles,12,mcv1-mcv2-sia
 PAK,Pakistan,2007,SIA,0.0381213030740323,campaign,0.75,15,9m-15y,65890638.5,Measles,3,mcv1-mcv2-sia
@@ -1970,16 +1970,16 @@ TUR,Turkey,2005,SIA,1,campaign,0.75,6,9m-6y,8240966.75,Measles,4,mcv1-mcv2-sia
 TUR,Turkey,2017,SIA,0.00106498711887078,campaign,0.5,100,6m-100y,80442287.5,MMR,2,mcv1-mcv2-sia
 TUR,Turkey,2017,SIA,0.000359363226710827,campaign,0.5,100,6m-100y,80442287.5,MMR,5,mcv1-mcv2-sia
 TUR,Turkey,2017,SIA,0.000357175322743029,campaign,0.5,100,6m-100y,80442287.5,MMR,11,mcv1-mcv2-sia
-TUR,Turkey,2019,SIA,0.571527608465864,campaign,0.75,0.916666666666667,9-11m,213965.166666667,MMR,7,mcv1-mcv2-sia
-TUR,Turkey,2019,SIA,0.0109765126228223,campaign,29,40,29y-40y,15246828,MMR,7,mcv1-mcv2-sia
-TUR,Turkey,2019,SIA,0.00139674954029782,campaign,29,40,29y-40y,15246828,MMR,7,mcv1-mcv2-sia
-TUR,Turkey,2019,SIA,0.000121956035265428,campaign,15,65,15y-65y,56471170,MMR,7,mcv1-mcv2-sia
-TUR,Turkey,2019,SIA,0.00013977043507333,campaign,15,65,15y-65y,56471170,MMR,7,mcv1-mcv2-sia
+TUR,Turkey,2019,SIA,0.571527608465864,campaign,0.75,0.916666666666667,9-11m,213965.166666667,MMR,6.5,mcv1-mcv2-sia
+TUR,Turkey,2019,SIA,0.0109765126228223,campaign,29,40,29y-40y,15246828,MMR,6.5,mcv1-mcv2-sia
+TUR,Turkey,2019,SIA,0.00139674954029782,campaign,29,40,29y-40y,15246828,MMR,6.5,mcv1-mcv2-sia
+TUR,Turkey,2019,SIA,0.000121956035265428,campaign,15,65,15y-65y,56471170,MMR,6.5,mcv1-mcv2-sia
+TUR,Turkey,2019,SIA,0.00013977043507333,campaign,15,65,15y-65y,56471170,MMR,6.5,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2000,SIA,0.487346175909417,campaign,0.75,4,9-59m,4838359.5,Measles,9,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2001,SIA,0.255581295236964,campaign,0.75,14,9m-14y,14427464.25,Measles,9,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2002,SIA,0.893583057237632,campaign,7,14,7-14y,7541769,Measles,10,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2005,SIA,1,campaign,0.75,4,9-59m,5679403.25,Measles,7,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2006,SIA,0.0494021802817034,campaign,0.5,15,6m-15y,17869434,Measles,7,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2006,SIA,0.0494021802817034,campaign,0.5,15,6m-15y,17869434,Measles,6.5,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2008,SIA,0.778850454284871,campaign,0.5,10,6m-10y,13900639,Measles,8,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2011,SIA,0.981330375056016,campaign,0.75,4,9-59m,6813875.5,Measles,11,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2014,SIA,0.975864110487116,campaign,0.75,14,9m-14y,21037385,MR,10,mcv1-mcv2-sia
