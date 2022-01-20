@@ -1,5 +1,6 @@
+# process_coverage.R
 # generate vaccine coverage files
-# update: 2022/01/13
+# update: 2022/01/20
 
 library(data.table)
 library(readxl)
@@ -90,7 +91,7 @@ setorder (cov_file_routine, vaccine, country_code, year)
 
 
 # ------------------------------------------------------------------------------
-## Supplementary immunisation activities (SIAs)
+## supplementary immunisation activities (SIAs)
 # ------------------------------------------------------------------------------
 # load WHO data SIAs
 # https://www.who.int/entity/immunization/monitoring_surveillance/data/Summary_Measles_SIAs.xls
@@ -331,10 +332,10 @@ cov_file_sia <- cov_who_sia [, .SD, .SDcols = c(sel_cols, "start_m")]
 
 setorder (cov_file_sia, vaccine, country_code, year)
 
+
 # ------------------------------------------------------------------------------
 ## output coverage files
 # ------------------------------------------------------------------------------
-
 outfile_mcv1_mcv2_sia <- rbind (cov_file_routine, cov_file_sia, fill = TRUE)
 outfile_mcv1_mcv2_sia [country == "DRCongo", country := "Democratic Republic of the Congo"]
 outfile_mcv1_mcv2_sia [country == "Tanzania", country := "United Republic of Tanzania"]
@@ -378,6 +379,24 @@ dev.off()
 # check years and months of implementation
 temp_sum <- outfile_mcv1_mcv2_sia [activity_type == "campaign"][, .N, by = c("year", "start_m", "country_code")]
 temp_sum [N > 1]
+
+
+# ------------------------------------------------------------------------------
+## add alternative MCV2 scenario
+# ------------------------------------------------------------------------------
+outfile_mcv1_mcv2 <- fread ("coverage/coverage_mcv1-mcv2.csv")
+dat_mcv2_2020 <- outfile_mcv1_mcv2 [vaccine == "MCV2" & year == 2020]
+dat_mcv1_2020 <- outfile_mcv1_mcv2 [vaccine == "MCV1" & year == 2020]
+dat_mcv2alt  <- dat_mcv2_2020 [dat_mcv1_2020 [, .(country_code, coverage)],
+                               on = .(country_code = country_code)]
+dat_mcv2alt [coverage == 0, coverage := i.coverage - 0.1]
+
+outfile_mcv1_mcv2alt <- copy(outfile_mcv1_mcv2) [dat_mcv2alt [, .(country_code, coverage)],
+                                                 on = .(country_code = country_code)]
+outfile_mcv1_mcv2alt [vaccine == "MCV2", coverage := ifelse (year < 2000, 0, i.coverage)]
+outfile_mcv1_mcv2alt [, i.coverage := NULL]
+fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
+
 
 # # ------------------------------------------------------------------------------
 # ## compare results with VIMC version
