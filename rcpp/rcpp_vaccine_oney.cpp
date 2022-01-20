@@ -33,7 +33,10 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 	NumericMatrix out_Comp(254, 14);     // compartments after including transmission and ageing, 254 age groups, 14 states
 	NumericVector betta(254);            // contact rate reported by a contactor of age a, 254 age groups
 	NumericVector cyc(254);              // case prevalence (adjusted for seasonality), 254 age groups
-	NumericVector newinfect(254);        // new infections/cases, 254 age groups
+	//NumericVector newinfect(254);        // new infections/cases, 254 age groups
+	NumericVector newinfect_0d(254);     // new infections/cases among zero-dose population, 254 age groups
+	NumericVector newinfect_1d(254);     // new infections/cases among one-dose population, 254 age groups
+	NumericVector newinfect_2d(254);     // new infections/cases among more-than-2-dose population, 254 age groups
 	NumericVector newdose(254);          // newly implemented doses, 254 age groups
 	NumericVector newreach(254);         // newly reached zero-dose population, 254 age groups
 	NumericVector newfvp(254);           // newly added fully vaccinated popualation, 254 age groups
@@ -75,7 +78,10 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		{
 			betta = beta_full(a,_);
             lambda = 1.0 - exp(-sum(betta*cyc));
-            newinfect[a] += lambda*(in_Comp(a,i_S) + in_Comp(a,i_V1S) + in_Comp(a,i_V2S) + in_Comp(a,i_V3S));
+            //newinfect[a] += lambda*(in_Comp(a,i_S) + in_Comp(a,i_V1S) + in_Comp(a,i_V2S) + in_Comp(a,i_V3S));
+			newinfect_0d[a] += lambda*in_Comp(a,i_S);
+			newinfect_1d[a] += lambda*in_Comp(a,i_V1S);
+			newinfect_2d[a] += lambda*(in_Comp(a,i_V2S) + in_Comp(a,i_V3S));
             //Rcout << "Age group = " << a+1 << "\n" // print out FOI to check
             //      << "FOI = " << lambda << "\n";
             //Rcout << "time = " << t << ", age = " << a+1 << ", newinfect = " << newinfect[a] << "\n"; 
@@ -219,7 +225,8 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				newdose[71] += age_w*(trans_Comp(71-1,i_M)+trans_Comp(71-1,i_S)+trans_Comp(71-1,i_I)+trans_Comp(71-1,i_R))*cov1[71-1] 
 						     + age_w*(trans_Comp(71-1,i_V1S)+trans_Comp(71-1,i_V1I)+trans_Comp(71-1,i_V1R)
 							         +trans_Comp(71-1,i_V2S)+trans_Comp(71-1,i_V2I)+trans_Comp(71-1,i_V2R))*cov2;
-                newreach[71] += age_w*(trans_Comp(71-1,i_M)+trans_Comp(71-1,i_S)+trans_Comp(71-1,i_I)+trans_Comp(71-1,i_R))*cov1[71-1];							 
+                newreach[71] += age_w*(trans_Comp(71-1,i_M)+trans_Comp(71-1,i_S)+trans_Comp(71-1,i_I)+trans_Comp(71-1,i_R))*cov1[71-1];	
+				newfvp[71]   += age_w*(trans_Comp(71-1,i_V1S)+trans_Comp(71-1,i_V1I)+trans_Comp(71-1,i_V1R))*cov2;				
 			}
 			else 
 			{
@@ -272,7 +279,6 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				// calculate administrated doses and zero-dose population reached
 				newdose[a]  += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
 				newreach[a] += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
-			    newfvp[a] += age_w*(trans_Comp(a-1,i_V1S)+trans_Comp(a-1,i_V1I)+trans_Comp(a-1,i_V1R))*cov1[a-1];
 				//Rcout << a+1 << " ";
 			}
 
@@ -471,9 +477,12 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		//Rcout << "time = " << t << " finished\n";
     }
 
-	outp["cases"]    = newinfect;
+	//outp["cases"]    = newinfect;
+	outp["cases_0d"] = newinfect_0d;
+	outp["cases_1d"] = newinfect_1d;
+	outp["cases_2d"] = newinfect_2d;
 	outp["doses"]    = newdose;
-	outp["reach0s"]  = newreach;
+	outp["reach_d0"] = newreach;
 	outp["fvps"]     = newfvp;
     outp["out_Comp"] = in_Comp;
 
