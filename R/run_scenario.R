@@ -1,6 +1,6 @@
 # run_scenario
 # execute simulations for MR-MAPs scenarios
-# update: 2022/01/20
+# update: 2022/01/27
 
 rm(list = ls())
 
@@ -159,7 +159,7 @@ for (index in 1:length(vaccine_strategies)){
                   psa                        = var$psa,
                   vaccination                = set_vaccination [index],
                   using_sia                  = set_sia         [index],
-                  folder_date                = "20220120",
+                  folder_date                = "20220127",
                   sim_years                  = 1980:2020,
                   chunksize                  = 1)
 

@@ -1,6 +1,6 @@
 # process_coverage.R
 # generate vaccine coverage files
-# update: 2022/01/20
+# update: 2022/01/27
 
 library(data.table)
 library(readxl)
@@ -358,24 +358,6 @@ outfile_nomcv <- copy (outfile_mcv1_mcv2) [, coverage := 0]
 outfile_nomcv [, scenario := "nomcv"]
 fwrite (outfile_nomcv, "coverage/coverage_nomcv.csv")
 
-## plot general trend
-pdf ("plot/coverage_check.pdf", width = 12, height = 6)
-for (ictry in 0:3){
-  plt_cov <- ggplot (data = outfile_mcv1_mcv2_sia [country_code %in% sel_ctries [ictry*5 + (1:5)]],
-                     aes (x = year, y = coverage, colour = dose)) +
-    scale_x_continuous (breaks = pretty_breaks ()) +
-    facet_grid(rows = vars(vaccine), cols = vars(country)) +
-    geom_point (size = 2) +
-    scale_colour_discrete (" ") +
-    labs (title = " ", x = "Year", y = "Vaccine coverage") +
-    theme_bw() +
-    theme (legend.position  = "bottom",
-           legend.direction = "horizontal")
-
-  print(plt_cov)
-}
-dev.off()
-
 # check years and months of implementation
 temp_sum <- outfile_mcv1_mcv2_sia [activity_type == "campaign"][, .N, by = c("year", "start_m", "country_code")]
 temp_sum [N > 1]
@@ -397,6 +379,34 @@ outfile_mcv1_mcv2alt [vaccine == "MCV2", coverage := ifelse (year < 2000, 0, i.c
 outfile_mcv1_mcv2alt [, i.coverage := NULL]
 fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
 
+
+# ------------------------------------------------------------------------------
+## plot general trend
+# ------------------------------------------------------------------------------
+outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
+outfile_mcv1_mcv2alt  <- fread ("coverage/coverage_mcv1-mcv2alt.csv")
+plt_data <- rbind (outfile_mcv1_mcv2_sia, outfile_mcv1_mcv2alt [vaccine == "MCV2"])
+sel_ctries <- unique(plt_data$country_code)
+
+pdf ("plot/coverage_check.pdf", width = 12, height = 6)
+for (ictry in 0:3){
+  plt_data_page <- plt_data [country_code %in% sel_ctries [ictry*5 + (1:5)]]
+  plt_cov <- ggplot (data = plt_data_page [vaccine %in% c("MCV1","MCV2")],
+                     aes (x = year, y = coverage, colour = scenario)) +
+    scale_x_continuous (breaks = pretty_breaks ()) +
+    geom_line (size = 1) +
+    geom_point (data = plt_data_page [!(vaccine %in% c("MCV1","MCV2"))],
+                aes (x = year, y = coverage, colour = scenario)) +
+    facet_grid(rows = vars(vaccine), cols = vars(country)) +
+    scale_colour_discrete ("MCV2 assumption", labels = c("WUENIC","Alternative")) +
+    labs (title = " ", x = "Year", y = "Vaccine coverage") +
+    theme_bw() +
+    theme (legend.position  = "bottom",
+           legend.direction = "horizontal")
+
+  print(plt_cov)
+}
+dev.off()
 
 # # ------------------------------------------------------------------------------
 # ## compare results with VIMC version
