@@ -1,6 +1,6 @@
 # process_coverage.R
 # generate vaccine coverage files
-# update: 2022/01/27
+# update: 2022/02/17
 
 library(data.table)
 library(readxl)
@@ -174,8 +174,9 @@ cov_who_sia [, `:=`(age_first_num  = as.double (stringr::str_extract (age_first_
 cov_who_sia [stringr::str_detect (age_range_verbatim, "<"), age_last_num := age_last_num - 1]
 cov_who_sia [is.na(age_first_unit), age_first_unit := age_last_unit]
 
-# use precise age for those <=3 years old
-# distinguish between 36-month old and 3-year old to match age definition
+# use precise age for those <=3 years old for weekly age structure
+# treat 36-month old as the end of 2-year old
+# age definition used in UNWPP data: X <= age < (X+1), X = 0, 1, ...100
 trans_m_to_y <- function (mage){
   yage <- ifelse (mage < 36, mage/12, ifelse (mage == 36, 2.999999, floor(mage/12)))
   return (yage)}
@@ -184,7 +185,7 @@ cov_who_sia [age_last_unit  == "m", age_last  := trans_m_to_y(age_last_num)]
 cov_who_sia [age_first_unit == "y", age_first := age_first_num]
 cov_who_sia [age_last_unit  == "y", age_last  := age_last_num]
 
-# adjust age ranges with operators (usually for upper bounds)
+# adjust age ranges with operators (usually occur in upper bounds)
 cov_who_sia [stringr::str_detect (age_range_verbatim, "<") & age_last_unit == "y", age_last := age_last -1]
 cov_who_sia [stringr::str_detect (age_range_verbatim, ">") & age_last_unit == "y", age_last := 100]
 
@@ -302,7 +303,7 @@ plt_sia <- ggplot (data = cov_who_sia,
   theme_bw () +
   theme (axis.text.x = element_text(size = 8),
          axis.text.y = element_text(size = 8))
-ggsave ("plot/coverage_sia.pdf", plt_sia, width = 28, height = 16, units = "cm")
+ggsave ("plot/coverage-sia.pdf", plt_sia, width = 28, height = 16, units = "cm")
 
 # # get future projections - every three years
 # for (ictry in sel_ctry){
@@ -329,8 +330,13 @@ setnames (x = cov_who_sia, old = c("Intervention"), new = c("vaccine"))
 cov_who_sia [, `:=` (dose = vaccine, activity_type = "campaign")]
 cov_who_sia [, vaccine := "SIA"]
 cov_file_sia <- cov_who_sia [, .SD, .SDcols = c(sel_cols, "start_m")]
-
 setorder (cov_file_sia, vaccine, country_code, year)
+
+# add a version with planned SIAs only (no SIAs for outbreak response)
+cov_who_sia_plan  <- cov_who_sia [Activity != "Outbreak Response"]
+cov_file_sia_plan <- cov_who_sia_plan [, .SD, .SDcols = c(sel_cols, "start_m")]
+setorder (cov_file_sia_plan, vaccine, country_code, year)
+dim(cov_file_sia_plan)
 
 
 # ------------------------------------------------------------------------------
@@ -362,6 +368,13 @@ fwrite (outfile_nomcv, "coverage/coverage_nomcv.csv")
 temp_sum <- outfile_mcv1_mcv2_sia [activity_type == "campaign"][, .N, by = c("year", "start_m", "country_code")]
 temp_sum [N > 1]
 
+# add alternative SIA data
+outfile_mcv1_mcv2_sia_plan <- rbind (cov_file_routine, cov_file_sia_plan, fill = TRUE)
+outfile_mcv1_mcv2_sia_plan [country == "DRCongo", country := "Democratic Republic of the Congo"]
+outfile_mcv1_mcv2_sia_plan [country == "Tanzania", country := "United Republic of Tanzania"]
+outfile_mcv1_mcv2_sia_plan [, scenario := "mcv1-mcv2-siaplan"]
+fwrite (outfile_mcv1_mcv2_sia_plan, "coverage/coverage_mcv1-mcv2-siaplan.csv")
+
 
 # ------------------------------------------------------------------------------
 ## add alternative MCV2 scenario
@@ -373,11 +386,20 @@ dat_mcv2alt  <- dat_mcv2_2020 [dat_mcv1_2020 [, .(country_code, coverage)],
                                on = .(country_code = country_code)]
 dat_mcv2alt [coverage == 0, coverage := i.coverage - 0.1]
 
+# 'mcv1-mcv2alt' scenario
 outfile_mcv1_mcv2alt <- copy(outfile_mcv1_mcv2) [dat_mcv2alt [, .(country_code, coverage)],
                                                  on = .(country_code = country_code)]
 outfile_mcv1_mcv2alt [vaccine == "MCV2", coverage := ifelse (year < 2000, 0, i.coverage)]
 outfile_mcv1_mcv2alt [, i.coverage := NULL]
 fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
+
+# 'mcv1-mcv2alt-sia' scenario
+outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
+outfile_mcv1_mcv2alt_sia  <- copy(outfile_mcv1_mcv2_sia) [dat_mcv2alt [, .(country_code, coverage)],
+                                                 on = .(country_code = country_code)]
+outfile_mcv1_mcv2alt_sia [vaccine == "MCV2", coverage := ifelse (year < 2000, 0, i.coverage)]
+outfile_mcv1_mcv2alt_sia [, i.coverage := NULL]
+fwrite (outfile_mcv1_mcv2alt_sia, "coverage/coverage_mcv1-mcv2alt-sia.csv")
 
 
 # ------------------------------------------------------------------------------
@@ -385,85 +407,29 @@ fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
 # ------------------------------------------------------------------------------
 outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
 outfile_mcv1_mcv2alt  <- fread ("coverage/coverage_mcv1-mcv2alt.csv")
-plt_data <- rbind (outfile_mcv1_mcv2_sia, outfile_mcv1_mcv2alt [vaccine == "MCV2"])
-sel_ctries <- unique(plt_data$country_code)
+plt_data <- rbind (outfile_mcv1_mcv2_sia,
+                   copy (outfile_mcv1_mcv2alt [vaccine == "MCV2"])[, vaccine := "MCV2 (alternative)"])
+# rank by burden
+country_names        <- plt_data [year == 2000 & vaccine == "MCV1", country]
+names(country_names) <- plt_data [year == 2000 & vaccine == "MCV1", country_code]
+plt_data [, country := factor (country, levels = country_names[sel_ctries])]
 
-pdf ("plot/coverage_check.pdf", width = 12, height = 6)
-for (ictry in 0:3){
-  plt_data_page <- plt_data [country_code %in% sel_ctries [ictry*5 + (1:5)]]
-  plt_cov <- ggplot (data = plt_data_page [vaccine %in% c("MCV1","MCV2")],
-                     aes (x = year, y = coverage, colour = scenario)) +
-    scale_x_continuous (breaks = pretty_breaks ()) +
-    geom_line (size = 1) +
-    geom_point (data = plt_data_page [!(vaccine %in% c("MCV1","MCV2"))],
-                aes (x = year, y = coverage, colour = scenario)) +
-    facet_grid(rows = vars(vaccine), cols = vars(country)) +
-    scale_colour_discrete ("MCV2 assumption", labels = c("WUENIC","Alternative")) +
-    labs (title = " ", x = "Year", y = "Vaccine coverage") +
-    theme_bw() +
-    theme (legend.position  = "bottom",
-           legend.direction = "horizontal")
-
-  print(plt_cov)
-}
+pdf ("plot/coverage-check.pdf", width = 12, height = 8)
+plt_cov <- ggplot (data = plt_data [vaccine != "SIA"],
+                   aes (x = year, y = coverage, colour = vaccine, linetype = vaccine)) +
+  scale_x_continuous (breaks = pretty_breaks ()) +
+  geom_line (size = 1) +
+  facet_wrap (vars(country), nrow = 4) +
+  labs (title = " ", x = "Year", y = "Vaccine coverage") +
+  theme_bw() +
+  theme (legend.position  = "bottom",
+         legend.direction = "horizontal",
+         legend.key.size = unit (1.2, 'cm'))
+plt_cov <- plt_cov +
+  geom_point (data = plt_data [vaccine == "SIA"], aes (x = year, y = coverage)) +
+  scale_colour_manual ("Dose", values = c("#253582ff", "#b8627dff", "#b8627dff", "#f9b641ff")) +
+  scale_linetype_manual ("Dose", values = c(1,1,2,0)) +
+  guides(color = guide_legend (override.aes = list (shape = c(NA,NA,NA,16))))
+print(plt_cov)
 dev.off()
 
-# # ------------------------------------------------------------------------------
-# ## compare results with VIMC version
-# # ------------------------------------------------------------------------------
-# vimc_cov_file_campaign <- fread ("D:/dynamice_cluster/vaccine_coverage/coverage_201910gavi-5_measles-campaign-default.csv")
-# vimc_cov_file_mcv2 <- fread ("D:/dynamice_cluster/vaccine_coverage/coverage_201910gavi-5_measles-mcv2-default.csv")
-# vimc_cov_file_mcv1 <- fread ("D:/dynamice_cluster/vaccine_coverage/coverage_201910gavi-5_measles-mcv1-default.csv")
-#
-# all_cov_files <- rbind (out_cov_file_campaign [coverage != 0][ , compare := "Our model"],
-#                         vimc_cov_file_campaign [(country_code %in% sel_ctry) & (coverage != 0),
-#                                                 !c("set_name", "gavi_support", "gender")] [, compare := "VIMC"])
-# all_cov_files [vaccine == "Measles", vaccine := "SIA"]
-#
-# plot_cov <- all_cov_files [year %in% 2000:2020]
-# nrows_comapre <- table (plot_cov$compare)
-# plt1 <- ggplot (data = plot_cov,
-#                 aes (x = year, y = coverage * 100, colour = compare)) +
-#   scale_x_continuous (breaks = pretty_breaks ()) +
-#   facet_grid(rows = vars(vaccine), cols = vars(country)) +
-#   geom_point (size = c(rep(2.2, nrows_comapre[1]),rep(1.5, nrows_comapre[2])), alpha = 0.85) +
-#   scale_color_discrete (name = " ", labels = aes (unique (compare))) +
-#   labs (title = " ", x = "Year", y = "Vaccine coverage (%)")
-#
-# print(plt1)
-#
-#
-# # ------------------------------------------------------------------------------
-# ## compare results with IHME estimates
-# # ------------------------------------------------------------------------------
-# # http://ghdx.healthdata.org/record/ihme-data/gbd-2020-routine-childhood-vaccination-coverage-1980-2019
-# ihme_cov_file <- fread ("C:/LSHTM/dynamice supp - Han/original_data/IHME_GBD_2020_R1_VACC_1980_2019_DATA_Y2021M06D03.csv")
-# ihme_ctry_names <- c("India", "Nigeria", "Pakistan", "Ethiopia", "Afghanistan", "Sudan",
-#                      "United Republic of Tanzania", "Niger", "Somalia", "Democratic Republic of the Congo")
-# ihme_cov_file <- ihme_cov_file [vaccine_name %in% c("MCV1", "MCV2") & location_name %in% ihme_ctry_names]
-# setnames (x = ihme_cov_file,
-#           old = c("vaccine_name", "location_name", "year_id"),
-#           new = c("vaccine", "country", "year"))
-# ihme_cov_file [country == "United Republic of Tanzania", country := "Tanzania"]
-# ihme_cov_file [country == "Democratic Republic of the Congo", country := "DR Congo"]
-# ihme_cov_file [, source := "IHME estimates"]
-#
-# my_cov_file <- fread ("vac_coverage_top10/coverage_sia-conti.csv")
-# my_cov_file [vaccine == "Measles", vaccine := "SIA"]
-# my_cov_file [country == "Tanzania, United Republic of", country := "Tanzania"]
-# my_cov_file [country == "Congo, the Democratic Republic of the", country := "DR Congo"]
-# my_cov_file [, source := "Paper assumptions"]
-#
-# plt2 <- ggplot (data = my_cov_file [year %in% 1980:2020],
-#                 aes (x = year, y = coverage * 100)) +
-#   scale_x_continuous (breaks = pretty_breaks ()) +
-#
-#   geom_point (size = 1, alpha = 0.85, aes(colour = source)) +
-#   labs (title = "Comparison between sources of vaccine coverage data", x = "Year", y = "vaccine coverage (%)") +
-#   facet_grid (cols = vars(vaccine), rows = vars(country)) +
-#   geom_pointrange (data = ihme_cov_file, size = 0.15,
-#                    aes (x = year, y = val*100,  ymin = lower*100, ymax = upper*100, colour = source)) +
-#   theme_bw () +
-#   theme (legend.position = "bottom", legend.direction = "horizontal")
-#
-# ggsave ("vac_coverage_top10/coverage_IHME.pdf", plt2, width = 20, height = 35, units = "cm")

@@ -84,17 +84,19 @@ dir.create (file.path (paste0 (getwd(), "/", var$burden_estimate_folder, "Portno
 
 
 # prepare coverage inputs
-vaccine_strategies <- c("nomcv",         # (1) no vaccination
-                        "mcv1",          # (2) MCV1 only
-                        "mcv1-mcv2",     # (3) MCV1 + MCV2
-                        "mcv1-mcv2-sia", # (4) MCV1 + MCV2 + SIA
-                        "mcv1-sia",      # (5) MCV1 + SIA
-                        "mcv1-mcv2alt"   # (6) MCV1 + MCV2(alternative)
+vaccine_strategies <- c("nomcv",             # (1) no vaccination
+                        "mcv1",              # (2) MCV1 only
+                        "mcv1-mcv2",         # (3) MCV1 + MCV2
+                        "mcv1-mcv2-sia",     # (4) MCV1 + MCV2 + SIA
+                        "mcv1-sia",          # (5) MCV1 + SIA
+                        "mcv1-mcv2alt",      # (6) MCV1 + MCV2(alternative)
+                        "mcv1-mcv2alt-sia",  # (7) MCV1 + MCV2(alternative) + SIA
+                        "mcv1-mcv2-siaplan"  # (8) MCV1 + MCV2 + SIA(plan)
 )
 
 # set SIAs and vaccination parameters for each scenario to minimize errors for running
-set_sia         <- c (0, 0, 0, 1, 1, 0)
-set_vaccination <- c (0, 1, 2, 2, 1, 2)
+set_sia         <- c (0, 0, 0, 1, 1, 0, 1, 1)
+set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2)
 
 # prepare coverage input data - update when the data are changed
 adj.covfiles <- FALSE
@@ -159,7 +161,7 @@ for (index in 1:length(vaccine_strategies)){
                   psa                        = var$psa,
                   vaccination                = set_vaccination [index],
                   using_sia                  = set_sia         [index],
-                  folder_date                = "20220127",
+                  folder_date                = "20220209",
                   sim_years                  = 1980:2020,
                   chunksize                  = 1)
 
