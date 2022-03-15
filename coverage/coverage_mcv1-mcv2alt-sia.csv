@@ -40,65 +40,6 @@ AFG,Afghanistan,2017,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AFG,Afghanistan,2018,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AFG,Afghanistan,2019,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AFG,Afghanistan,2020,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-AFG,Afghanistan,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2000,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2001,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2002,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2003,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2004,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2005,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2006,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2007,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2008,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2009,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2010,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2011,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2012,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2013,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2014,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2015,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2016,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2017,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2018,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2019,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2020,MCV2,0.43,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AFG,Afghanistan,2002,SIA,0.836533292671642,campaign,0.5,14,6m-14y,10509482.5,Measles,6.5,mcv1-mcv2-sia
-AFG,Afghanistan,2003,SIA,1,campaign,0.75,4,9-59m,3899052.25,Measles,7,mcv1-mcv2-sia
-AFG,Afghanistan,2006,SIA,0.251629531799978,campaign,0.75,4,9-59m,4228438.5,Measles,8,mcv1-mcv2-sia
-AFG,Afghanistan,2006,SIA,0.428012137341007,campaign,0.75,4,9-59m,4228438.5,Measles,11,mcv1-mcv2-sia
-AFG,Afghanistan,2007,SIA,0.484155247667172,campaign,0.75,4,9-59m,4307459.25,Measles,5,mcv1-mcv2-sia
-AFG,Afghanistan,2009,SIA,1,campaign,0.75,2.999999,9-36m,2394477.451075,Measles,4,mcv1-mcv2-sia
-AFG,Afghanistan,2011,SIA,0.0441703514310334,campaign,0.75,4,9-59m,4538564.75,Measles,11,mcv1-mcv2-sia
-AFG,Afghanistan,2011,SIA,0.0493711145136797,campaign,0.75,4,9-59m,4538564.75,Measles,4,mcv1-mcv2-sia
-AFG,Afghanistan,2011,SIA,0.0980157497438874,campaign,0.75,10,9m-10y,10263309.75,Measles,11,mcv1-mcv2-sia
-AFG,Afghanistan,2012,SIA,0.576872546579094,campaign,0.75,10,9m-10y,10444600,Measles,7,mcv1-mcv2-sia
-AFG,Afghanistan,2012,SIA,0.526151982842809,campaign,0.75,10,9m-10y,10444600,Measles,12,mcv1-mcv2-sia
-AFG,Afghanistan,2013,SIA,0.189672965213067,campaign,0.75,4,9-59m,4617811.5,Measles,6,mcv1-mcv2-sia
-AFG,Afghanistan,2014,SIA,0.0291222868584628,campaign,0.5,10,6m-10y,11048239.5,Measles,6,mcv1-mcv2-sia
-AFG,Afghanistan,2014,SIA,0.111971574182292,campaign,0.75,4,9-59m,4647465.25,Measles,8,mcv1-mcv2-sia
-AFG,Afghanistan,2015,SIA,1,campaign,0.75,4,9-59m,4670738.25,Measles,5,mcv1-mcv2-sia
-AFG,Afghanistan,2016,SIA,0.222547816493071,campaign,0.75,10,9m-10y,11010636,Measles,9,mcv1-mcv2-sia
-AFG,Afghanistan,2017,SIA,0.223467583685635,campaign,0.75,4,9-59m,4714115.5,Measles,4,mcv1-mcv2-sia
-AFG,Afghanistan,2018,SIA,1,campaign,0.75,10,9m-10y,11177787.25,Measles,9,mcv1-mcv2-sia
 AGO,Angola,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AGO,Angola,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AGO,Angola,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
@@ -140,56 +81,6 @@ AGO,Angola,2017,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AGO,Angola,2018,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AGO,Angola,2019,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
 AGO,Angola,2020,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-AGO,Angola,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2000,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2001,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2002,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2003,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2004,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2005,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2006,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2007,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2008,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2009,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2010,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2011,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2012,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2013,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2014,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2015,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2016,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2017,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2018,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2019,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2020,MCV2,0.41,routine,,,"",,MCV2,,mcv1-mcv2-sia
-AGO,Angola,2003,SIA,0.907755322417104,campaign,0.75,14,9m-14y,7960410.5,Measles,4,mcv1-mcv2-sia
-AGO,Angola,2006,SIA,1,campaign,0.75,4,9-59m,3203490.5,Measles,7,mcv1-mcv2-sia
-AGO,Angola,2009,SIA,0.963070228606659,campaign,0.75,4,9-59m,3602858.75,Measles,6,mcv1-mcv2-sia
-AGO,Angola,2011,SIA,1,campaign,0.75,4,9-59m,3891099.25,Measles,9,mcv1-mcv2-sia
-AGO,Angola,2014,SIA,1,campaign,0.5,9,6m-9y,8752047.5,Measles,9,mcv1-mcv2-sia
-AGO,Angola,2018,SIA,0.867044893824995,campaign,0.5,14,6m-14y,13841770,MR,4,mcv1-mcv2-sia
-AGO,Angola,2019,SIA,0.0323734009221526,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
-AGO,Angola,2019,SIA,0.0251528388406774,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
-AGO,Angola,2019,SIA,0.0217148510047746,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
 BEN,Benin,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 BEN,Benin,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 BEN,Benin,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
@@ -231,55 +122,6 @@ BEN,Benin,2017,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
 BEN,Benin,2018,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
 BEN,Benin,2019,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
 BEN,Benin,2020,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-BEN,Benin,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2000,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2001,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2002,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2003,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2004,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2005,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2006,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2007,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2008,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2009,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2010,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2011,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2012,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2013,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2014,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2015,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2016,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2017,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2018,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2019,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2020,MCV2,0.55,routine,,,"",,MCV2,,mcv1-mcv2-sia
-BEN,Benin,2001,SIA,0.318182559745194,campaign,0.75,14,9m-14y,2988158.75,Measles,12,mcv1-mcv2-sia
-BEN,Benin,2003,SIA,0.727927030758437,campaign,0.75,14,9m-14y,3159084.5,Measles,1,mcv1-mcv2-sia
-BEN,Benin,2005,SIA,0.984362820310285,campaign,0.75,4,9-59m,1155227.5,Measles,12,mcv1-mcv2-sia
-BEN,Benin,2008,SIA,1,campaign,0.75,4,9-59m,1246707.25,Measles,11,mcv1-mcv2-sia
-BEN,Benin,2011,SIA,1,campaign,0.75,4,9-59m,1343681.25,Measles,9,mcv1-mcv2-sia
-BEN,Benin,2014,SIA,0.902484890863518,campaign,0.75,9,9m-9y,2904906.25,Measles,11,mcv1-mcv2-sia
-BEN,Benin,2015,SIA,0.137547886882788,campaign,0.75,9,9m-9y,2969954.75,Measles,1,mcv1-mcv2-sia
-BEN,Benin,2019,SIA,1,campaign,0.75,14,9m-14y,4685591,MR,3,mcv1-mcv2-sia
 CHN,China,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 CHN,China,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
 CHN,China,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
@@ -321,60 +163,6 @@ CHN,China,2017,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
 CHN,China,2018,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
 CHN,China,2019,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
 CHN,China,2020,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
-CHN,China,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2000,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2001,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2002,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2003,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2004,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2005,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2006,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2007,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2008,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2009,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2010,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2011,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2012,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2013,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2014,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2015,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2016,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2017,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2018,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2019,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2020,MCV2,0.99,routine,,,"",,MCV2,,mcv1-mcv2-sia
-CHN,China,2003,SIA,0.00360137843100811,campaign,0.666666666666667,12,8m-12y,227616179.666667,Measles,11,mcv1-mcv2-sia
-CHN,China,2004,SIA,0.0353129062451103,campaign,0.666666666666667,12,8m-12y,220650091.666667,Measles,11,mcv1-mcv2-sia
-CHN,China,2005,SIA,0.0154998076135997,campaign,0.666666666666667,14,8m-14y,260154390.333333,Measles,1,mcv1-mcv2-sia
-CHN,China,2005,SIA,0.0168775037270488,campaign,1,14,1-14y,254802136,Measles,3,mcv1-mcv2-sia
-CHN,China,2005,SIA,0.00446977708730664,campaign,0.666666666666667,25,8m-25y,512217937.333333,Measles,5,mcv1-mcv2-sia
-CHN,China,2005,SIA,0.0184505823401627,campaign,0.666666666666667,14,8m-14y,260154390.333333,Measles,9,mcv1-mcv2-sia
-CHN,China,2006,SIA,0.0232836993267775,campaign,0.666666666666667,14,8m-14y,253396160,Measles,3,mcv1-mcv2-sia
-CHN,China,2007,SIA,0.0806871733960853,campaign,0.666666666666667,14,8m-14y,249110226,Measles,9,mcv1-mcv2-sia
-CHN,China,2008,SIA,0.141694075776074,campaign,0.666666666666667,14,8m-14y,246895107,Measles,3,mcv1-mcv2-sia
-CHN,China,2008,SIA,0.110150848997135,campaign,0.666666666666667,6,8m-6y,105044583,Measles,11,mcv1-mcv2-sia
-CHN,China,2009,SIA,0.383783130992316,campaign,0.666666666666667,14,8m-14y,245366217,Measles,3,mcv1-mcv2-sia
-CHN,China,2009,SIA,0.0204126104287617,campaign,0.666666666666667,14,8m-14y,245366217,Measles,4,mcv1-mcv2-sia
-CHN,China,2010,SIA,1,campaign,0.666666666666667,4,8m-4y,73008224,Measles,9,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,1980,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,1981,MCV1,0.23,routine,,,"",,MCV1,,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,1982,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
@@ -416,47 +204,669 @@ COD,Democratic Republic of the Congo,2017,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv
 COD,Democratic Republic of the Congo,2018,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2019,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2020,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2000,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2001,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2002,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2003,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2004,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2005,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2006,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2007,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2008,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2009,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2010,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2011,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2012,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2013,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2014,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2015,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2016,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2017,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2018,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2019,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
-COD,Democratic Republic of the Congo,2020,MCV2,0.47,routine,,,"",,MCV2,,mcv1-mcv2-sia
+ETH,Ethiopia,1980,MCV1,0.04,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1981,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1982,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1983,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1984,MCV1,0.08,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1985,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1986,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1987,MCV1,0.13,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1988,MCV1,0.15,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1989,MCV1,0.23,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1990,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1991,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1992,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1993,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1994,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1995,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1996,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1997,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1998,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,1999,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2000,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2001,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2002,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2003,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2004,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2005,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2006,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2007,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2008,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2009,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2010,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2011,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2012,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2013,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2014,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2015,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2016,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2017,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2018,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2019,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ETH,Ethiopia,2020,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1983,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1984,MCV1,0.13,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1985,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1986,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1987,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1988,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1989,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1990,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1991,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1992,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1993,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1994,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1995,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1996,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1997,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1998,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,1999,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2000,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2001,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2002,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2003,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2004,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2005,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2006,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2007,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2008,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2009,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2010,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2011,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2012,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2013,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2014,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2016,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2018,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2019,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IDN,Indonesia,2020,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1984,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1985,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1986,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1987,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1988,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1989,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1990,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1991,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1992,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1993,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1994,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1995,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1996,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1997,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1998,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,1999,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2000,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2001,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2002,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2003,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2004,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2005,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2006,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2007,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2008,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2009,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2010,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2011,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2012,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2013,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2014,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2016,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2018,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2019,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
+IND,India,2020,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1984,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1985,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1986,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1987,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1988,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1989,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1990,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1991,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1992,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1993,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1994,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1995,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1996,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1997,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1998,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,1999,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2002,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2003,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2004,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2005,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2006,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2007,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2008,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2009,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2010,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2011,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2012,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2013,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2014,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2015,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2016,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2017,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2018,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2019,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MDG,Madagascar,2020,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1981,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1982,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1983,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1984,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1985,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1986,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1987,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1988,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1989,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1990,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1991,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1992,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1993,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1994,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1995,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1996,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1997,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1998,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,1999,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2000,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2001,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2002,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2003,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2004,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2005,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2006,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2007,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2008,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2009,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2010,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2011,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2012,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2013,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2014,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2016,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2017,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2018,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2019,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+MOZ,Mozambique,2020,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1981,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1982,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1983,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1984,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1985,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1986,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1987,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1988,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1989,MCV1,0.14,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1990,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1991,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1992,MCV1,0.21,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1993,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1994,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1995,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1996,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1997,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1998,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,1999,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2000,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2001,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2002,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2003,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2004,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2005,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2006,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2007,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2008,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2009,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2010,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2011,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2012,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2013,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2014,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2015,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2016,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2017,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2018,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2019,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NER,Niger,2020,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1984,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1985,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1986,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1987,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1988,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1989,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1990,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1991,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1992,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1993,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1994,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1995,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1996,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1997,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1998,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,1999,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2000,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2001,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2002,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2003,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2004,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2005,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2006,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2007,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2008,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2009,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2010,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2011,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2012,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2013,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2014,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2015,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2016,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2017,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2018,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2019,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+NGA,Nigeria,2020,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1980,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1981,MCV1,0.02,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1982,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1983,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1984,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1985,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1986,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1987,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1988,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1989,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1990,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1991,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1992,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1993,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1994,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1995,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1996,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1997,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1998,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,1999,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2002,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2003,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2004,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2005,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2006,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2007,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2008,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2009,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2010,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2011,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2012,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2013,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2014,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2015,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2016,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2017,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2018,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2019,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PAK,Pakistan,2020,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1982,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1983,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1984,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1985,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1986,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1987,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1988,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1989,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1990,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1991,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1992,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1993,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1994,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1995,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1996,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1997,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1998,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,1999,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2000,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2001,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2002,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2003,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2004,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2005,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2006,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2007,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2008,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2009,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2010,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2011,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2012,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2013,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2014,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2015,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2016,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2017,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2018,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2019,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
+PHL,Philippines,2020,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1980,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1981,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1982,MCV1,0.04,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1983,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1984,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1985,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1986,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1987,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1988,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1989,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1990,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1991,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1992,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1993,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1994,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1995,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1996,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1997,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1998,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,1999,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2000,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2001,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2002,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2003,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2004,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2005,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2006,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2007,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2008,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2009,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2010,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2011,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2012,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2013,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2014,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2015,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2016,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2017,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2018,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2019,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+SOM,Somalia,2020,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1984,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1985,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1986,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1987,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1988,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1989,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1990,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1991,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1992,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1993,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1994,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1995,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1996,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1997,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1998,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,1999,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2000,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2001,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2002,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2003,MCV1,0.23,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2004,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2005,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2006,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2007,MCV1,0.31,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2008,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2009,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2010,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2011,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2012,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2013,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2014,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2015,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2016,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2017,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2018,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2019,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TCD,Chad,2020,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1980,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1981,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1982,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1983,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1984,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1985,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1986,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1987,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1988,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1989,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1990,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1991,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1992,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1993,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1994,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1995,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1996,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1997,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1998,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,1999,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2000,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2001,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2002,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2003,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2004,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2005,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2006,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2007,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2008,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2009,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2010,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2011,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2012,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2013,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2014,MCV1,0.94,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2015,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2016,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2017,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2018,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2019,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TUR,Turkey,2020,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1980,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1981,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1982,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1983,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1984,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1985,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1986,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1987,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1988,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1989,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1990,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1991,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1992,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1993,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1994,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1995,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1996,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1997,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1998,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,1999,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2000,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2001,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2002,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2003,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2004,MCV1,0.94,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2005,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2006,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2007,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2008,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2009,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2010,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2011,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2012,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2013,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2014,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2015,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2016,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2018,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2019,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
+TZA,United Republic of Tanzania,2020,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1981,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1982,MCV1,0.21,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1983,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1984,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1985,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1986,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1987,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1988,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1989,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1990,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1991,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1992,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1993,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1994,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1995,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1996,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1997,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1998,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,1999,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2002,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2003,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2004,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2005,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2006,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2007,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2008,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2009,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2010,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2011,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2012,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2013,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2014,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2015,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2016,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2017,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2018,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2019,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+UGA,Uganda,2020,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1983,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1984,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1985,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1986,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1987,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1988,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1989,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1990,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1991,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1992,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1993,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1994,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1995,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1996,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1997,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1998,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,1999,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2000,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2001,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2002,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2003,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2004,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2005,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2006,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2007,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2008,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2009,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2010,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2011,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2012,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2013,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2014,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2015,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2016,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2017,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2018,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2019,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
+ZAF,South Africa,2020,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
+AFG,Afghanistan,2002,SIA,0.836533292671642,campaign,0.5,14,6m-14y,10509482.5,Measles,6.5,mcv1-mcv2-sia
+AFG,Afghanistan,2003,SIA,1,campaign,0.75,4,9-59m,3899052.25,Measles,7,mcv1-mcv2-sia
+AFG,Afghanistan,2006,SIA,0.251629531799978,campaign,0.75,4,9-59m,4228438.5,Measles,8,mcv1-mcv2-sia
+AFG,Afghanistan,2006,SIA,0.428012137341007,campaign,0.75,4,9-59m,4228438.5,Measles,11,mcv1-mcv2-sia
+AFG,Afghanistan,2007,SIA,0.484155247667172,campaign,0.75,4,9-59m,4307459.25,Measles,5,mcv1-mcv2-sia
+AFG,Afghanistan,2009,SIA,1,campaign,0.75,2.999999,9-36m,2394477.451075,Measles,4,mcv1-mcv2-sia
+AFG,Afghanistan,2011,SIA,0.0441703514310334,campaign,0.75,4,9-59m,4538564.75,Measles,11,mcv1-mcv2-sia
+AFG,Afghanistan,2011,SIA,0.0493711145136797,campaign,0.75,4,9-59m,4538564.75,Measles,4,mcv1-mcv2-sia
+AFG,Afghanistan,2011,SIA,0.0980157497438874,campaign,0.75,10,9m-10y,10263309.75,Measles,11,mcv1-mcv2-sia
+AFG,Afghanistan,2012,SIA,0.576872546579094,campaign,0.75,10,9m-10y,10444600,Measles,7,mcv1-mcv2-sia
+AFG,Afghanistan,2012,SIA,0.526151982842809,campaign,0.75,10,9m-10y,10444600,Measles,12,mcv1-mcv2-sia
+AFG,Afghanistan,2013,SIA,0.189672965213067,campaign,0.75,4,9-59m,4617811.5,Measles,6,mcv1-mcv2-sia
+AFG,Afghanistan,2014,SIA,0.0291222868584628,campaign,0.5,10,6m-10y,11048239.5,Measles,6,mcv1-mcv2-sia
+AFG,Afghanistan,2014,SIA,0.111971574182292,campaign,0.75,4,9-59m,4647465.25,Measles,8,mcv1-mcv2-sia
+AFG,Afghanistan,2015,SIA,1,campaign,0.75,4,9-59m,4670738.25,Measles,5,mcv1-mcv2-sia
+AFG,Afghanistan,2016,SIA,0.222547816493071,campaign,0.75,10,9m-10y,11010636,Measles,9,mcv1-mcv2-sia
+AFG,Afghanistan,2017,SIA,0.223467583685635,campaign,0.75,4,9-59m,4714115.5,Measles,4,mcv1-mcv2-sia
+AFG,Afghanistan,2018,SIA,1,campaign,0.75,10,9m-10y,11177787.25,Measles,9,mcv1-mcv2-sia
+AGO,Angola,2003,SIA,0.907755322417104,campaign,0.75,14,9m-14y,7960410.5,Measles,4,mcv1-mcv2-sia
+AGO,Angola,2006,SIA,1,campaign,0.75,4,9-59m,3203490.5,Measles,7,mcv1-mcv2-sia
+AGO,Angola,2009,SIA,0.963070228606659,campaign,0.75,4,9-59m,3602858.75,Measles,6,mcv1-mcv2-sia
+AGO,Angola,2011,SIA,1,campaign,0.75,4,9-59m,3891099.25,Measles,9,mcv1-mcv2-sia
+AGO,Angola,2014,SIA,1,campaign,0.5,9,6m-9y,8752047.5,Measles,9,mcv1-mcv2-sia
+AGO,Angola,2018,SIA,0.867044893824995,campaign,0.5,14,6m-14y,13841770,MR,4,mcv1-mcv2-sia
+AGO,Angola,2019,SIA,0.0323734009221526,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
+AGO,Angola,2019,SIA,0.0251528388406774,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
+AGO,Angola,2019,SIA,0.0217148510047746,campaign,0.5,4,6m-4y,5078552,MR,5,mcv1-mcv2-sia
+BEN,Benin,2001,SIA,0.318182559745194,campaign,0.75,14,9m-14y,2988158.75,Measles,12,mcv1-mcv2-sia
+BEN,Benin,2003,SIA,0.727927030758437,campaign,0.75,14,9m-14y,3159084.5,Measles,1,mcv1-mcv2-sia
+BEN,Benin,2005,SIA,0.984362820310285,campaign,0.75,4,9-59m,1155227.5,Measles,12,mcv1-mcv2-sia
+BEN,Benin,2008,SIA,1,campaign,0.75,4,9-59m,1246707.25,Measles,11,mcv1-mcv2-sia
+BEN,Benin,2011,SIA,1,campaign,0.75,4,9-59m,1343681.25,Measles,9,mcv1-mcv2-sia
+BEN,Benin,2014,SIA,0.902484890863518,campaign,0.75,9,9m-9y,2904906.25,Measles,11,mcv1-mcv2-sia
+BEN,Benin,2015,SIA,0.137547886882788,campaign,0.75,9,9m-9y,2969954.75,Measles,1,mcv1-mcv2-sia
+BEN,Benin,2019,SIA,1,campaign,0.75,14,9m-14y,4685591,MR,3,mcv1-mcv2-sia
+CHN,China,2003,SIA,0.00360137843100811,campaign,0.666666666666667,12,8m-12y,227616179.666667,Measles,11,mcv1-mcv2-sia
+CHN,China,2004,SIA,0.0353129062451103,campaign,0.666666666666667,12,8m-12y,220650091.666667,Measles,11,mcv1-mcv2-sia
+CHN,China,2005,SIA,0.0154998076135997,campaign,0.666666666666667,14,8m-14y,260154390.333333,Measles,1,mcv1-mcv2-sia
+CHN,China,2005,SIA,0.0168775037270488,campaign,1,14,1-14y,254802136,Measles,3,mcv1-mcv2-sia
+CHN,China,2005,SIA,0.00446977708730664,campaign,0.666666666666667,25,8m-25y,512217937.333333,Measles,5,mcv1-mcv2-sia
+CHN,China,2005,SIA,0.0184505823401627,campaign,0.666666666666667,14,8m-14y,260154390.333333,Measles,9,mcv1-mcv2-sia
+CHN,China,2006,SIA,0.0232836993267775,campaign,0.666666666666667,14,8m-14y,253396160,Measles,3,mcv1-mcv2-sia
+CHN,China,2007,SIA,0.0806871733960853,campaign,0.666666666666667,14,8m-14y,249110226,Measles,9,mcv1-mcv2-sia
+CHN,China,2008,SIA,0.141694075776074,campaign,0.666666666666667,14,8m-14y,246895107,Measles,3,mcv1-mcv2-sia
+CHN,China,2008,SIA,0.110150848997135,campaign,0.666666666666667,6,8m-6y,105044583,Measles,11,mcv1-mcv2-sia
+CHN,China,2009,SIA,0.383783130992316,campaign,0.666666666666667,14,8m-14y,245366217,Measles,3,mcv1-mcv2-sia
+CHN,China,2009,SIA,0.0204126104287617,campaign,0.666666666666667,14,8m-14y,245366217,Measles,4,mcv1-mcv2-sia
+CHN,China,2010,SIA,1,campaign,0.666666666666667,4,8m-4y,73008224,Measles,9,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2000,SIA,0.192834179514266,campaign,0.75,4,9-59m,7236533.5,Measles,9,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2002,SIA,0.242748590189072,campaign,0.5,15,6m-15y,22883033,Measles,12,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2003,SIA,0.0045737108773559,campaign,0.5,15,6m-15y,23613211,Measles,1,mcv1-mcv2-sia
@@ -514,88 +924,6 @@ COD,Democratic Republic of the Congo,2016,SIA,0.556742834855871,campaign,0.5,4,6
 COD,Democratic Republic of the Congo,2016,SIA,0.286271780133966,campaign,0.5,4,6-59m,12955671,Measles,10,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2017,SIA,0.411677652987147,campaign,0.5,4,6-59m,13279620.5,Measles,2,mcv1-mcv2-sia
 COD,Democratic Republic of the Congo,2019,SIA,0.032466843287052,campaign,0.5,4,6-59m,13864575.5,Measles,1,mcv1-mcv2-sia
-ETH,Ethiopia,1980,MCV1,0.04,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1981,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1982,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1983,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1984,MCV1,0.08,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1985,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1986,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1987,MCV1,0.13,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1988,MCV1,0.15,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1989,MCV1,0.23,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1990,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1991,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1992,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1993,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1994,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1995,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1996,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1997,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1998,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1999,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2000,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2001,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2002,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2003,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2004,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2005,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2006,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2007,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2008,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2009,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2010,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2011,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2012,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2013,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2014,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2015,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2016,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2017,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2018,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2019,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,2020,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ETH,Ethiopia,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2000,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2001,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2002,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2003,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2004,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2005,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2006,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2007,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2008,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2009,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2010,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2011,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2012,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2013,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2014,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2015,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2016,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2017,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2018,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2019,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ETH,Ethiopia,2020,MCV2,0.46,routine,,,"",,MCV2,,mcv1-mcv2-sia
 ETH,Ethiopia,2000,SIA,0.349933383007395,campaign,0.75,4,9-59m,10316249.25,Measles,6,mcv1-mcv2-sia
 ETH,Ethiopia,2000,SIA,0.227453209314422,campaign,0.75,4,9-59m,10316249.25,Measles,12,mcv1-mcv2-sia
 ETH,Ethiopia,2001,SIA,0.153834520499254,campaign,0.75,4,9-59m,10701993.25,Measles,11,mcv1-mcv2-sia
@@ -621,88 +949,6 @@ ETH,Ethiopia,2016,SIA,0.640929118568297,campaign,0.5,13,6m-<15y,38984949,Measles
 ETH,Ethiopia,2017,SIA,0.51315296637047,campaign,0.75,14,9m-14y,41362323.5,Measles,2,mcv1-mcv2-sia
 ETH,Ethiopia,2017,SIA,0.0598230476822085,campaign,0.5,14,6-179m,42205155,Measles,7,mcv1-mcv2-sia
 ETH,Ethiopia,2020,SIA,0.984992075140391,campaign,0.75,4,9-59m,14183689.75,Measles,6,mcv1-mcv2-sia
-IDN,Indonesia,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1983,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1984,MCV1,0.13,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1985,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1986,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1987,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1988,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1989,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1990,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1991,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1992,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1993,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1994,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1995,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1996,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1997,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1998,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1999,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2000,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2001,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2002,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2003,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2004,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2005,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2006,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2007,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2008,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2009,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2010,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2011,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2012,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2013,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2014,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2016,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2018,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2019,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,2020,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IDN,Indonesia,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2000,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2001,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2002,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2003,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2004,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2005,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2006,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2007,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2008,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2009,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2010,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2011,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2012,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2013,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2014,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2015,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2016,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2017,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2018,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2019,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IDN,Indonesia,2020,MCV2,0.49,routine,,,"",,MCV2,,mcv1-mcv2-sia
 IDN,Indonesia,2000,SIA,0.20810941921344,campaign,6,12,6-12y,30471504,Measles,6.5,mcv1-mcv2-sia
 IDN,Indonesia,2000,SIA,0.0493763412141161,campaign,0.5,4,6-59m,19199721.5,Measles,6.5,mcv1-mcv2-sia
 IDN,Indonesia,2002,SIA,0.0079491990516067,campaign,0.5,4,0-59m,19511525.5,Measles,9,mcv1-mcv2-sia
@@ -727,88 +973,6 @@ IDN,Indonesia,2011,SIA,0.578034783502912,campaign,0.75,4,9-59m,19662597,Measles,
 IDN,Indonesia,2016,SIA,0.173492319744711,campaign,0.75,4,9-59m,20970282.75,Measles,8,mcv1-mcv2-sia
 IDN,Indonesia,2017,SIA,0.488906457186584,campaign,0.75,15,9m-15y,72216571.25,MR,8,mcv1-mcv2-sia
 IDN,Indonesia,2018,SIA,0.324818199084394,campaign,0.75,15,9m-15y,72206182,MR,8,mcv1-mcv2-sia
-IND,India,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1984,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1985,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1986,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1987,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1988,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1989,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1990,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1991,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1992,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1993,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1994,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1995,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1996,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1997,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1998,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1999,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2000,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2001,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2002,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2003,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2004,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2005,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2006,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2007,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2008,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2009,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2010,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2011,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2012,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2013,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2014,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2016,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2018,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2019,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,2020,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
-IND,India,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2000,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2001,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2002,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2003,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2004,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2005,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2006,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2007,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2008,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2009,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2010,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2011,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2012,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2013,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2014,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2015,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2016,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2017,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2018,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2019,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
-IND,India,2020,MCV2,0.81,routine,,,"",,MCV2,,mcv1-mcv2-sia
 IND,India,2000,SIA,0.0068386744107864,campaign,0.75,4,9-59m,108122854.75,Measles,6.5,mcv1-mcv2-sia
 IND,India,2001,SIA,0.0088295536842089,campaign,0.75,4,9-59m,109005962.75,Measles,6.5,mcv1-mcv2-sia
 IND,India,2010,SIA,0.0357683735480284,campaign,0.75,10,9m-10y,261902375.5,Measles,11,mcv1-mcv2-sia
@@ -850,88 +1014,6 @@ IND,India,2018,SIA,0.202671941140589,campaign,0.75,15,9m-15y,373608697.75,MR,11,
 IND,India,2018,SIA,0.0692328635702914,campaign,0.75,15,9m-15y,373608697.75,MR,11,mcv1-mcv2-sia
 IND,India,2019,SIA,0.103507194157192,campaign,0.75,15,9m-15y,371133623.25,MR,1,mcv1-mcv2-sia
 IND,India,2019,SIA,0.0614926769505517,campaign,0.75,15,9m-15y,371133623.25,MR,1,mcv1-mcv2-sia
-MDG,Madagascar,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1984,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1985,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1986,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1987,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1988,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1989,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1990,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1991,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1992,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1993,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1994,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1995,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1996,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1997,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1998,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1999,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2002,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2003,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2004,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2005,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2006,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2007,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2008,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2009,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2010,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2011,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2012,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2013,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2014,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2015,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2016,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2017,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2018,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2019,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,2020,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MDG,Madagascar,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2000,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2001,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2002,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2003,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2004,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2005,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2006,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2007,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2008,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2009,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2010,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2011,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2012,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2013,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2014,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2015,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2016,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2017,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2018,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2019,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MDG,Madagascar,2020,MCV2,0.24,routine,,,"",,MCV2,,mcv1-mcv2-sia
 MDG,Madagascar,2004,SIA,1,campaign,0.75,14,9m-14y,7510782.5,Measles,9,mcv1-mcv2-sia
 MDG,Madagascar,2007,SIA,1,campaign,0.75,4,9-59m,2727598.25,Measles,10,mcv1-mcv2-sia
 MDG,Madagascar,2010,SIA,1,campaign,0.75,3,9-47m,2222442.5,Measles,10,mcv1-mcv2-sia
@@ -941,88 +1023,6 @@ MDG,Madagascar,2018,SIA,0.0790098222552724,campaign,0.75,5,9m-5y,4046041.25,Meas
 MDG,Madagascar,2019,SIA,0.302542099162197,campaign,0.75,9,9m-9y,6976252.25,Measles,1,mcv1-mcv2-sia
 MDG,Madagascar,2019,SIA,0.167314285523512,campaign,0.5,9,6m-9y,7188770.5,Measles,2,mcv1-mcv2-sia
 MDG,Madagascar,2019,SIA,0.548665728026789,campaign,0.5,9,6m-9y,7188770.5,Measles,3,mcv1-mcv2-sia
-MOZ,Mozambique,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1981,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1982,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1983,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1984,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1985,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1986,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1987,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1988,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1989,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1990,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1991,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1992,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1993,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1994,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1995,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1996,MCV1,0.58,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1997,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1998,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1999,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2000,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2001,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2002,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2003,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2004,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2005,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2006,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2007,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2008,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2009,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2010,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2011,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2012,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2013,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2014,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2015,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2016,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2017,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2018,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2019,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,2020,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-MOZ,Mozambique,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2000,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2001,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2002,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2003,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2004,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2005,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2006,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2007,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2008,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2009,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2010,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2011,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2012,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2013,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2014,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2015,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2016,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2017,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2018,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2019,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
-MOZ,Mozambique,2020,MCV2,0.62,routine,,,"",,MCV2,,mcv1-mcv2-sia
 MOZ,Mozambique,2003,SIA,0.00298670127779677,campaign,0.5,14,0m-14y,8314859,Measles,7,mcv1-mcv2-sia
 MOZ,Mozambique,2003,SIA,0.00334281074399458,campaign,0.5,14,0m-14y,8314859,Measles,7,mcv1-mcv2-sia
 MOZ,Mozambique,2005,SIA,0.899235259814865,campaign,0.75,15,9m-15y,9107047.25,Measles,8,mcv1-mcv2-sia
@@ -1030,88 +1030,6 @@ MOZ,Mozambique,2008,SIA,0.987259387533919,campaign,0.75,4,9-59m,3383942.5,Measle
 MOZ,Mozambique,2011,SIA,1,campaign,0.5,4,6-59m,3810938.5,Measles,5,mcv1-mcv2-sia
 MOZ,Mozambique,2013,SIA,1,campaign,0.5,4,6-59m,3969970,Measles,12,mcv1-mcv2-sia
 MOZ,Mozambique,2018,SIA,0.989248793466069,campaign,0.5,15,6m-15y,13367941.5,MR,4,mcv1-mcv2-sia
-NER,Niger,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1981,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1982,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1983,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1984,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1985,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1986,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1987,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1988,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1989,MCV1,0.14,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1990,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1991,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1992,MCV1,0.21,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1993,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1994,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1995,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1996,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1997,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1998,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1999,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2000,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2001,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2002,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2003,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2004,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2005,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2006,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2007,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2008,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2009,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2010,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2011,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2012,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2013,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2014,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2015,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2016,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2017,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2018,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2019,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,2020,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NER,Niger,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2000,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2001,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2002,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2003,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2004,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2005,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2006,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2007,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2008,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2009,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2010,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2011,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2012,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2013,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2014,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2015,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2016,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2017,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2018,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2019,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NER,Niger,2020,MCV2,0.6,routine,,,"",,MCV2,,mcv1-mcv2-sia
 NER,Niger,2004,SIA,0.848166231013723,campaign,0.75,14,9m-14y,5978956.5,Measles,12,mcv1-mcv2-sia
 NER,Niger,2005,SIA,0.0509823934638067,campaign,0.75,15,9m-15y,6518289.5,Measles,9,mcv1-mcv2-sia
 NER,Niger,2008,SIA,1,campaign,0.75,4,9-59m,2657095.5,Measles,1,mcv1-mcv2-sia
@@ -1119,88 +1037,6 @@ NER,Niger,2010,SIA,1,campaign,0.75,3,9-47m,2238781.25,Measles,11,mcv1-mcv2-sia
 NER,Niger,2012,SIA,0.927955392307758,campaign,0.75,14,9m-14y,8336678.75,Measles,11,mcv1-mcv2-sia
 NER,Niger,2015,SIA,0.966011907545527,campaign,0.75,4,9-59m,3416027.25,Measles,11,mcv1-mcv2-sia
 NER,Niger,2019,SIA,1,campaign,0.75,4,9-59m,3892831.75,Measles,9,mcv1-mcv2-sia
-NGA,Nigeria,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1984,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1985,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1986,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1987,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1988,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1989,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1990,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1991,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1992,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1993,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1994,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1995,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1996,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1997,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1998,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1999,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2000,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2001,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2002,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2003,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2004,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2005,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2006,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2007,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2008,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2009,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2010,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2011,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2012,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2013,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2014,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2015,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2016,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2017,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2018,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2019,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,2020,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-NGA,Nigeria,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2000,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2001,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2002,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2003,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2004,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2005,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2006,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2007,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2008,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2009,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2010,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2011,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2012,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2013,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2014,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2015,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2016,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2017,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2018,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2019,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
-NGA,Nigeria,2020,MCV2,0.12,routine,,,"",,MCV2,,mcv1-mcv2-sia
 NGA,Nigeria,2005,SIA,0.47790282071977,campaign,0.75,15,9m-15y,59717107.25,Measles,12,mcv1-mcv2-sia
 NGA,Nigeria,2006,SIA,0.428742160526546,campaign,0.75,15,9m-15y,61467696.5,Measles,10,mcv1-mcv2-sia
 NGA,Nigeria,2007,SIA,0.106968010973024,campaign,0.75,4,9-59m,21581470.75,Measles,1,mcv1-mcv2-sia
@@ -1217,88 +1053,6 @@ NGA,Nigeria,2017,SIA,0.0755186247054185,campaign,0.5,10,6m-10y,61916858.5,Measle
 NGA,Nigeria,2018,SIA,0.611365411697241,campaign,0.75,4,9-59m,27733584,Measles,3,mcv1-mcv2-sia
 NGA,Nigeria,2019,SIA,0.00803769077548458,campaign,0.5,9,6m-9y,59193369.5,Measles,6.5,mcv1-mcv2-sia
 NGA,Nigeria,2019,SIA,0.760514189544134,campaign,0.75,4,9-59m,28162435.75,Measles,10,mcv1-mcv2-sia
-PAK,Pakistan,1980,MCV1,0.01,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1981,MCV1,0.02,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1982,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1983,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1984,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1985,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1986,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1987,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1988,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1989,MCV1,0.48,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1990,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1991,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1992,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1993,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1994,MCV1,0.53,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1995,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1996,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1997,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1998,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1999,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2002,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2003,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2004,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2005,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2006,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2007,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2008,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2009,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2010,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2011,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2012,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2013,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2014,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2015,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2016,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2017,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2018,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2019,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,2020,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PAK,Pakistan,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2000,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2001,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2002,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2003,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2004,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2005,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2006,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2007,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2008,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2009,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2010,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2011,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2012,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2013,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2014,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2015,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2016,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2017,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2018,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2019,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PAK,Pakistan,2020,MCV2,0.74,routine,,,"",,MCV2,,mcv1-mcv2-sia
 PAK,Pakistan,2005,SIA,0.0681761070745605,campaign,1,4,12-59m,18070847,Measles,12,mcv1-mcv2-sia
 PAK,Pakistan,2007,SIA,0.0381213030740323,campaign,0.75,15,9m-15y,65890638.5,Measles,3,mcv1-mcv2-sia
 PAK,Pakistan,2007,SIA,0.0221080876951226,campaign,0.75,13,9m-13y,57998322.5,Measles,7,mcv1-mcv2-sia
@@ -1330,88 +1084,6 @@ PAK,Pakistan,2017,SIA,0.0565345839373929,campaign,0.75,4,9-59m,22637807,Measles,
 PAK,Pakistan,2018,SIA,1,campaign,0.75,4,9-59m,23010707.75,Measles,10,mcv1-mcv2-sia
 PAK,Pakistan,2018,SIA,0.00190951205465806,campaign,0.75,9,9-119m,47714283.75,Measles,5,mcv1-mcv2-sia
 PAK,Pakistan,2018,SIA,0.0374039836929798,campaign,0.5,4,6-59m,24437450.5,Measles,5,mcv1-mcv2-sia
-PHL,Philippines,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1982,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1983,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1984,MCV1,0.44,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1985,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1986,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1987,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1988,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1989,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1990,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1991,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1992,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1993,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1994,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1995,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1996,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1997,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1998,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1999,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2000,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2001,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2002,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2003,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2004,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2005,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2006,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2007,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2008,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2009,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2010,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2011,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2012,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2013,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2014,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2015,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2016,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2017,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2018,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2019,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,2020,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-PHL,Philippines,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2000,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2001,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2002,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2003,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2004,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2005,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2006,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2007,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2008,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2009,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2010,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2011,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2012,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2013,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2014,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2015,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2016,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2017,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2018,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2019,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
-PHL,Philippines,2020,MCV2,0.68,routine,,,"",,MCV2,,mcv1-mcv2-sia
 PHL,Philippines,2002,SIA,0.0534583997720774,campaign,0.75,4,9-59m,9369846.5,Measles,6,mcv1-mcv2-sia
 PHL,Philippines,2004,SIA,1,campaign,0.75,7,9m-7y,16017566.5,Measles,2,mcv1-mcv2-sia
 PHL,Philippines,2007,SIA,0.856834847188294,campaign,0.75,4,9-48m,9572278.75,Measles,10,mcv1-mcv2-sia
@@ -1427,88 +1099,6 @@ PHL,Philippines,2018,SIA,0.208944746191122,campaign,0.5,4,6-59m,9999926,MMR,9,mc
 PHL,Philippines,2019,SIA,0.137284612423865,campaign,5,12,5-12y,17900870,MMR,5,mcv1-mcv2-sia
 PHL,Philippines,2019,SIA,0.400773902698129,campaign,0.5,4,6-59m,9781333,MMR,2,mcv1-mcv2-sia
 PHL,Philippines,2019,SIA,0.0119294271846509,campaign,13,100,13y-100y,79440277,MMR,5,mcv1-mcv2-sia
-SOM,Somalia,1980,MCV1,0.09,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1981,MCV1,0.03,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1982,MCV1,0.04,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1983,MCV1,0.06,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1984,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1985,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1986,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1987,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1988,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1989,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1990,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1991,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1992,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1993,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1994,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1995,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1996,MCV1,0.33,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1997,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1998,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1999,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2000,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2001,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2002,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2003,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2004,MCV1,0.4,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2005,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2006,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2007,MCV1,0.35,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2008,MCV1,0.34,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2009,MCV1,0.43,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2010,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2011,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2012,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2013,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2014,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2015,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2016,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2017,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2018,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2019,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,2020,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-SOM,Somalia,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2000,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2001,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2002,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2003,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2004,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2005,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2006,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2007,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2008,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2009,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2010,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2011,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2012,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2013,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2014,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2015,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2016,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2017,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2018,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2019,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
-SOM,Somalia,2020,MCV2,0.36,routine,,,"",,MCV2,,mcv1-mcv2-sia
 SOM,Somalia,2005,SIA,0.0650127708710634,campaign,0.75,15,9m-15y,4911665.75,Measles,11,mcv1-mcv2-sia
 SOM,Somalia,2006,SIA,0.397448710494249,campaign,0.75,15,9m-15y,5081704.75,Measles,5,mcv1-mcv2-sia
 SOM,Somalia,2007,SIA,0.528507069042903,campaign,0.75,15,9m-15y,5249084,Measles,2,mcv1-mcv2-sia
@@ -1538,88 +1128,6 @@ SOM,Somalia,2017,SIA,1,campaign,0.5,4,6-59m,2323193,Measles,1,mcv1-mcv2-sia
 SOM,Somalia,2017,SIA,0.168636274484936,campaign,0.5,5,6m-5y,2799119,Measles,5,mcv1-mcv2-sia
 SOM,Somalia,2018,SIA,0.864664869296534,campaign,0.5,10,6m-10y,5116735,Measles,1,mcv1-mcv2-sia
 SOM,Somalia,2019,SIA,0.432895724321214,campaign,0.5,4,6-59m,2451084.5,Measles,11,mcv1-mcv2-sia
-TCD,Chad,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1983,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1984,MCV1,0.1,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1985,MCV1,0.07,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1986,MCV1,0.12,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1987,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1988,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1989,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1990,MCV1,0.32,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1991,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1992,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1993,MCV1,0.19,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1994,MCV1,0.24,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1995,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1996,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1997,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1998,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1999,MCV1,0.3,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2000,MCV1,0.28,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2001,MCV1,0.26,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2002,MCV1,0.25,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2003,MCV1,0.23,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2004,MCV1,0.16,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2005,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2006,MCV1,0.39,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2007,MCV1,0.31,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2008,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2009,MCV1,0.36,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2010,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2011,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2012,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2013,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2014,MCV1,0.45,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2015,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2016,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2017,MCV1,0.37,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2018,MCV1,0.42,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2019,MCV1,0.41,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,2020,MCV1,0.47,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TCD,Chad,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2000,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2001,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2002,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2003,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2004,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2005,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2006,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2007,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2008,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2009,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2010,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2011,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2012,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2013,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2014,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2015,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2016,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2017,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2018,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2019,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TCD,Chad,2020,MCV2,0.37,routine,,,"",,MCV2,,mcv1-mcv2-sia
 TCD,Chad,2005,SIA,0.0637958594706456,campaign,0.75,14,9m-14y,4629516.75,Measles,3,mcv1-mcv2-sia
 TCD,Chad,2005,SIA,0.354658183275825,campaign,0.75,14,9m-14y,4629516.75,Measles,9,mcv1-mcv2-sia
 TCD,Chad,2006,SIA,0.542350597279812,campaign,0.75,15,9m-15y,5044264.75,Measles,1,mcv1-mcv2-sia
@@ -1636,88 +1144,6 @@ TCD,Chad,2016,SIA,0.182894872588466,campaign,0.75,4,9-59m,2265738.75,Measles,5,m
 TCD,Chad,2017,SIA,0.305227665267551,campaign,0.75,4,9-59m,2316641.25,Measles,3,mcv1-mcv2-sia
 TCD,Chad,2018,SIA,0.491240098367042,campaign,0.5,9,6m-9y,4928480,Measles,11,mcv1-mcv2-sia
 TCD,Chad,2019,SIA,0.123207818345454,campaign,0.5,9,6m-9y,5035029.5,Measles,4,mcv1-mcv2-sia
-TUR,Turkey,1980,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1981,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1982,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1983,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1984,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1985,MCV1,0.61,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1986,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1987,MCV1,0.67,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1988,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1989,MCV1,0.71,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1990,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1991,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1992,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1993,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1994,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1995,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1996,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1997,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1998,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1999,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2000,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2001,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2002,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2003,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2004,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2005,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2006,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2007,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2008,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2009,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2010,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2011,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2012,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2013,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2014,MCV1,0.94,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2015,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2016,MCV1,0.98,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2017,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2018,MCV1,0.96,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2019,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,2020,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TUR,Turkey,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2000,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2001,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2002,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2003,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2004,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2005,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2006,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2007,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2008,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2009,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2010,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2011,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2012,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2013,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2014,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2015,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2016,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2017,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2018,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2019,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TUR,Turkey,2020,MCV2,0.93,routine,,,"",,MCV2,,mcv1-mcv2-sia
 TUR,Turkey,2003,SIA,0.835735912230403,campaign,6,14,6-14y,11450890,Measles,12,mcv1-mcv2-sia
 TUR,Turkey,2004,SIA,0.120409192204859,campaign,0.75,6,9m-6y,8271345.25,Measles,10,mcv1-mcv2-sia
 TUR,Turkey,2005,SIA,1,campaign,0.75,6,9m-6y,8240966.75,Measles,4,mcv1-mcv2-sia
@@ -1729,88 +1155,6 @@ TUR,Turkey,2019,SIA,0.0109765126228223,campaign,29,40,29y-40y,15246828,MMR,6.5,m
 TUR,Turkey,2019,SIA,0.00139674954029782,campaign,29,40,29y-40y,15246828,MMR,6.5,mcv1-mcv2-sia
 TUR,Turkey,2019,SIA,0.000121956035265428,campaign,15,65,15y-65y,56471170,MMR,6.5,mcv1-mcv2-sia
 TUR,Turkey,2019,SIA,0.00013977043507333,campaign,15,65,15y-65y,56471170,MMR,6.5,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1980,MCV1,0.46,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1981,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1982,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1983,MCV1,0.6,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1984,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1985,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1986,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1987,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1988,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1989,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1990,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1991,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1992,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1993,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1994,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1995,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1996,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1997,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1998,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1999,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2000,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2001,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2002,MCV1,0.89,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2003,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2004,MCV1,0.94,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2005,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2006,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2007,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2008,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2009,MCV1,0.91,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2010,MCV1,0.92,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2011,MCV1,0.93,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2012,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2013,MCV1,0.99,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2014,MCV1,0.97,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2015,MCV1,0.95,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2016,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2017,MCV1,0.9,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2018,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2019,MCV1,0.88,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2020,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2000,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2001,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2002,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2003,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2004,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2005,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2006,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2007,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2008,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2009,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2010,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2011,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2012,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2013,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2014,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2015,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2016,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2017,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2018,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2019,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
-TZA,United Republic of Tanzania,2020,MCV2,0.67,routine,,,"",,MCV2,,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2000,SIA,0.487346175909417,campaign,0.75,4,9-59m,4838359.5,Measles,9,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2001,SIA,0.255581295236964,campaign,0.75,14,9m-14y,14427464.25,Measles,9,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2002,SIA,0.893583057237632,campaign,7,14,7-14y,7541769,Measles,10,mcv1-mcv2-sia
@@ -1820,88 +1164,6 @@ TZA,United Republic of Tanzania,2008,SIA,0.778850454284871,campaign,0.5,10,6m-10
 TZA,United Republic of Tanzania,2011,SIA,0.981330375056016,campaign,0.75,4,9-59m,6813875.5,Measles,11,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2014,SIA,0.975864110487116,campaign,0.75,14,9m-14y,21037385,MR,10,mcv1-mcv2-sia
 TZA,United Republic of Tanzania,2019,SIA,0.908029153685982,campaign,0.75,5,9m-5y,9789705.5,MR,9,mcv1-mcv2-sia
-UGA,Uganda,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1981,MCV1,0.22,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1982,MCV1,0.21,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1983,MCV1,0.2,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1984,MCV1,0.18,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1985,MCV1,0.17,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1986,MCV1,0.27,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1987,MCV1,0.38,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1988,MCV1,0.49,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1989,MCV1,0.51,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1990,MCV1,0.52,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1991,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1992,MCV1,0.56,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1993,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1994,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1995,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1996,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1997,MCV1,0.54,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1998,MCV1,0.5,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1999,MCV1,0.55,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2000,MCV1,0.57,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2001,MCV1,0.59,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2002,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2003,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2004,MCV1,0.66,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2005,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2006,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2007,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2008,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2009,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2010,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2011,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2012,MCV1,0.8,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2013,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2014,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2015,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2016,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2017,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2018,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2019,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,2020,MCV1,0.87,routine,,,"",,MCV1,,mcv1-mcv2-sia
-UGA,Uganda,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2000,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2001,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2002,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2003,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2004,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2005,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2006,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2007,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2008,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2009,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2010,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2011,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2012,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2013,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2014,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2015,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2016,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2017,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2018,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2019,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
-UGA,Uganda,2020,MCV2,0.77,routine,,,"",,MCV2,,mcv1-mcv2-sia
 UGA,Uganda,2000,SIA,0.307347066566348,campaign,0.75,4,9-59m,3965344.5,Measles,3,mcv1-mcv2-sia
 UGA,Uganda,2000,SIA,0.241561861775188,campaign,0.75,4,9-59m,3965344.5,Measles,10,mcv1-mcv2-sia
 UGA,Uganda,2001,SIA,0.0541721927673266,campaign,0.75,14,9m-14y,11337108,Measles,9,mcv1-mcv2-sia
@@ -1912,88 +1174,6 @@ UGA,Uganda,2009,SIA,1,campaign,0.75,3,9-47m,3988358.5,Measles,6,mcv1-mcv2-sia
 UGA,Uganda,2012,SIA,1,campaign,0.5,4,6-59m,5874039.5,Measles,5,mcv1-mcv2-sia
 UGA,Uganda,2015,SIA,1,campaign,0.5,4,6-59m,6288611.5,Measles,10,mcv1-mcv2-sia
 UGA,Uganda,2019,SIA,1,campaign,0.75,13,9m-<15y,18264830.25,MR,10,mcv1-mcv2-sia
-ZAF,South Africa,1980,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1981,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1982,MCV1,0,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1983,MCV1,0.74,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1984,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1985,MCV1,0.7,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1986,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1987,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1988,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1989,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1990,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1991,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1992,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1993,MCV1,0.85,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1994,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1995,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1996,MCV1,0.76,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1997,MCV1,0.82,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1998,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1999,MCV1,0.75,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2000,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2001,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2002,MCV1,0.65,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2003,MCV1,0.62,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2004,MCV1,0.63,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2005,MCV1,0.64,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2006,MCV1,0.69,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2007,MCV1,0.68,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2008,MCV1,0.73,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2009,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2010,MCV1,0.72,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2011,MCV1,0.77,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2012,MCV1,0.79,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2013,MCV1,0.78,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2014,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2015,MCV1,0.86,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2016,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2017,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2018,MCV1,0.81,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2019,MCV1,0.83,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,2020,MCV1,0.84,routine,,,"",,MCV1,,mcv1-mcv2-sia
-ZAF,South Africa,1980,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1981,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1982,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1983,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1984,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1985,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1986,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1987,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1988,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1989,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1990,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1991,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1992,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1993,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1994,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1995,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1996,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1997,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1998,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,1999,MCV2,0,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2000,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2001,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2002,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2003,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2004,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2005,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2006,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2007,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2008,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2009,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2010,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2011,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2012,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2013,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2014,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2015,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2016,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2017,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2018,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2019,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
-ZAF,South Africa,2020,MCV2,0.76,routine,,,"",,MCV2,,mcv1-mcv2-sia
 ZAF,South Africa,2000,SIA,0.729118875126597,campaign,0.75,4,9-59m,4121850.5,Measles,5,mcv1-mcv2-sia
 ZAF,South Africa,2004,SIA,0.848970288196619,campaign,0.75,4,9-59m,4124345.75,Measles,7,mcv1-mcv2-sia
 ZAF,South Africa,2005,SIA,0.546125299937824,campaign,0.75,4,9-59m,4163154.5,Measles,4,mcv1-mcv2-sia
@@ -2005,3 +1185,823 @@ ZAF,South Africa,2010,SIA,0.93603940895547,campaign,0.5,15,6m-15y,15589857.5,Mea
 ZAF,South Africa,2013,SIA,0.804116673399346,campaign,0.5,4,6-59m,5205951,Measles,4,mcv1-mcv2-sia
 ZAF,South Africa,2017,SIA,0.812803583405092,campaign,0.5,4,6-59m,5235690.5,Measles,6,mcv1-mcv2-sia
 ZAF,South Africa,2017,SIA,0.0782859536944819,campaign,5,14,5-14y,10814737,Measles,6,mcv1-mcv2-sia
+AFG,Afghanistan,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2000,MCV2,0.17,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2001,MCV2,0.27,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2002,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2003,MCV2,0.29,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2004,MCV2,0.38,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2005,MCV2,0.4,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2006,MCV2,0.43,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2007,MCV2,0.45,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2008,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2009,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2010,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2011,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2012,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2013,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2014,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2015,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2016,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2017,MCV2,0.57,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2018,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2019,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+AFG,Afghanistan,2020,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2000,MCV2,0.22,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2001,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2002,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2003,MCV2,0.34,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2004,MCV2,0.33,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2005,MCV2,0.11,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2006,MCV2,0.11,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2007,MCV2,0.48,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2008,MCV2,0.38,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2009,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2010,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2011,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2012,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2013,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2014,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2015,MCV2,0.41,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2016,MCV2,0.35,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2017,MCV2,0.32,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2018,MCV2,0.4,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2019,MCV2,0.45,routine,,,,,MCV2,,mcv1-mcv2
+AGO,Angola,2020,MCV2,0.41,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2000,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2001,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2002,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2003,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2004,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2005,MCV2,0.51,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2006,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2007,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2008,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2009,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2010,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2011,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2012,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2013,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2014,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2015,MCV2,0.57,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2016,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2017,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2018,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2019,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+BEN,Benin,2020,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2000,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2001,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2002,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2003,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2004,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2005,MCV2,0.84,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2006,MCV2,0.94,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2007,MCV2,0.92,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2008,MCV2,0.95,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2009,MCV2,0.98,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2010,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2011,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2012,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2013,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2014,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2015,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2016,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2017,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2018,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2019,MCV2,0.98,routine,,,,,MCV2,,mcv1-mcv2
+CHN,China,2020,MCV2,0.99,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2000,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2001,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2002,MCV2,0.32,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2003,MCV2,0.39,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2004,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2005,MCV2,0.51,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2006,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2007,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2008,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2009,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2010,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2011,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2012,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2013,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2014,MCV2,0.57,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2015,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2016,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2017,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2018,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2019,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+COD,Democratic Republic of the Congo,2020,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2000,MCV2,0.26,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2001,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2002,MCV2,0.26,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2003,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2004,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2005,MCV2,0.3,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2006,MCV2,0.34,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2007,MCV2,0.39,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2008,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2009,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2010,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2011,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2012,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2013,MCV2,0.45,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2014,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2015,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2016,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2017,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2018,MCV2,0.45,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2019,MCV2,0.48,routine,,,,,MCV2,,mcv1-mcv2
+ETH,Ethiopia,2020,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2000,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2001,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2002,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2003,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2004,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2005,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2006,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2007,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2008,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2009,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2010,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2011,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2012,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2013,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2014,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2015,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2016,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2017,MCV2,0.8,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2018,MCV2,0.79,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2019,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+IDN,Indonesia,2020,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2000,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2001,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2002,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2003,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2004,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2005,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2006,MCV2,0.59,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2007,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2008,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2009,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2010,MCV2,0.72,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2011,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2012,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2013,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2014,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2015,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2016,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2017,MCV2,0.8,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2018,MCV2,0.83,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2019,MCV2,0.85,routine,,,,,MCV2,,mcv1-mcv2
+IND,India,2020,MCV2,0.81,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2000,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2001,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2002,MCV2,0.51,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2003,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2004,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2005,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2006,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2007,MCV2,0.71,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2008,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2009,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2010,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2011,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2012,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2013,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2014,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2015,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2016,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2017,MCV2,0.45,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2018,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2019,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+MDG,Madagascar,2020,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2000,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2001,MCV2,0.64,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2002,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2003,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2004,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2005,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2006,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2007,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2008,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2009,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2010,MCV2,0.72,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2011,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2012,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2013,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2014,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2015,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2016,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2017,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2018,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2019,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+MOZ,Mozambique,2020,MCV2,0.71,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2000,MCV2,0.27,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2001,MCV2,0.29,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2002,MCV2,0.31,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2003,MCV2,0.33,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2004,MCV2,0.35,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2005,MCV2,0.37,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2006,MCV2,0.43,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2007,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2008,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2009,MCV2,0.59,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2010,MCV2,0.57,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2011,MCV2,0.59,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2012,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2013,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2014,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2015,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2016,MCV2,0.66,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2017,MCV2,0.72,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2018,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2019,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+NER,Niger,2020,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2000,MCV2,0.23,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2001,MCV2,0.22,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2002,MCV2,0.2,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2003,MCV2,0.24,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2004,MCV2,0.27,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2005,MCV2,0.31,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2006,MCV2,0.34,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2007,MCV2,0.31,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2008,MCV2,0.43,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2009,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2010,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2011,MCV2,0.39,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2012,MCV2,0.32,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2013,MCV2,0.33,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2014,MCV2,0.34,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2015,MCV2,0.32,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2016,MCV2,0.41,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2017,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2018,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2019,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+NGA,Nigeria,2020,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2000,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2001,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2002,MCV2,0.5,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2003,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2004,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2005,MCV2,0.51,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2006,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2007,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2008,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2009,MCV2,0.46,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2010,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2011,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2012,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2013,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2014,MCV2,0.61,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2015,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2016,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2017,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2018,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2019,MCV2,0.71,routine,,,,,MCV2,,mcv1-mcv2
+PAK,Pakistan,2020,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2000,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2001,MCV2,0.71,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2002,MCV2,0.72,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2003,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2004,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2005,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2006,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2007,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2008,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2009,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2010,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2011,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2012,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2013,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2014,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2015,MCV2,0.72,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2016,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2017,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2018,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2019,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+PHL,Philippines,2020,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2000,MCV2,0.14,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2001,MCV2,0.1,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2002,MCV2,0.35,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2003,MCV2,0.3,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2004,MCV2,0.3,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2005,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2006,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2007,MCV2,0.25,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2008,MCV2,0.24,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2009,MCV2,0.33,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2010,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2011,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2012,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2013,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2014,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2015,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2016,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2017,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2018,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2019,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+SOM,Somalia,2020,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2000,MCV2,0.18,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2001,MCV2,0.16,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2002,MCV2,0.15,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2003,MCV2,0.13,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2004,MCV2,0.06,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2005,MCV2,0.17,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2006,MCV2,0.29,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2007,MCV2,0.21,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2008,MCV2,0.17,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2009,MCV2,0.26,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2010,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2011,MCV2,0.44,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2012,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2013,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2014,MCV2,0.35,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2015,MCV2,0.36,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2016,MCV2,0.27,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2017,MCV2,0.27,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2018,MCV2,0.32,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2019,MCV2,0.31,routine,,,,,MCV2,,mcv1-mcv2
+TCD,Chad,2020,MCV2,0.37,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2000,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2001,MCV2,0.91,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2002,MCV2,0.83,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2003,MCV2,0.97,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2004,MCV2,0.97,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2005,MCV2,0.98,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2006,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2007,MCV2,0.94,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2008,MCV2,0.92,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2009,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2010,MCV2,0.91,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2011,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2012,MCV2,0.86,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2013,MCV2,0.98,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2014,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2015,MCV2,0.87,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2016,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2017,MCV2,0.86,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2018,MCV2,0.87,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2019,MCV2,0.88,routine,,,,,MCV2,,mcv1-mcv2
+TUR,Turkey,2020,MCV2,0.93,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2000,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2001,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2002,MCV2,0.79,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2003,MCV2,0.87,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2004,MCV2,0.84,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2005,MCV2,0.81,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2006,MCV2,0.83,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2007,MCV2,0.8,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2008,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2009,MCV2,0.81,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2010,MCV2,0.82,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2011,MCV2,0.83,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2012,MCV2,0.87,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2013,MCV2,0.89,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2014,MCV2,0.87,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2015,MCV2,0.85,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2016,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2017,MCV2,0.8,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2018,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2019,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+TZA,United Republic of Tanzania,2020,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2000,MCV2,0.47,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2001,MCV2,0.49,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2002,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2003,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2004,MCV2,0.56,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2005,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2006,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2007,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2008,MCV2,0.6,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2009,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2010,MCV2,0.63,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2011,MCV2,0.65,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2012,MCV2,0.7,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2013,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2014,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2015,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2016,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2017,MCV2,0.73,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2018,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2019,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+UGA,Uganda,2020,MCV2,0.77,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1980,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1981,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1982,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1983,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1984,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1985,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1986,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1987,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1988,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1989,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1990,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1991,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1992,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1993,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1994,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1995,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1996,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1997,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1998,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,1999,MCV2,0,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2000,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2001,MCV2,0.59,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2002,MCV2,0.55,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2003,MCV2,0.52,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2004,MCV2,0.53,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2005,MCV2,0.54,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2006,MCV2,0.59,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2007,MCV2,0.58,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2008,MCV2,0.63,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2009,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2010,MCV2,0.62,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2011,MCV2,0.67,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2012,MCV2,0.69,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2013,MCV2,0.68,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2014,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2015,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2016,MCV2,0.74,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2017,MCV2,0.78,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2018,MCV2,0.75,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2019,MCV2,0.79,routine,,,,,MCV2,,mcv1-mcv2
+ZAF,South Africa,2020,MCV2,0.76,routine,,,,,MCV2,,mcv1-mcv2

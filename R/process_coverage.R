@@ -1,6 +1,6 @@
 # process_coverage.R
 # generate vaccine coverage files
-# update: 2022/02/17
+# update: 2022/03/01
 
 library(data.table)
 library(readxl)
@@ -17,9 +17,9 @@ rm (list = c())
 # Pakistan, Madagascar, Somalia, South Africa, United Republic of Tanzania,
 # Mozambique, Turkey (not included in VIMC), Chad, Benin, Afghanistan
 sel_ctries = c("IND", "IDN", "NGA", "CHN", "PHL",
-               "UGA", "ETH", "COD", "AGO", "NER",
-               "PAK", "MDG", "SOM", "ZAF", "TZA",
-               "MOZ", "TUR", "TCD", "BEN", "AFG")
+               "ETH", "UGA", "AGO", "COD", "MOZ",
+               "SOM", "PAK", "ZAF", "MDG", "NER",
+               "TZA", "TUR", "TCD", "BEN", "AFG")
 
 # set up column names for the output file
 # based on the format of VIMC coverage file
@@ -377,7 +377,7 @@ fwrite (outfile_mcv1_mcv2_sia_plan, "coverage/coverage_mcv1-mcv2-siaplan.csv")
 
 
 # ------------------------------------------------------------------------------
-## add alternative MCV2 scenario
+## add alternative MCV2 scenario - 1
 # ------------------------------------------------------------------------------
 outfile_mcv1_mcv2 <- fread ("coverage/coverage_mcv1-mcv2.csv")
 dat_mcv2_2020 <- outfile_mcv1_mcv2 [vaccine == "MCV2" & year == 2020]
@@ -394,11 +394,38 @@ outfile_mcv1_mcv2alt [, i.coverage := NULL]
 fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
 
 # 'mcv1-mcv2alt-sia' scenario
-outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
+outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia_old.csv")
 outfile_mcv1_mcv2alt_sia  <- copy(outfile_mcv1_mcv2_sia) [dat_mcv2alt [, .(country_code, coverage)],
                                                  on = .(country_code = country_code)]
 outfile_mcv1_mcv2alt_sia [vaccine == "MCV2", coverage := ifelse (year < 2000, 0, i.coverage)]
 outfile_mcv1_mcv2alt_sia [, i.coverage := NULL]
+fwrite (outfile_mcv1_mcv2alt_sia, "coverage/coverage_mcv1-mcv2alt-sia_old.csv")
+
+
+# ------------------------------------------------------------------------------
+## add alternative MCV2 scenario - 2
+# ------------------------------------------------------------------------------
+outfile_mcv1_mcv2 <- fread ("coverage/coverage_mcv1-mcv2.csv")
+dat_mcv2_yrs <- outfile_mcv1_mcv2 [vaccine == "MCV2"]
+dat_mcv1_yrs <- outfile_mcv1_mcv2 [vaccine == "MCV1"]
+dat_mcv2alt_yrs  <- dat_mcv2_yrs [dat_mcv1_yrs [, .(country_code, year, coverage)],
+                                  on = .(country_code = country_code,
+                                         year = year)]
+dat_mcv2alt_yrs [year >= 2000, coverage := i.coverage - 0.1]
+
+# 'mcv1-mcv2alt' scenario
+outfile_mcv1_mcv2alt <- copy(outfile_mcv1_mcv2) [dat_mcv2alt_yrs [, .(country_code, year, coverage)],
+                                                 on = .(country_code = country_code,
+                                                        year = year)]
+outfile_mcv1_mcv2alt [vaccine == "MCV2", coverage := ifelse (coverage>=i.coverage, coverage, i.coverage)]
+outfile_mcv1_mcv2alt [, i.coverage := NULL]
+fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
+
+# 'mcv1-mcv2alt-sia' scenario
+outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
+
+outfile_mcv1_mcv2alt_sia  <- rbind (copy (outfile_mcv1_mcv2_sia [vaccine != "MCV2"]),
+                                    copy (outfile_mcv1_mcv2alt [vaccine == "MCV2"]))
 fwrite (outfile_mcv1_mcv2alt_sia, "coverage/coverage_mcv1-mcv2alt-sia.csv")
 
 
@@ -409,7 +436,12 @@ outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
 outfile_mcv1_mcv2alt  <- fread ("coverage/coverage_mcv1-mcv2alt.csv")
 plt_data <- rbind (outfile_mcv1_mcv2_sia,
                    copy (outfile_mcv1_mcv2alt [vaccine == "MCV2"])[, vaccine := "MCV2 (alternative)"])
-# rank by burden
+
+# update country names
+plt_data [country_code == "COD", country := "DRC"]
+plt_data [country_code == "TZA", country := "Tanzania"]
+
+# rank countries by IHME burden
 country_names        <- plt_data [year == 2000 & vaccine == "MCV1", country]
 names(country_names) <- plt_data [year == 2000 & vaccine == "MCV1", country_code]
 plt_data [, country := factor (country, levels = country_names[sel_ctries])]
@@ -424,10 +456,18 @@ plt_cov <- ggplot (data = plt_data [vaccine != "SIA"],
   theme_bw() +
   theme (legend.position  = "bottom",
          legend.direction = "horizontal",
-         legend.key.size = unit (1.2, 'cm'))
+         legend.key.size = unit (1.2, 'cm'),
+         legend.text = element_text (size = 10),
+         axis.text.x = element_text (angle = 60, hjust = 1),
+         strip.text.x = element_text (size = 10),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         panel.background = element_blank(),
+         plot.margin = margin (0.1, 0.1, 0, 0.2, "cm"))
 plt_cov <- plt_cov +
   geom_point (data = plt_data [vaccine == "SIA"], aes (x = year, y = coverage)) +
-  scale_colour_manual ("Dose", values = c("#253582ff", "#b8627dff", "#b8627dff", "#f9b641ff")) +
+  scale_colour_manual ("Dose", #c("#253582ff", "#b8627dff", "#b8627dff", "#f9b641ff")
+                       values = c("#42b540", "#00468b", "#0099b4", "#ed0000")) +
   scale_linetype_manual ("Dose", values = c(1,1,2,0)) +
   guides(color = guide_legend (override.aes = list (shape = c(NA,NA,NA,16))))
 print(plt_cov)

@@ -1,6 +1,6 @@
 # run_scenario
 # execute simulations for MR-MAPs scenarios
-# update: 2022/01/27
+# update: 2022/03/09
 
 rm(list = ls())
 
@@ -102,7 +102,7 @@ set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2)
 adj.covfiles <- FALSE
 if(adj.covfiles){
   # Generate 2 coverage input files for routine and SIA vaccination
-  for (index in 1:length(vaccine_strategies)) {
+  for (index in c(6,7)) {#1:length(vaccine_strategies
     create_vaccine_coverage_routine_sia (
       vaccine_coverage_folder    = var$vaccine_coverage_folder,
       vaccine_coverage_subfolder = var$vaccine_coverage_subfolder,
@@ -116,7 +116,7 @@ if(adj.covfiles){
 }
 
 # run model
-for (index in 1:length(vaccine_strategies)){
+for (index in 1:7){#1:length(vaccine_strategies)
 
   scenario_name  <- vaccine_strategies [index]
   print (scenario_name)
@@ -161,7 +161,7 @@ for (index in 1:length(vaccine_strategies)){
                   psa                        = var$psa,
                   vaccination                = set_vaccination [index],
                   using_sia                  = set_sia         [index],
-                  folder_date                = "20220209",
+                  folder_date                = "20220309",
                   sim_years                  = 1980:2020,
                   chunksize                  = 1)
 

@@ -168,8 +168,11 @@ runCountry_rcpp <- function (
       # To estimate proportion that is vaccinated at each week, we first calculate the number of individuals remaining susceptible
       # Then we calculate the number of individuals that should be vaccinated each week, in order to remain 1 - coverage susceptibles at the end of the timeliness data
       # In essence, this becomes the inverse of the cumulative timeliness curve
-      cycov <- c_coverage_routine [year == y & vaccine == "MCV1", coverage] /
-        c_timeliness [is.na(age), prop_final_cov]
+      cycov <- c_coverage_routine [year == y & vaccine == "MCV1", coverage]
+
+      # Not use the following adjustment for coverage, as it leads to reduced coverage estimates
+      # cycov <- c_coverage_routine [year == y & vaccine == "MCV1", coverage] /
+      #   c_timeliness [is.na(age), prop_final_cov]
 
       if (length(cycov) == 0) {   # check if vaccine is not yet introduced and thereby, coverage value missing for this year
         cycov <- 0
