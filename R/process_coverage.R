@@ -1,6 +1,6 @@
 # process_coverage.R
 # generate vaccine coverage files
-# update: 2022/03/01
+# update: 2022/03/28
 
 library(data.table)
 library(readxl)
@@ -440,14 +440,15 @@ plt_data <- rbind (outfile_mcv1_mcv2_sia,
 # update country names
 plt_data [country_code == "COD", country := "DRC"]
 plt_data [country_code == "TZA", country := "Tanzania"]
+plt_data [vaccine == "SIA", vaccine := "SIAs"]
 
 # rank countries by IHME burden
 country_names        <- plt_data [year == 2000 & vaccine == "MCV1", country]
 names(country_names) <- plt_data [year == 2000 & vaccine == "MCV1", country_code]
 plt_data [, country := factor (country, levels = country_names[sel_ctries])]
 
-pdf ("plot/coverage-check.pdf", width = 12, height = 8)
-plt_cov <- ggplot (data = plt_data [vaccine != "SIA"],
+pdf ("plot/fig1_coverage.pdf", width = 12, height = 8)
+plt_cov <- ggplot (data = plt_data [vaccine != "SIAs"],
                    aes (x = year, y = coverage, colour = vaccine, linetype = vaccine)) +
   scale_x_continuous (breaks = pretty_breaks ()) +
   geom_line (size = 1) +
@@ -457,18 +458,22 @@ plt_cov <- ggplot (data = plt_data [vaccine != "SIA"],
   theme (legend.position  = "bottom",
          legend.direction = "horizontal",
          legend.key.size = unit (1.2, 'cm'),
-         legend.text = element_text (size = 10),
-         axis.text.x = element_text (angle = 60, hjust = 1),
-         strip.text.x = element_text (size = 10),
+         legend.text = element_text (size = 14),
+         legend.title = element_text (size = 15),
+         axis.title.x = element_text (size = 15, vjust = -0.75),
+         axis.title.y = element_text (size = 15, margin = margin(r = 15)),
+         axis.text.x = element_text (size = 10, angle = 60, hjust = 1),
+         axis.text.y = element_text (size = 10),
+         strip.text.x = element_text (size = 12),
          panel.grid.major = element_blank(),
          panel.grid.minor = element_blank(),
          panel.background = element_blank(),
-         plot.margin = margin (0.1, 0.1, 0, 0.2, "cm"))
+         plot.margin = margin (0.1, 0.2, 0, 0.2, "cm"))
 plt_cov <- plt_cov +
-  geom_point (data = plt_data [vaccine == "SIA"], aes (x = year, y = coverage)) +
-  scale_colour_manual ("Dose", #c("#253582ff", "#b8627dff", "#b8627dff", "#f9b641ff")
+  geom_point (data = plt_data [vaccine == "SIAs"], aes (x = year, y = coverage)) +
+  scale_colour_manual ("Delivery strategy", #c("#253582ff", "#b8627dff", "#b8627dff", "#f9b641ff")
                        values = c("#42b540", "#00468b", "#0099b4", "#ed0000")) +
-  scale_linetype_manual ("Dose", values = c(1,1,2,0)) +
+  scale_linetype_manual ("Delivery strategy", values = c(1,1,2,0)) +
   guides(color = guide_legend (override.aes = list (shape = c(NA,NA,NA,16))))
 print(plt_cov)
 dev.off()
