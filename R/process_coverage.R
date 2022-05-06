@@ -338,6 +338,17 @@ outfile_mcv1_mcv2_sia [country == "DRCongo", country := "Democratic Republic of 
 outfile_mcv1_mcv2_sia [, scenario := "mcv1-mcv2-sia"]
 fwrite (outfile_mcv1_mcv2_sia, "coverage/coverage_mcv1-mcv2-sia.csv")
 
+# copy coverage input files for the alternative SIA scenario
+# 'mcv1-mcv2-siaalt1' & 'mcv1-mcv2-siaalt2' scenarios
+outfile_mcv1_mcv2_siaalt <- copy (outfile_mcv1_mcv2_sia)
+fwrite (outfile_mcv1_mcv2_siaalt [, scenario := "mcv1-mcv2-siaalt1"], "coverage/coverage_mcv1-mcv2-siaalt1.csv")
+fwrite (outfile_mcv1_mcv2_siaalt [, scenario := "mcv1-mcv2-siaalt2"], "coverage/coverage_mcv1-mcv2-siaalt2.csv")
+
+# 'mcv1-siaalt1' & 'mcv1-siaalt2' scenarios
+outfile_mcv1_siaalt <- copy (outfile_mcv1_mcv2_siaalt) [vaccine == "MCV2", coverage := 0]
+fwrite (outfile_mcv1_siaalt [, scenario := "mcv1-siaalt1"], "coverage/coverage_mcv1-siaalt1.csv")
+fwrite (outfile_mcv1_siaalt [, scenario := "mcv1-siaalt2"], "coverage/coverage_mcv1-siaalt2.csv")
+
 outfile_mcv1_mcv2 <- copy (outfile_mcv1_mcv2_sia) [activity_type == "routine"]
 outfile_mcv1_mcv2 [, scenario := "mcv1-mcv2"]
 fwrite (outfile_mcv1_mcv2, "coverage/coverage_mcv1-mcv2.csv")

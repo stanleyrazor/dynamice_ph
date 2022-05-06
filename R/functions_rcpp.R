@@ -25,7 +25,6 @@ runCountry_rcpp <- function (
   c_population,
 
   # dynaMICE model options
-  tstep,
   save_scenario,
   foldername,
   log_name,
@@ -38,7 +37,7 @@ runCountry_rcpp <- function (
 
 ) {
 
-  # adjusted filename
+  # adjusted filename for XK
   if (iso3 == "XK") {iso3 <- "XKX"}
 
   # stochastic parameters
@@ -59,9 +58,12 @@ runCountry_rcpp <- function (
     }
   }
 
-  # country specific timeliness curve
+  # country-specific timeliness curve
   country_timeliness <- c_timeliness [!is.na(age), timeliness]
   timeliness_ages    <- c_timeliness [!is.na(age), age]
+
+  # country-specific age at vaccination for MCV2
+  parms_rcpp$vage2 <- as.integer (data_vage [country_code == iso3, "mcv2"])
 
   # expand 0-2 years old to weekly age strata
   s         <- 52 # number of finer stages within an age band (weekly ages, so 52)
@@ -170,7 +172,8 @@ runCountry_rcpp <- function (
       # In essence, this becomes the inverse of the cumulative timeliness curve
       cycov <- c_coverage_routine [year == y & vaccine == "MCV1", coverage]
 
-      # Not use the following adjustment for coverage, as it leads to reduced coverage estimates
+      # Not use the following adjustment for coverage, as it leads to reduced the ...
+      # final size of vaccinated population under the assumption of perfect timeliness
       # cycov <- c_coverage_routine [year == y & vaccine == "MCV1", coverage] /
       #   c_timeliness [is.na(age), prop_final_cov]
 
@@ -207,22 +210,23 @@ runCountry_rcpp <- function (
 
 
     # set up SIA inputs
-    setorder(c_coverage_sia, year, start_m)
-    if ((using_sia == 1) && (dim(c_coverage_sia [year == y])[1] > 0)) {
+    cy_coverage_sia <- c_coverage_sia [year == y]
+    if ((using_sia >= 1) && (dim(cy_coverage_sia)[1] > 0)) {
       # set up timesteps based on mid-month
-      sia_mn <- c_coverage_sia [year == y, start_m]
+      setorder(cy_coverage_sia, start_m)
+      sia_mn <- cy_coverage_sia$start_m
       t_sia_m <- c()
       for (im in unique(sia_mn)){
         t_sia_m <- c(t_sia_m,
-                     round((tstep/24) + (im-1)*(tstep/12)) + (1:sum(sia_mn == im)))
+                     round((parms_rcpp$tstep/24) + (im-1)*(parms_rcpp$tstep/12)) + (1:sum(sia_mn == im)))
       }
 
       sia_input <- list (
-        sia_implement = 2, # use 7.7% never-reach assumption
-        a0 = c_coverage_sia [year == y, a0],
-        a1 = c_coverage_sia [year == y, a1],
-        sia_cov = c_coverage_sia [year == y, coverage],
-        sia_mt = c(t_sia_m, 2000) # add a larger-than-timestep number for Rcpp model run
+        sia_implement = using_sia, # choose SIA implementation approach
+        a0 = cy_coverage_sia$a0,
+        a1 = cy_coverage_sia$a1,
+        sia_cov = cy_coverage_sia$coverage,
+        sia_mt = c(t_sia_m, 2000)  # add a larger-than-timestep number for Rcpp model run
       )
     } else {
       sia_input <- list (
@@ -234,7 +238,7 @@ runCountry_rcpp <- function (
       )
     }
 
-    t_start <- length(t_spinup) + (y-years[1])*tstep + 1
+    t_start <- length(t_spinup) + (y-years[1])*parms_rcpp$tstep + 1
     outp <- rcpp_vaccine_oney (out_Comp,
                                parms_rcpp,
                                sia_input,
@@ -519,7 +523,6 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
                                     c_contact          = contact_list[[iso3]],
                                     c_rnought          = rnought[country_code == iso3, r0],
                                     c_population       = population[country_code == iso3,],
-                                    tstep              = tstep,
                                     save_scenario      = save_scenario,
                                     foldername         = foldername,
                                     log_name           = log_name,

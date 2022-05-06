@@ -1,6 +1,6 @@
 # run_scenario
 # execute simulations for MR-MAPs scenarios
-# update: 2022/03/09
+# update: 2022/05/05
 
 rm(list = ls())
 
@@ -29,22 +29,46 @@ load(file = "data/data_timeliness_maps.rda")  # to include Turkey
 load(file = "data/data_lexp_remain_maps.rda") # to include Turkey
 load(file = "data/data_template.rda")
 
+# list countries for analysis
+eva_countries <- c("IND", "NGA", "IDN", "ETH", "CHN",
+                   "PHL", "UGA", "COD", "PAK", "AGO",
+                   "MDG", "UKR", "MWI", "SOM")
+
+# add data for country-specific age at vaccination
+# https://immunizationdata.who.int/pages/schedule-by-disease/measles.html
+# input monthly age and then covert to weekly age for dynaMICE structure
+data_vage <- data.table (country_code = eva_countries,
+                         mcv1 = ceiling (c(10.5,  9, 9, 9, 8,
+                                              9,  9, 9, 9, 9,
+                                              9, 12, 9, 9)/12*52),
+                         mcv2 = ceiling (c(  20,   15,   18, 15, 18,
+                                           13.5, 16.5, 16.5, 15, 15,
+                                           16.5,   72,   15, 16.5)/12*52))
+# adjust to yearly age for those >= 3 years old
+data_vage [mcv2 > 52*3, mcv2 := 52*3 + floor(mcv2/52-2)]
+
+# update timeliness data for countries not giving MCV1 to 39 week old (9 months)
+for (ictry in data_vage [mcv1 != 39, country_code]){ # IND
+  c_age <- data_vage [country_code == ictry, mcv1]
+  data_timeliness [country_code == ictry & !is.na(age), timeliness := ifelse (age < c_age, 0, 1)]
+}
+
 # assume a fixed R0 for the central run
 # median R0 for least developed countries, vaccine era, from Guerra et al. (2017)
 adj.fixR0 = 15.9  # NA
 if (!is.na(adj.fixR0)){
   data_r0 [ , r0 := adj.fixR0]
-  # add r0 for Turkey
-  data_r0 <- rbind (data_r0,
-                    copy(data_r0[1])[, `:=` (country = "Turkey",
-                                             country_code = "TUR")])
+  # # add r0 for Turkey
+  # data_r0 <- rbind (data_r0,
+  #                   copy(data_r0[1])[, `:=` (country = "Turkey",
+  #                                            country_code = "TUR")])
 }
 
-# assume Turkey has the same CFR as Syria
-# use Portnoy 2021 estimates - no difference by scenario
-data_cfr_portnoy_21 <- rbind (data_cfr_portnoy_21,
-                              copy(data_cfr_portnoy_21[country == "SYR"])[, country := "TUR"])
-
+# # assume Turkey has the same CFR as Syria
+# # use Portnoy 2021 estimates - no difference by scenario
+# data_cfr_portnoy_21 <- rbind (data_cfr_portnoy_21,
+#                               copy(data_cfr_portnoy_21[country == "SYR"])[, country := "TUR"])
+#
 source ("R/logs.R")
 source ("R/utils.R")
 source ("R/functions_rcpp.R")
@@ -72,10 +96,7 @@ var <- list (
 
   # countries - specify iso3 codes to analyse only these countries
   #             or set it to "all" to analyse all included countries
-  countries                         =  c("IND", "IDN", "NGA", "CHN", "PHL",
-                                         "UGA", "ETH", "COD", "AGO", "NER",
-                                         "PAK", "MDG", "SOM", "ZAF", "TZA",
-                                         "MOZ", "TUR", "TCD", "BEN", "AFG"),
+  countries                         = eva_countries, # c("IND", "NGA"),
   cluster_cores                     = 1,    # number of cores
   psa                               = 0     # psa runs; 0 for single central run
 )
@@ -89,20 +110,28 @@ vaccine_strategies <- c("nomcv",             # (1) no vaccination
                         "mcv1-mcv2",         # (3) MCV1 + MCV2
                         "mcv1-mcv2-sia",     # (4) MCV1 + MCV2 + SIA
                         "mcv1-sia",          # (5) MCV1 + SIA
-                        "mcv1-mcv2alt",      # (6) MCV1 + MCV2(alternative)
-                        "mcv1-mcv2alt-sia",  # (7) MCV1 + MCV2(alternative) + SIA
-                        "mcv1-mcv2-siaplan"  # (8) MCV1 + MCV2 + SIA(plan)
+                        "mcv1-mcv2alt",      # (6) MCV1 + MCV2(early intro)
+                        "mcv1-mcv2alt-sia",  # (7) MCV1 + MCV2(early intro) + SIA
+                        "mcv1-mcv2-siaalt1", # (8) MCV1 + MCV2 + SIA(zero dose first)
+                        "mcv1-mcv2-siaalt2", # (9) MCV1 + MCV2 + SIA(already vaccinated first)
+                        "mcv1-siaalt1",      # (10) MCV1 + SIA(zero dose first)
+                        "mcv1-siaalt2"       # (11) MCV1 + SIA(already vaccinated first)
 )
 
-# set SIAs and vaccination parameters for each scenario to minimize errors for running
-set_sia         <- c (0, 0, 0, 1, 1, 0, 1, 1)
-set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2)
+# set SIAs implementation method for each scenario
+# 0: no SIA, 1: Portnoy's method, 2: 7.7% never reached
+# 3: zero-dose first, 4: already-vaccinated first
+set_sia         <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4)
+
+# set routine vaccination parameters to distinguish between scenarios
+# 0: no routine MCV, 1: MCV1, 2: MCV1 + MCV2
+set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1)
 
 # prepare coverage input data - update when the data are changed
 adj.covfiles <- FALSE
 if(adj.covfiles){
-  # Generate 2 coverage input files for routine and SIA vaccination
-  for (index in c(6,7)) {#1:length(vaccine_strategies
+  # generate 2 coverage input files for routine and SIA vaccination
+  for (index in 1:length(vaccine_strategies)){
     create_vaccine_coverage_routine_sia (
       vaccine_coverage_folder    = var$vaccine_coverage_folder,
       vaccine_coverage_subfolder = var$vaccine_coverage_subfolder,
@@ -116,7 +145,7 @@ if(adj.covfiles){
 }
 
 # run model
-for (index in 1:7){#1:length(vaccine_strategies)
+for (index in 1:length(vaccine_strategies)){
 
   scenario_name  <- vaccine_strategies [index]
   print (scenario_name)
@@ -161,7 +190,7 @@ for (index in 1:7){#1:length(vaccine_strategies)
                   psa                        = var$psa,
                   vaccination                = set_vaccination [index],
                   using_sia                  = set_sia         [index],
-                  folder_date                = "20220309",
+                  folder_date                = "20220505",
                   sim_years                  = 1980:2020,
                   chunksize                  = 1)
 
