@@ -1,6 +1,6 @@
 # process_coverage.R
 # generate vaccine coverage files
-# update: 2022/05/11
+# update: 2022/05/27
 
 library(data.table)
 library(readxl)
@@ -422,13 +422,15 @@ outfile_mcv1_mcv2alt <- rbind (dat_mcv1_yrs, dat_mcv2alt_yrs)
 outfile_mcv1_mcv2alt [, scenario := "mcv1-mcv2alt"]
 fwrite (outfile_mcv1_mcv2alt, "coverage/coverage_mcv1-mcv2alt.csv")
 
-# 'mcv1-mcv2alt-sia' scenario
+# 'mcv1-mcv2alt-sia' & "mcv1-mcv2alt-siaalt1" scenarios
 outfile_mcv1_mcv2_sia <- fread ("coverage/coverage_mcv1-mcv2-sia.csv")
 outfile_mcv1_mcv2alt_sia <- rbind (copy (outfile_mcv1_mcv2_sia [vaccine != "MCV2"]),
                                    copy (outfile_mcv1_mcv2alt [vaccine == "MCV2"]))
 outfile_mcv1_mcv2alt_sia [, scenario := "mcv1-mcv2alt-sia"]
 fwrite (outfile_mcv1_mcv2alt_sia, "coverage/coverage_mcv1-mcv2alt-sia.csv")
 
+outfile_mcv1_mcv2alt_siaalt1 <- copy (outfile_mcv1_mcv2alt_sia) [, scenario := "mcv1-mcv2alt-siaalt1"]
+fwrite (outfile_mcv1_mcv2alt_siaalt1, "coverage/coverage_mcv1-mcv2alt-siaalt1.csv")
 
 # ------------------------------------------------------------------------------
 ## plot general trend

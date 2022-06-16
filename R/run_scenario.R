@@ -105,27 +105,28 @@ dir.create (file.path (paste0 (getwd(), "/", var$burden_estimate_folder, "Portno
 
 
 # prepare coverage inputs
-vaccine_strategies <- c("nomcv",             # (1) no vaccination
-                        "mcv1",              # (2) MCV1 only
-                        "mcv1-mcv2",         # (3) MCV1 + MCV2
-                        "mcv1-mcv2-sia",     # (4) MCV1 + MCV2 + SIA
-                        "mcv1-sia",          # (5) MCV1 + SIA
-                        "mcv1-mcv2alt",      # (6) MCV1 + MCV2(early intro)
-                        "mcv1-mcv2alt-sia",  # (7) MCV1 + MCV2(early intro) + SIA
-                        "mcv1-mcv2-siaalt1", # (8) MCV1 + MCV2 + SIA(zero dose first)
-                        "mcv1-mcv2-siaalt2", # (9) MCV1 + MCV2 + SIA(already vaccinated first)
-                        "mcv1-siaalt1",      # (10) MCV1 + SIA(zero dose first)
-                        "mcv1-siaalt2"       # (11) MCV1 + SIA(already vaccinated first)
+vaccine_strategies <- c("nomcv",               # (1) no vaccination
+                        "mcv1",                # (2) MCV1 only
+                        "mcv1-mcv2",           # (3) MCV1 + MCV2
+                        "mcv1-mcv2-sia",       # (4) MCV1 + MCV2 + SIA
+                        "mcv1-sia",            # (5) MCV1 + SIA
+                        "mcv1-mcv2alt",        # (6) MCV1 + MCV2(early intro)
+                        "mcv1-mcv2alt-sia",    # (7) MCV1 + MCV2(early intro) + SIA
+                        "mcv1-mcv2-siaalt1",   # (8) MCV1 + MCV2 + SIA(zero dose first)
+                        "mcv1-mcv2-siaalt2",   # (9) MCV1 + MCV2 + SIA(already vaccinated first)
+                        "mcv1-siaalt1",        # (10) MCV1 + SIA(zero dose first)
+                        "mcv1-siaalt2",        # (11) MCV1 + SIA(already vaccinated first)
+                        "mcv1-mcv2alt-siaalt1" # (12) MCV1 + MCV2(early intro) + SIA(zero dose first)
 )
 
 # set SIAs implementation method for each scenario
 # 0: no SIA, 1: Portnoy's method, 2: 7.7% never reached
 # 3: zero-dose first, 4: already-vaccinated first
-set_sia         <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4)
+set_sia         <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4, 3)
 
 # set routine vaccination parameters to distinguish between scenarios
 # 0: no routine MCV, 1: MCV1, 2: MCV1 + MCV2
-set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1)
+set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2)
 
 # prepare coverage input data - update when the data are changed
 adj.covfiles <- FALSE
