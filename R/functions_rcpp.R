@@ -3,8 +3,87 @@
 # update: 2022/01/20
 
 # ------------------------------------------------------------------------------
-## Execute the Rcpp measles model for a country and a PSA run
+#' Execute the Rcpp measles model for a single country run
+#'
+#' A function nested under \code{\link{runScenario_rcpp}} to run Rcpp codes
+#'  for measles vaccination, given a particular country and a variable set of
+#'  probabilistic sensitivity analysis (PSA).
 # ------------------------------------------------------------------------------
+#' @param iso3 ISO-3 code of the selected country.
+#' @param years A vector containing continuous calender years for simulation.
+#' @param vaccination A numeric indicator that determines vaccination programmes
+#'  for children: 0 - No vaccination, 1 - Only MCV1,  2 - MCV1 and MCV2.
+#' @param using_sia A numeric indicator that determines whether supplementary
+#' immunisation activities (SIAs) are implemented and how SIAs are distributed
+#' between zero-dose and already-vaccinated populations: 0 - no SIA, 1 - SIAs
+#' based on a weighted logistic function fitted with Portnoy's data, and 2 -
+#' SIAs based on an assumption that 7.7% of the population are never reached by
+#' vaccination.
+#' @param parms_rcpp A list includes time-invariant parameters for Rcpp functions:
+#' recovery rate per timestep (\code{gamma}), number of timesteps per year (\code{tstep}),
+#'  amplification scale for seasonality (\code{amp}), vaccine efficacy for first dose
+#' by each age group (\code{ve1}), vaccine efficacy for two and more doses (\code{ve2plus}).
+#'  assuming 'take' ('all-or-not') protection for each age group (weekly age
+#' groups for age 0, 1, and 2; yearly age groups for age between 3 and 100).
+#' @param c_coverage_routine A data frame for routine vaccination coverage under
+#' a selected scenario for a specific country.
+#' @param c_coverage_sia A data frame for SIA coverage under a selected scenario
+#'  for a specific country.
+#' @param c_timeliness A data frame for timeliness estimates by age for a
+#' specific country.
+#' @param contact_mat A character variable that indicates the assumption for
+#' contact pattern. "prpmix" - proportional mixing informed by age distribution
+#' of population, "unimix" -  uniform mixing (equal mixing probability across
+#' each age year), "polymod" - POLYMOD Great Britain physical contacts expanded
+#' using local populations, and "syn" - country-specific synthetic matrix.
+#' @param c_contact A data frame for the contact matrix by age (0-100 years old)
+#'  for a specific country.
+#' @param c_rnought A numeric variable of R0 value for the selected country
+#' \code{iso3}.
+#' @param c_population A data frame for population size by age for a specific
+#' country.
+#' @param save_scenario A folder name for saving results from a selected
+#' scenario, denoted by a two-digit number. e.g. "scenario08".
+#' @param foldername Name of the folder for output files that are temporarily
+#' kept for processing into final results.
+#' @param log_name A file name for keeping a log.
+#' @param r A numeric variable of the order of the PSA runs.
+#' @param runs A numeric variable of the total runs for each scenario.
+#' @param psa A numeric variable of the total runs for PSA. Use 0 to indicate a
+#' single run without PSA.
+#' @param psa_var A data frame including the parameter values used in PSA.
+#'
+#' @importFrom Rcpp sourceCpp
+#' @import data.table
+#'
+#' @examples
+#' \dontrun{
+#' runCountry_rcpp (
+#'   iso3               = "BGD",
+#'   years              = 1980:2020,
+#'   vaccination        = 1,
+#'   using_sia          = 1,
+#'   parms_rcpp         = list (gamma = 1/(14*1000/365),
+#'                              tstep = 1000,
+#'                              amp   = 0.05,
+#'                              ve1   = c(rep(0,40), rep(0.7, 214)),
+#'                              ve2plus = 0.98),
+#'   c_coverage_routine = coverage_routine[country_code == "BGD"],
+#'   c_coverage_sia     = coverage_sia[country_code == "BGD" & coverage!=0],
+#'   c_timeliness       = timeliness[country_code == "BGD"],
+#'   contact_mat        = "prpmix",
+#'   c_contact          = contact[["BGD"]],
+#'   c_rnought          = 10,
+#'   c_population       = population[country_code == "BGD"],
+#'   save_scenario      = "scenario01",
+#'   foldername         = NULL,
+#'   log_name           = "test_log",
+#'   r                  = 1,
+#'   runs               = 1,
+#'   psa                = 0,
+#'   psa_var            = psa_var
+#'   )
+#'   }
 runCountry_rcpp <- function (
   #variables specific for loop
   iso3,
@@ -287,8 +366,70 @@ runCountry_rcpp <- function (
 
 
 # ------------------------------------------------------------------------------
-## Run the Rcpp measles model for a selected vaccination strategy
+#' Run the Rcpp measles model for a selected vaccination strategy
+#'
+#' A function that executes the Rcpp measles model under a selected vaccination
+#' scenario, including a pre-specified set of countries and runs of probability
+#' sensitivity analysis (PSA).
 # ------------------------------------------------------------------------------
+#' @param vaccine_coverage_folder A folder name for the vaccine coverage files.
+#' @param vaccine_coverage_subfolder A folder name under the \code{x} folder for
+#' the vaccine coverage files.
+#' @param coverage_prefix A prefix used in the name of vaccine coverage file.
+#' @param antigen Name of a disease name used by VIMC: "Measles".
+#' @param scenario_name Name of the vaccination scenario selected or being
+#' analysed.
+#' @param save_scenario A folder name for saving results from a selected
+#' scenario, denoted by a two-digit number. e.g. "scenario08".
+#' @param burden_estimate_folder A folder name for the file which contains the
+#' model outputs for evaluation. Include a slash at the end.
+#' @param group_name A modelling group name used by VIMC.
+#' @param log_name A file name for keeping a log.
+#' @param countries A vector of ISO-3 country codes used in the analysis. Use
+#' "all" to include all countries.
+#' @param cluster_cores Number of cores to be used in the cluster.
+#' @param psa A numeric variable of the total runs for PSA. Use 0 to indicate a
+#' single run without PSA.
+#' @param vaccination A numeric indicator that determines vaccination programmes
+#'  for children: 0 - No vaccination, 1 - Only MCV1, and 2 - MCV1 and MCV2.
+#' @param using_sia A numeric indicator that determines whether supplementary
+#' immunisation activities (SIAs) are implemented and how SIAs are distributed
+#' between zero-dose and already-vaccinated populations: 0 - no SIA, 1 - SIAs
+#' based on a weighted logistic function fitted with Portnoy's data, and 2 -
+#' SIAs based on an assumption that 7.7% of the population are never reached by
+#' vaccination.
+#' @param contact_mat A character variable that indicates the assumption for
+#' contact pattern. "prpmix" - proportional mixing informed by age distribution
+#' of population, "unimix" -  uniform mixing (equal mixing probability across
+#' each age year), "polymod" - POLYMOD Great Britain physical contacts expanded
+#' using local populations, and "syn" - country-specific synthetic matrix.
+#' @param sim_years A numeric vector containing calendar years included for model
+#'  simulation.
+#'
+#' @importFrom foreach %dopar% %:% foreach
+#' @import data.table
+#'
+#' @examples
+#' \dontrun{
+#' runScenario_rcpp (
+#'   vaccine_coverage_folder    = "vaccine_coverage_upd/",
+#'   vaccine_coverage_subfolder = "scenarios/"
+#'   coverage_prefix            = "coverage",
+#'   antigen                    = "measles-",
+#'   scenario_name              = "campaign-only-default",
+#'   save_scenario               = scenario_number,
+#'   burden_estimate_folder     = "central_burden_estimate/",
+#'   group_name                 = "LSHTM-Jit-",
+#'   log_name                   = "test_log",
+#'   countries                  = c("BGD","ETH"),
+#'   cluster_cores              = 3,
+#'   psa                        = 0,
+#'   vaccination                = 0,
+#'   using_sia                  = 1,
+#'   contact_mat                = "prpmix",
+#'   sim_years                  = 1980:2100
+#'   )
+#'   }
 runScenario_rcpp <- function (vaccine_coverage_folder    = "",
                               vaccine_coverage_subfolder = "",
                               coverage_prefix            = "",
@@ -568,8 +709,63 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
 
 
 # ------------------------------------------------------------------------------
-## Merge the output of cases
+#' Merge the output of cases
+#'
+#' A function that combines all the RDS files for a selected scenario into csv
+#' files. Each RDS file contains case estimates of a single country from a
+#' single run using the function \code{runScenario_rcpp()}. If stochastic runs
+#' are included (\code{psa > 0}), an additional csv is generated for the mean
+#' estimates of each country.
 # ------------------------------------------------------------------------------
+#' @param vaccine_coverage_folder A folder name for the vaccine coverage files.
+#' @param vaccine_coverage_subfolder A folder name under the \code{x} folder for
+#' the vaccine coverage files.
+#' @param antigen Name of a disease name used by VIMC: "Measles".
+#' @param scenario_name Name of the vaccination scenario selected or being
+#' analysed.
+#' @param save_scenario A folder name for saving results from a selected
+#' scenario, denoted by a two-digit number. e.g. "scenario08".
+#' @param burden_estimate_folder A folder name for the file which contains the
+#' model outputs for evaluation. Include a slash at the end.
+#' @param group_name A modelling group name used by VIMC.
+#' @param log_name A file name for keeping a log.
+#' @param psa A numeric variable of the total runs for PSA. Use 0 to indicate a
+#' single run without PSA.
+#' @param vaccination A numeric indicator that determines vaccination programmes
+#'  for children: 0 - No vaccination, 1 - Only MCV1, and 2 - MCV1 and MCV2.
+#' @param using_sia A numeric indicator that determines whether supplementary
+#' immunisation activities (SIAs) are implemented and how SIAs are distributed
+#' between zero-dose and already-vaccinated populations: 0 - no SIA, 1 - SIAs
+#' based on a weighted logistic function fitted with Portnoy's data, and 2 -
+#' SIAs based on an assumption that 7.7% of the population are never reached by
+#' vaccination.
+#' @param folder_date Starting date of the simulation, as seen in the folder
+#' name for RDS results, in the format "YYYYMMDD".
+#' @param sim_years A numeric vector containing calendar years included for
+#' model simulation.
+#' @param chunksize Number of split csv files for each scenario.
+#'
+#' @import data.table
+#'
+#' @examples
+#' \dontrun{
+#' merge_case_csv (
+#'   vaccine_coverage_folder    = "vaccine_coverage/",
+#'   vaccine_coverage_subfolder = "scenarios/"
+#'   antigen                    = "measles-",
+#'   scenario_name              = "campaign-only-default",
+#'   save_scenario               = scenario_number,
+#'   burden_estimate_folder     = "central_burden_estimate/",
+#'   group_name                 = "LSHTM-Jit-",
+#'   log_name                   = "test_log",
+#'   psa                        = 0,
+#'   vaccination                = 0,
+#'   using_sia                  = 1,
+#'   folder_date                = "20210930",
+#'   sim_years                  = 1980:2100,
+#'   chunksize                  = 1
+#'   )
+#'   }
 merge_case_csv <- function (vaccine_coverage_folder,
                             vaccine_coverage_subfolder,
                             antigen,
@@ -759,7 +955,38 @@ merge_case_csv <- function (vaccine_coverage_folder,
 
 # ------------------------------------------------------------------------------
 ## Estimate deaths and DALYs of measles - 2021 Portnoy's CFRs
+#'
+#' A function that estimates the number of deaths by applying case-fatality
+#' risks (CFRs) to the number of cases, and then calculates the
+#' disability-adjusted years (DALYs). Portnoy's CFRs used in the 2021 WHO
+#' estimates are adopted.
 # ------------------------------------------------------------------------------
+#' @param antigen Name of a disease name used by VIMC: "Measles".
+#' @param group_name A modelling group name used by VIMC.
+#' @param scenario_name Name of the vaccination scenario selected or being
+#' analysed.
+#' @param log_name A file name for keeping a log.
+#' @param burden_estimate_folder A folder name for the file which contains the
+#' model outputs for evaluation. Include a slash at the end.
+#' @param psa A numeric variable of the total runs for PSA. Use 0 to indicate a
+#' single run without PSA.
+#' @param chunksize Number of csv files needed for saving results in the selected
+#' scenario.
+#'
+#' @import data.table
+#'
+#' @examples
+#' \dontrun{
+#' estimate_deaths_dalys_21 (
+#'  antigen                = "measles-",
+#'  group_name             = "LSHTM-Jit-",
+#'  scenario_name          = "campaign-only-default",
+#'  log_name               = "test_log",
+#'  burden_estimate_folder = "central_burden_estimate/",
+#'  psa                    = 0,
+#'  chunksize              = 8
+#'  )
+#'  }
 estimate_deaths_dalys_21 <- function (antigen,
                                       group_name,
                                       scenario_name,
