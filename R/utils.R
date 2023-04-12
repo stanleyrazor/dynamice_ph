@@ -14,7 +14,6 @@
 #' @param coverage_prefix A prefix used in naming the vaccine coverage file.
 #' @param touchstone A version note in the file name used by VIMC. Include a
 #' underscore at the beginning and end of the name.
-#' @param antigen Name of a disease name used by VIMC: "Measles".
 #' @param scenario_name Name of the vaccination scenario selected or being analysed.
 #'
 #' @import data.table
@@ -26,7 +25,6 @@
 #'   vaccine_coverage_subfolder = "scenarios/",
 #'   coverage_prefix            = "coverage",
 #'   touchstone                 = "_201910gavi-5_",
-#'   antigen                    = "measles-",
 #'   scenario_name              = "campaign-only-bestcase"
 #'   )
 #'   }
@@ -34,7 +32,6 @@ create_vaccine_coverage_routine_sia <- function (vaccine_coverage_folder    = ""
                                                  vaccine_coverage_subfolder = "",
                                                  coverage_prefix            = "",
                                                  touchstone                 = "",
-                                                 antigen                    = "",
                                                  scenario_name              = ""
                                                  ) {
 
@@ -42,7 +39,6 @@ create_vaccine_coverage_routine_sia <- function (vaccine_coverage_folder    = ""
   vaccine_coverage_file <- paste0 (vaccine_coverage_folder,
                                    coverage_prefix,
                                    touchstone,
-                                   antigen,
                                    scenario_name,
                                    ".csv")
 

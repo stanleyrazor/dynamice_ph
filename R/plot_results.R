@@ -1,5 +1,5 @@
 # plot_results.R
-# update: 2022/07/12
+# update: 2023/04/12
 
 library(data.table)
 library(ggplot2)
@@ -10,41 +10,51 @@ library(readxl)
 library(tidyr)
 
 rm (list = ls())
-vac_stgs <- c("nomcv",               # (1) no vaccination
-              "mcv1",                # (2) MCV1 only
-              "mcv1-mcv2",           # (3) MCV1 + MCV2
-              "mcv1-mcv2-sia",       # (4) MCV1 + MCV2 + SIA
-              "mcv1-sia",            # (5) MCV1 + SIA
-              "mcv1-mcv2alt",        # (6) MCV1 + MCV2(early intro)
-              "mcv1-mcv2alt-sia",    # (7) MCV1 + MCV2(early intro) + SIA
-              "mcv1-mcv2-siaalt1",   # (8) MCV1 + MCV2 + SIA(zero dose first)
-              "mcv1-mcv2-siaalt2",   # (9) MCV1 + MCV2 + SIA(already vaccinated first)
-              "mcv1-siaalt1",        # (10) MCV1 + SIA(zero dose first)
-              "mcv1-siaalt2",        # (11) MCV1 + SIA(already vaccinated first)
-              "mcv1-mcv2alt-siaalt1" # (12) MCV1 + MCV2(early intro) + SIA(zero dose first)
+vac_stgs <- c("nomcv",                 # (1) no vaccination
+              "mcv1",                  # (2) MCV1 only
+              "mcv1-mcv2",             # (3) MCV1 + MCV2
+              "mcv1-mcv2-sia",         # (4) MCV1 + MCV2 + SIA
+              "mcv1-sia",              # (5) MCV1 + SIA
+              "mcv1-mcv2alt1",         # (6) MCV1 + MCV2(early intro, fast rollout)
+              "mcv1-mcv2alt1-sia",     # (7) MCV1 + MCV2(early introm fast rollout) + SIA
+              "mcv1-mcv2-siaalt1",     # (8) MCV1 + MCV2 + SIA(zero dose first)
+              "mcv1-mcv2-siaalt2",     # (9) MCV1 + MCV2 + SIA(already vaccinated first)
+              "mcv1-siaalt1",          # (10) MCV1 + SIA(zero dose first)
+              "mcv1-siaalt2",          # (11) MCV1 + SIA(already vaccinated first)
+              "mcv1-mcv2alt1-siaalt1", # (12) MCV1 + MCV2(early intro) + SIA(zero dose first)
+              "mcv1-mcv2alt2"          # (13) MCV1 + MCV2(early intro, gradual rollout)
 )
 vac_stg_names <- c("No vaccination",
                    "MCV1",
                    "MCV1 + MCV2",
                    "MCV1 + MCV2 + SIAs",
                    "MCV1 + SIAs",
-                   "MCV1 + MCV2 (early intro)",
-                   "MCV1 + MCV2 (early intro) + SIAs",
+                   "MCV1 + MCV2 (early intro, fast rollout)",
+                   "MCV1 + MCV2 (early intro, fast rollout) + SIAs",
                    "MCV1 + MCV2 + SIAs (zero-dose first)",
                    "MCV1 + MCV2 + SIAs (vaccinated first)",
                    "MCV1 + SIAs (zero-dose first)",
                    "MCV1 + SIAs (vaccinated first)",
-                   "MCV1 + MCV2 (early intro) + SIAs (zero-dose first)")
+                   "MCV1 + MCV2 (early intro) + SIAs (zero-dose first)",
+                   "MCV1 + MCV2 (early intro, gradual rollout)")
 
 eva_ctries <- c("IND", "NGA", "IDN", "ETH", "CHN",
                 "PHL", "UGA", "COD", "PAK", "AGO",
                 "MDG", "UKR", "MWI", "SOM")
+
+country_names <- c("India", "Nigeria", "Indonesia", "Ethiopia", "China",
+                   "Philippines", "Uganda", "DRC", "Pakistan", "Angola",
+                   "Madagascar", "Ukraine", "Malawi", "Somalia")
+
+names (eva_ctries) <- country_names
+names (country_names) <- eva_ctries
 
 custom_palette <- c("#00468BFF", "#ED0000FF", "#42B540FF", "#0099B4FF", "#925E9FFF",
                     "#FDAF91FF", "#AD002AFF", "#ADB6B6FF", "#1B1919FF", "#00468B99",
                     "#ED000099", "#42B54099", "#0099B499", "#925E9F99", "#FDAF9199",
                     "#AD002A99", "#ADB6B699", "#1B191999", "#00468B66", "#ED000066")
 
+res_folder <- paste0 (getwd(), "/previous_res/20230401/")
 
 # ------------------------------------------------------------------------------
 ## load and combine model outputs
@@ -52,8 +62,7 @@ custom_palette <- c("#00468BFF", "#ED0000FF", "#42B540FF", "#0099B4FF", "#925E9F
 # burden and vaccine doses
 file_burden  <- NULL
 for (scname in vac_stgs){
-  scn_burden <- fread (paste0 (getwd(), "/central_burden_estimate/Portnoy/", #"/previous_res/",
-                               "central_burden_estimate_", scname, ".csv"))
+  scn_burden <- fread (paste0 (res_folder, "siareach_2/central_burden_estimate_", scname, ".csv"))
   scn_burden [, `:=` (cases = cases0d + cases1d + cases2d,
                       deaths = deaths0d + deaths1d + deaths2d)]
   scn_burden [, comp := scname]
@@ -65,32 +74,52 @@ cum_burden <- file_burden [, lapply (.SD, sum),
                            .SDcols = pops:deaths,
                            by = c("country", "year", "country_name", "comp")]
 
-# set up country name and ISO-3 code
-country_names        <- cum_burden [year == 2000 & comp == "nomcv", country_name]
-names(country_names) <- cum_burden [year == 2000 & comp == "nomcv", country]
-
 # calculate incidence rate (case per million)
 cum_burden [, incrateM := (cases/pops)*1e6]
 
 
 # ------------------------------------------------------------------------------
-## load WHO data for comparison
+## load WHO and IHME data for comparison
 # ------------------------------------------------------------------------------
 # WHO reported cases
-input_WHOcase <- read_excel ("D:/research-data/incidence_series.xls", sheet = "Measles")
-data_WHOcase  <- setDT (tidyr::pivot_longer(input_WHOcase, col = `2019`:`1980`,
-                                            values_to = "cases", names_to = "year"))
-data_WHOcase [, year := as.integer(year)]
-setnames (x = data_WHOcase,
-          old = c("ISO_code", "Cname", "cases"),
-          new = c("country", "country_name", "notifs"))
-data_WHOcase <- data_WHOcase [cum_burden [comp == "nomcv" & year <= 2019,
-                                          .(comp, country, year, pops)],
-                              on = .(country = country, year = year)]
-data_WHOcase [, incrateM := 1e6*(notifs/pops)]
+# https://immunizationdata.who.int/pages/incidence/MEASLES.html
+input_WHOcase <- read_excel ("D:/research-data/Measles reported cases and incidence by year (Reported cases) 2023-031-03 0-18 UTC.xlsx")
+input_WHOcase$`Country / Region` [which (input_WHOcase$`Country / Region` == "Democratic Republic of the Congo")] <- "DRC"
+input_WHOcase <- setDT (input_WHOcase) [`Country / Region` %in% country_names, !(`1999`:`1980`)]
 
-data_WHOcase [, country_name := country_names [country]]
-data_WHOcase <- data_WHOcase [country_name %in% country_names & year >= 2000]
+dat_WHOcase <- tidyr::pivot_longer (input_WHOcase [, !c("Disease", "2022", "2021")], cols = `2020`:`2000`,
+                                    names_to = "year", values_to = "notifs")
+dat_WHOcase <- setDT (dat_WHOcase) [, year := as.numeric(year)]
+setnames (x = dat_WHOcase, old = c("Country / Region"), new = c("country_name"))
+
+# adjust data format
+dat_WHOcase [, `:=` (notifs = as.numeric (str_remove_all (notifs, "\\,")),
+                     country_name = factor (country_name, levels = country_names),
+                     country = factor (eva_ctries [country_name], levels = eva_ctries))]
+dat_WHOcase <- dat_WHOcase [cum_burden [comp == "nomcv" & year <= 2020,
+                                        .(comp, country, year, pops)],
+                            on = .(country = country, year = year)]
+dat_WHOcase [, incrateM := 1e6*(notifs/pops)]
+setorder (dat_WHOcase, country_name, year)
+
+# IHME GBD-2019
+# http://ghdx.healthdata.org/gbd-results-tool
+input_IHME <- fread( "D:/research-data/IHME-GBD_2019_DATA-530a6126-1.csv")[measure_name == "Incidence"]
+input_IHME [location_name == "Democratic Republic of the Congo", location_name := "DRC"]
+dat_IHME <- input_IHME [year %in% 2000:2020, .SD,
+                        .SDcols = c("location_name", "year", "val", "upper", "lower")]
+setnames (x = dat_IHME, old = c("location_name", "val"),
+          new = c("country_name", "est_cases"))
+dat_IHME [, country_name := factor(country_name, levels = country_names)]
+
+# adjust data format
+dat_IHME [, `:=` (country_name = factor (country_name, levels = country_names),
+                  country = factor (eva_ctries [country_name], levels = eva_ctries))]
+dat_IHME <- dat_IHME [cum_burden [comp == "nomcv" & year < 2020,
+                                  .(comp, country, year, pops)],
+                      on = .(country = country, year = year)]
+dat_IHME[, incrateM := 1e6*(est_cases/pops)]
+setorder (dat_IHME, country_name, year)
 
 
 # ------------------------------------------------------------------------------
@@ -120,18 +149,18 @@ format_num_plain <- function (x, ...) {
 ## plot country burden over time
 # ------------------------------------------------------------------------------
 pltdata_ctry_burden <- cum_burden [comp %in% vac_stgs[c(1,2,3,5,4)],
-                                   .(comp, year, country_name, cases, deaths, dalys)]
+                                   .(comp, year, country_name, cases, deaths)]
 pltdata_ctry_burden <- setDT (pivot_longer (pltdata_ctry_burden,
-                                            cols = cases:dalys,
+                                            cols = cases:deaths,
                                             names_to = "measure",
                                             values_to = "value"))
-pltdata_ctry_burden [, `:=` (measure = factor (measure, levels = c("cases", "deaths", "dalys"),
-                                               labels = c("Cases", "Deaths", "DALYs")),
+pltdata_ctry_burden [, `:=` (measure = factor (measure, levels = c("cases", "deaths"),
+                                               labels = c("Cases", "Deaths")),
                              country_name = factor (country_name, levels = country_names[eva_ctries]),
                              comp = factor (comp, levels = vac_stgs[c(1,2,3,5,4)],
                                             labels = vac_stg_names[c(1,2,3,5,4)]))]
 
-pdf("plot/figS3_burden-trend.pdf", height = 8, width = 14)
+pdf (paste0 (res_folder, "figures/figS3_burden-trend.pdf"), height = 6.5, width = 14)
 ggplot (data = pltdata_ctry_burden,
         aes(x = year, y = value/1e6, fill = country_name)) +
   geom_area () +
@@ -165,26 +194,29 @@ pltdat_incrateM [, `:=` (country_name = factor (country_name,
                          comp = factor (comp, levels = vac_stgs [c(4,5,3,2,1)],
                                         labels = vac_stg_names [c(4,5,3,2,1)]))]
 
-pdf (file = "plot/fig2_incrateM.pdf", width = 14, height = 7)
+pdf (paste0 (res_folder, "figures/fig2_incrateM.pdf"), width = 14, height = 7)
 ggplot (data = pltdat_incrateM,
-        aes(x = year, y = incrateM, colour = comp)) +
-  geom_line (size = 0.9, alpha = 1) +
+        aes(x = year, y = incrateM, colour = comp, linetype = comp)) +
+  geom_line (size = 1, alpha = 1) +
   facet_wrap (vars(country_name), scales = "free", ncol = 5) +
-  labs (x = "Year", y = "Estimated measles incidence rate \nper million population") +
-  scale_colour_manual ("Delivery strategies",
-                       values = c(custom_palette[c(5,2,1,3)], "grey 50")) +
+  scale_colour_manual (values = c(custom_palette[c(5,2,1,3)], "grey 50"),
+                       guide = guide_legend (reverse = TRUE)) +
+  scale_linetype_manual (values = c(1,2,1,2,1),
+                         guide = guide_legend (reverse = TRUE)) +
+  labs (x = "Year", y = "Estimated measles incidence rate \nper million population",
+        colour = "Delivery strategies", linetype = "Delivery strategies") +
   # scale_y_log10 (labels = format_num_plain) +
   theme_bw () +
   theme (legend.position = c(0.9, 0.15),
          legend.text = element_text (size = 12),
          legend.title = element_text (size = 12),
+         legend.key.width = unit (2.2, "line"),
          axis.title.x = element_text (size = 15, margin = margin(t = 15)),
          axis.title.y = element_text (size = 15, margin = margin(r = 15)),
          axis.text.x = element_text (size = 10.5),
          axis.text.y = element_text (size = 10.5),
-         strip.text.x = element_text (size = 12)) +
-  guides (colour = guide_legend (reverse = TRUE))
-# geom_point (data = data_WHOcase,
+         strip.text.x = element_text (size = 12))
+# geom_point (data = dat_WHOcase,
 #             aes(x = year, y = incrateM, shape = "WHO reported cases"),
 #             size = 2, colour = "gold") +
 #   scale_shape_manual ("", values = 4)
@@ -198,17 +230,18 @@ pltdat_incrateM_opt [, `:=` (country_name = factor (country_name,
                              comp = factor (comp, levels = vac_stgs [c(4,7,8,12)],
                                             labels = vac_stg_names [c(4,7,8,12)]))]
 
-pdf (file = "plot/figS5_incrateM_optim.pdf", width = 14, height = 8)
+pdf (paste0 (res_folder, "figures/figS5_incrateM_optim.pdf"), width = 14, height = 8)
 ggplot (data = pltdat_incrateM_opt,
         aes(x = year, y = incrateM, colour = comp)) +
-  # geom_point (data = data_WHOcase,
+  # geom_point (data = dat_WHOcase,
   #             aes(x = year, y = incrateM, shape = "WHO notifications"),
   #             size = 2, colour = "goldenrod3") +
+  # scale_shape_manual ("", values = 4, guide = guide_legend (order = 2)) +
   geom_line (size = 0.9, alpha = 1) +
   facet_wrap (vars(country_name), scales = "free", ncol = 5) +
-  scale_colour_manual ("Delivery strategies",
-                       values = custom_palette[c(5,4,6,8)]) +
-  scale_shape_manual ("", values = 4) +
+  scale_colour_manual (name = "MCV2 introduction and SIA delivery strategies",
+                       values = custom_palette[c(5,4,6,8)],
+                       guide = guide_legend (order = 1, ncol = 2, byrow = T)) +
   scale_y_log10 (labels = format_num_plain) +
   labs (x = "Year", y = "Estimated measles incidence rate \nper million population (log scale)") +
   theme_bw () +
@@ -220,10 +253,7 @@ ggplot (data = pltdat_incrateM_opt,
          axis.title.y = element_text (size = 15, margin = margin(r = 10)),
          axis.text.x = element_text (size = 11),
          axis.text.y = element_text (size = 11),
-         strip.text.x = element_text (size = 12.5)) +
-  guides (colour = guide_legend (order = 1, ncol = 2, byrow = T))
-  # guides (colour = guide_legend (order = 1, ncol = 2, byrow = T),
-  #         shape = guide_legend (order = 2))
+         strip.text.x = element_text (size = 12.5))
 dev.off()
 
 
@@ -233,8 +263,9 @@ dev.off()
 # birth cohort: not changed by scenario
 pltdat_sus_age0 <- copy (file_burden [age == 0 & comp == vac_stgs[1],
                                       c("country_name", "year", "comp", "pops")]) [, comp := "birth"]
-pltdat_sus_age0  [, country_name := factor (country_name,
-                                            levels = country_names[eva_ctries])]
+pltdat_sus_age0  [, `:=` (country_name = factor (country_name,
+                                                 levels = country_names[eva_ctries]),
+                          data_type = "Annual birth cohort")]
 pltdat_sus <- file_burden [age < 5 & comp %in% vac_stgs[c(1,2,3,5,4)],
                            lapply (.SD, sum), .SDcols = "popsSus",
                            by = c("country", "year", "country_name", "comp")]
@@ -242,43 +273,54 @@ pltdat_sus [, `:=` (country_name = factor (country_name,
                                            levels = country_names[eva_ctries]),
                     comp = factor (comp, levels = c(vac_stgs[c(4,5,3,2,1)]),
                                    labels = c(vac_stg_names[c(4,5,3,2,1)])))]
+
 # plot
-pdf (file = "plot/fig3_sus-birth.pdf", width = 14, height = 7)
+pdf (paste0 (res_folder, "figures/fig3_sus-birth.pdf"), width = 14, height = 7)
 ggplot () +
-  geom_line (data = pltdat_sus[comp != "Birth cohort"],
-             aes(x = year, y = popsSus/1e6, colour = comp),
-             size = 0.9, alpha = 1, linetype = 1) +
-  geom_line (data = pltdat_sus_age0,
-             aes(x = year, y = pops/1e6, linetype = "birth"),
-             size = 0.8, alpha = 0.85) +
+  geom_line (data = pltdat_sus, size = 1,
+             aes(x = year, y = popsSus/1e6, colour = comp, linetype = comp)) +
   facet_wrap (vars(country_name), scales = "free", ncol = 5) +
-  scale_colour_manual ("Delivery strategies",
-                       values = c(custom_palette[c(5,2,1,3)], "grey 50")) +
-  scale_linetype_manual ("", values = c("birth" = 3), labels = "Annual birth cohort") +
-  labs (x = "Year", y = "Estimated number of susceptible population < 5 y/o (millions)") +
+  scale_colour_manual (values = c(custom_palette[c(5,2,1,3)], "grey 50"),
+                       guide = guide_legend (reverse = TRUE, order = 1)) +
+  scale_linetype_manual (values = c(1,2,1,2,1),
+                         guide = guide_legend (reverse = TRUE, order = 1)) +
+  labs (x = "Year", y = "Estimated number of susceptible population < 5 y/o (millions)",
+        colour = "Delivery strategies", linetype = "Delivery strategies") +
   theme_bw () +
-  theme (legend.position = c(0.9, 0.1),
+  theme (legend.position = c(0.91, 0.12),
          legend.text = element_text (size = 12),
          legend.title = element_text (size = 12),
+         legend.key.width = unit (2.2, "line"),
          axis.title.x = element_text (size = 15, margin = margin(t = 15)),
          axis.title.y = element_text (size = 15, margin = margin(r = 15)),
          axis.text.x = element_text (size = 10.5),
          axis.text.y = element_text (size = 10.5),
          strip.text.x = element_text (size = 12)) +
-  guides (colour = guide_legend (reverse = TRUE))
+  ggnewscale::new_scale("linetype") +
+  geom_line (data = pltdat_sus_age0,
+             aes(x = year, y = pops/1e6, linetype = data_type),
+             size = 0.9, alpha = 0.85) +
+  scale_linetype_manual (name = NULL, values = 3,
+                         guide = guide_legend (order = 2))
 dev.off()
+
 
 # calculate number of years with susceptibles > birth cohort
 compdat_sus <- pltdat_sus [pltdat_sus_age0 [, !c("comp")], on = c("country_name", "year")]
 compdat_sus [, outbreak := ifelse(popsSus >= pops, 1, 0)]
 tab_sus <- compdat_sus [, .(pr_outbreak = 1-sum(outbreak)/21), by = c("country", "comp")]
-
+setorder (tab_sus, -comp)
 tab_sus <- setDT (pivot_wider (tab_sus, values_from = pr_outbreak, names_from = comp))
 tab_sus [, country := factor (country, levels = eva_ctries)]
 setorder (tab_sus, country)
-fwrite (x = tab_sus [, c(1:4,6,5)], file = "tabs3_yr-sus-outbreak.csv")
 
-tab_sus [, lapply(.SD, mean), .SDcols = 3:6]
+# get median and 25th-75th percentile
+tab_sus <- rbind (tab_sus,
+                   cbind (data.table (country = c("pr25", "median", "pr75")),
+                          tab_sus [, lapply (.SD, quantile, prob = c(.25, .5, .75),
+                                             na.rm = TRUE), .SDcols = !"country"]))
+fwrite (x = tab_sus,
+        file = paste0 (res_folder, "tables/tabs3_yr-sus-outbreak.csv"))
 
 
 # ------------------------------------------------------------------------------
@@ -320,7 +362,7 @@ setorder (sel_vacc_impact, pr_red_cases)
 sel_vacc_impact [country != "Global"]
 setorder (sel_vacc_impact, avt_cases)
 sel_vacc_impact [country != "Global"]
-sel_vacc_impact <- cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2alt")
+sel_vacc_impact <- cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2alt1")
 # Global averted cases: 96804681
 
 # combine results of all comparison pairs
@@ -330,28 +372,28 @@ all_avtnnv <- rbind (cal_avtnnv (cum_burden, "nomcv", "mcv1"),
                      cal_avtnnv (cum_burden, "nomcv", "mcv1-mcv2-sia"),
                      cal_avtnnv (cum_burden, "mcv1", "mcv1-sia"),
                      cal_avtnnv (cum_burden, "mcv1", "mcv1-mcv2"),
+                     cal_avtnnv (cum_burden, "mcv1", "mcv1-mcv2-sia"),
                      cal_avtnnv (cum_burden, "mcv1-sia", "mcv1-mcv2-sia"),
                      cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2-sia"),
-                     cal_avtnnv (cum_burden, "mcv1", "mcv1-mcv2alt"),
+                     cal_avtnnv (cum_burden, "mcv1", "mcv1-mcv2alt1"),
+                     cal_avtnnv (cum_burden, "mcv1", "mcv1-mcv2alt2"),
                      cal_avtnnv (cum_burden, "mcv1", "mcv1-siaalt1"),
                      cal_avtnnv (cum_burden, "mcv1", "mcv1-siaalt2"))
-                     # cal_avtnnv (cum_burden, "mcv1-mcv2alt", "mcv1-mcv2alt-sia"),
-                     # cal_avtnnv (cum_burden, "mcv1-sia", "mcv1-mcv2alt-sia"))
 
 # averted cases, deaths, and dalys
-output_case <- setDT (pivot_wider (all_avtnnv [, c("comp_set", "country_name", "country", "avt_cases")],
-                                        values_from = avt_cases,
-                                        names_from = comp_set))
+output_case <- setDT (pivot_wider (all_avtnnv [, .(comp_set, country_name, country, avt_cases)],
+                                   values_from = avt_cases,
+                                   names_from = comp_set))
 output_case [, country := factor (country, levels = c(eva_ctries, "Global"))]
 setorder (output_case, country)
 
-output_death <- setDT (pivot_wider (all_avtnnv [, c("comp_set", "country_name", "country", "avt_deaths")],
+output_death <- setDT (pivot_wider (all_avtnnv [, .(comp_set, country_name, country, avt_deaths)],
                                     values_from = avt_deaths,
                                     names_from = comp_set))
 output_death [, country := factor (country, levels = c(eva_ctries, "Global"))]
 setorder (output_death, country)
 
-output_daly <- all_avtnnv [, c("comp_set", "country_name", "country", "avt_dalys")]
+output_daly <- all_avtnnv [, .(comp_set, country_name, country, avt_dalys)]
 output_daly [, avt_dalys_K := avt_dalys/1000]
 output_daly <- setDT (pivot_wider (output_daly [, !c("avt_dalys")],
                                    values_from = avt_dalys_K,
@@ -365,33 +407,33 @@ setorder (output_daly, country)
 eva_ctries_mcv2 <- c("IND", "IDN", "CHN", "PHL", "PAK", "AGO", "UKR", "MWI",
                      "NGA","ETH", "MDG",
                      "UGA","COD", "SOM")
-# output_tab1_case <- output_case [, 1:7]
-# names(output_tab1_case)[3:7] <- paste0 (names(output_tab1_case)[3:7], "_case")
-# output_tab1_death <- output_death [, 3:7]
-# names(output_tab1_death) <- paste0 (names(output_tab1_death), "_death")
-# output_tab1 <- cbind (output_tab1_case, output_tab1_death)
-# output_tab1 <- output_tab1 [, c(1:3,8,4,9,5,10,6,11,7,12)]
 
-value_cols <- names(output_case)[3:8]
-output_case [, (value_cols) := lapply (.SD, function (avt_burden){
-  return (avt_burden/1000)}),
-  .SDcols = value_cols]
+value_cols <- names(output_case)[-c(1:2)]
+sel_cols_tab1 <- c("country_name", "mcv1-mcv2-sia_VS_nomcv", "mcv1_VS_nomcv",
+                   "mcv1-sia_VS_mcv1", "mcv1-mcv2_VS_mcv1", "mcv1-mcv2-sia_VS_mcv1")
+
+output_case [, (value_cols) := lapply (.SD,
+                                       function (avt_burden){
+                                         return (avt_burden/1000)}),
+             .SDcols = value_cols]
 output_case [, country := factor (country, levels = c(eva_ctries_mcv2, "Global"))]
 setorder (output_case, country)
-fwrite (x = output_case[, 1:8], file = "tab1_avtcase.csv")
+fwrite (x = output_case [, ..sel_cols_tab1],
+        file = paste0 (res_folder, "tables/tab1_avtcase.csv"))
 
-# Table S2: Averted deaths
+# Table S4: Averted deaths
 output_death [, (value_cols) := lapply (.SD, function (avt_burden){
   return (avt_burden/1000)}),
   .SDcols = value_cols]
 output_death [, country := factor (country, levels = c(eva_ctries_mcv2, "Global"))]
 setorder (output_death, country)
-fwrite (x = output_death[, 1:8], file = "tabs2_avtdeath.csv")
+fwrite (x = output_death[, ..sel_cols_tab1],
+        file = paste0 (res_folder, "tables/tabs4_avtdeath.csv"))
 
-# Table S3: Averted DALYs
-output_daly [, country := factor (country, levels = c(eva_ctries_mcv2, "Global"))]
-setorder (output_daly, country)
-fwrite (x = output_daly[, 1:8], file = "tabs3_avtdaly.csv")
+# # Table SX: Averted DALYs
+# output_daly [, country := factor (country, levels = c(eva_ctries_mcv2, "Global"))]
+# setorder (output_daly, country)
+# fwrite (x = output_daly[, ..sel_cols_tab1], file = paste0 (work_folder, "tabs3_avtdaly.csv"))
 
 # Table 2: NNV
 # not calculated for countries have not yet introduced MCV2 when MCV1 only is the comparator
@@ -400,15 +442,23 @@ output_nnv <- setDT (pivot_wider (all_avtnnv [comp_set %in% c("mcv1_VS_nomcv",
                                                               "mcv1-mcv2_VS_mcv1",
                                                               "mcv1-mcv2-sia_VS_mcv1-mcv2",
                                                               "mcv1-mcv2-sia_VS_mcv1-sia"),
-                                              c("comp_set", "country_name", "country", "nnv")],
+                                              .(comp_set, country_name, country, nnv)],
                                   values_from = nnv,
                                   names_from = comp_set))
 output_nnv [, country := factor (country, levels = c(eva_ctries_mcv2, "Global"))]
 setorder (output_nnv, country)
-fwrite (x = output_nnv, file = "tab2_nnv.csv")
 
-output_nnv [country_name != "Global",
-            lapply (.SD, function(x) median (x, na.rm = T)), .SDcols = 3:7] # avoid NNV with small-size denominator
+output_nnv <- rbind (output_nnv,
+                     output_nnv [country_name != "Global",
+                                 lapply (.SD, function(x) median (x, na.rm = T)),
+                                 .SDcols = `mcv1_VS_nomcv`:`mcv1-mcv2-sia_VS_mcv1-mcv2`],
+                     fill = TRUE)
+output_nnv [is.na(country), `:=` (country_name = "Median", country = "Median")]
+fwrite (x = output_nnv [country != "Global"],
+        file = paste0 (res_folder, "tables/tab2_nnv.csv"))
+
+median (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2alt1_VS_mcv1", nnv])
+median (all_avtnnv [country_name != "Global" & comp_set == "mcv1-siaalt1_VS_mcv1", nnv])
 
 
 # ------------------------------------------------------------------------------
@@ -458,7 +508,7 @@ plt_dose_sum <- function (sel_ctries, sel_scns){
            plot.margin = margin (0.1, 0.2, 0, 0.6, "cm"))
   return(plt)
 }
-pdf ("plot/figS4_dose-sum.pdf", width = 11, height = 7)
+pdf (paste0 (res_folder, "figures/figS4_dose-sum.pdf"), width = 11, height = 7)
 print (plt_dose_sum (eva_ctries, c(2,3,5,4)))
 dev.off()
 
@@ -467,7 +517,8 @@ dev.off()
 ## plot averted cases and NNV for sensitivity analysis
 # ------------------------------------------------------------------------------
 all_avtnnv_senanl <- all_avtnnv [comp_set %in% c("mcv1-mcv2_VS_mcv1",
-                                                 "mcv1-mcv2alt_VS_mcv1",
+                                                 "mcv1-mcv2alt1_VS_mcv1",
+                                                 "mcv1-mcv2alt2_VS_mcv1",
                                                  "mcv1-sia_VS_mcv1",
                                                  "mcv1-siaalt1_VS_mcv1",
                                                  "mcv1-siaalt2_VS_mcv1")]
@@ -475,28 +526,31 @@ all_avtnnv_senanl [, `:=` (country_name = factor (country_name,
                                                   levels = country_names[eva_ctries]),
                            comp_set = factor (comp_set,
                                               levels = c("mcv1-mcv2_VS_mcv1",
-                                                         "mcv1-mcv2alt_VS_mcv1",
+                                                         "mcv1-mcv2alt1_VS_mcv1",
+                                                         "mcv1-mcv2alt2_VS_mcv1",
                                                          "mcv1-sia_VS_mcv1",
                                                          "mcv1-siaalt1_VS_mcv1",
                                                          "mcv1-siaalt2_VS_mcv1"),
                                               labels = c("MCV1 + MCV2",
-                                                         "MCV1 + MCV2 (early intro)",
+                                                         "MCV1 + MCV2 (early intro, fast rollout)",
+                                                         "MCV1 + MCV2 (early intro, gradual rollout)",
                                                          "MCV1 + SIAs",
                                                          "MCV1 + SIAs (zero-dose first)",
                                                          "MCV1 + SIAs (vaccinated first)")),
                            avt_cases_M = ifelse (avt_cases <= 0.0001, NA, avt_cases/1e6))]
 
-
-
 # plot
-plt_senanl <- function (sel_mea, sel_ylab, sel_lgdpos){
-  plt <- ggplot (data = all_avtnnv_senanl [country != "Global"],
-                 aes(x = country_name, y = get(sel_mea))) +
-    geom_col (aes(fill = comp_set), width = 0.8, colour = NA, size = 0,
+plt_senanl_bar <- function (plt_data, sel_mea, sel_ylab,
+                            sel_lgdpos, sel_lgdtitle, sel_fill_values){
+  plt <- ggplot (data = plt_data [country != "Global"],
+                 aes (x = country_name, y = get(sel_mea))) +
+    geom_col (aes (fill = comp_set, colour = comp_set), width = 0.7,  size = 0,
               position = position_dodge()) +
-    labs (x = "", y = sel_ylab) +
-    scale_fill_manual ("Delivery strategy compared to MCV1 only",
-                       values = custom_palette [c(1,4,2,6,7)]) +
+    labs (x = "", y = sel_ylab, fill = sel_lgdtitle, colour = sel_lgdtitle) +
+    scale_fill_manual (values = sel_fill_values,
+                       guide = guide_legend (ncol = 3, byrow = T)) +
+    scale_colour_manual (values = sel_fill_values,
+                         guide = guide_legend (ncol = 3, byrow = T)) +
     theme_bw () +
     theme (legend.position = sel_lgdpos,
            legend.text = element_text (size = 13),
@@ -507,16 +561,215 @@ plt_senanl <- function (sel_mea, sel_ylab, sel_lgdpos){
            panel.grid.major = element_blank(),
            panel.grid.minor = element_blank(),
            panel.background = element_blank(),
-           plot.margin = margin (0, 0.2, 0, 0.6, "cm")) +
-    guides (fill = guide_legend (ncol = 3, byrow = T))
+           plot.margin = margin (0, 0.2, 0, 0.6, "cm"))
   return(plt)
 }
 
-ggsave ("plot/fig4_nnv-avtcase-senanl.pdf",
+ggsave (paste0 (res_folder, "figures/fig4_nnv-avtcase-senanl.pdf"),
         ggarrange (plt_blank,
-                   plt_senanl ("avt_cases_M", "Estimated number of \naverted cases (millions)", c(0.5,1.35)),
-                   plt_senanl ("nnv", "Estimated number\nneeded to vaccinate", "none"),
-                   ncol = 1, vjust = -1.2,#common.legend = T,
+                   plt_senanl_bar (all_avtnnv_senanl, "avt_cases_M",
+                                   "Estimated number of \naverted cases (millions)",
+                                   c(0.5,1.33), "Vaccination strategy compared to MCV1 only",
+                                   custom_palette [c(1,4,10,2,6,7)]),
+                   plt_senanl_bar (all_avtnnv_senanl, "nnv",
+                                   "Estimated number\nneeded to vaccinate",
+                                   "none", NA,
+                                   custom_palette [c(1,4,10,2,6,7)]),
+                   ncol = 1, vjust = -1.2,
                    labels = c("", "A", "B"), heights = c(1.5, 4, 4)),
         height = 8, width = 11)
+
+
+# ------------------------------------------------------------------------------
+## plot case and NNV estimates by different SIA delivery methods
+# ------------------------------------------------------------------------------
+# load data
+all_siareach_senanl <- NULL
+for (isia in c(1,2,5)) {
+  for (iscn in vac_stgs[c(2,3,4,5)]){
+    outputs <- fread (paste0 (res_folder, "siareach_", isia,
+                          "/central_burden_estimate_", iscn, ".csv"))
+    all_siareach_senanl <- rbind (all_siareach_senanl,
+                                  outputs [, `:=` (scenario = iscn,
+                                                   siareach = isia)])
+    remove(outputs)
+  }
+}
+
+siareach_methods <- c("7.7% less-likely-to-be-reached (national level)",
+                      "7.7% less-likely-to-be-reached (subnational level)",
+                      "random reach")
+
+all_siareach_senanl [, `:=` (country_name = factor (country_names[country], levels = country_names),
+                             cases = cases0d + cases1d + cases2d,
+                             deaths = deaths0d + deaths1d + deaths2d,
+                             siareach = factor (siareach, levels = c(2,5,1), labels = siareach_methods))]
+cum_siareach_senanl <- all_siareach_senanl [, lapply (.SD, sum),
+                                            .SDcols = c("pops", "cases", "deaths", "dalys", "doses"),
+                                            by = c("year", "country", "country_name", "scenario", "siareach")]
+setorder (cum_siareach_senanl, country, year, siareach)
+
+# calculate NNV and add results of the main scenarios
+nnv_siareach_senanl <- NULL
+for (isia in siareach_methods){
+  output_nnv <- cum_siareach_senanl [siareach == isia & scenario %in% vac_stgs[c(2,3,5)]]
+  output_nnv [, comp := scenario]
+  nnv_siareach_senanl <- rbind (nnv_siareach_senanl,
+                                cal_avtnnv (output_nnv, "mcv1", "mcv1-mcv2")[, siareach := isia],
+                                cal_avtnnv (output_nnv, "mcv1", "mcv1-sia")[, siareach := isia])
+  remove (output_nnv)
+}
+nnv_siareach_senanl [, `:=` (comp_set = factor (comp_set, labels = c("MCV1 + MCV2", "MCV1 + SIAs")),
+                             siareach = factor (siareach, levels = siareach_methods))]
+
+# plot case estimates
+pdf (paste0 (res_folder, "figures/figS6_case-siareach.pdf"), width = 14, height = 8.5)
+ggplot(data = cum_siareach_senanl [scenario == "mcv1-mcv2-sia"],
+       aes(x = year, y = cases/1e3, colour = siareach)) +
+  scale_x_continuous (breaks = scales::pretty_breaks ()) +
+  scale_colour_manual (name = "SIA dose delivery methods",
+                       values = custom_palette[5:7]) +
+  geom_line (size = 0.9) +
+  facet_wrap (vars(country_name), nrow = 3, scales = "free") +
+  labs (x = "Year", y = "Cases (thousand)") +
+  theme_bw () +
+  theme (legend.position = "bottom",
+         legend.direction = "vertical",
+         legend.text = element_text (size = 11.5),
+         legend.title = element_text (size = 12),
+         plot.margin = unit (c(0.1, 0.25, 0.1, 0.1), "cm"),
+         axis.title.x = element_text (size = 15, margin = margin(t = 15)),
+         axis.title.y = element_text (size = 15, margin = margin(r = 10)),
+         axis.text.x = element_text (size = 11),
+         axis.text.y = element_text (size = 11),
+         strip.text.x = element_text (size = 12.5))
+dev.off()
+
+# plot NNV estimates
+pdf (paste0 (res_folder, "figures/figS7_nnv-siareach.pdf"), width = 9, height = 7)
+ggplot (data = nnv_siareach_senanl [country != "Global"],
+        aes(x = country_name, y = nnv)) +
+  geom_col (aes(fill = comp_set), width = 0.8, colour = NA, size = 0,
+            position = position_dodge()) +
+  facet_wrap (vars(siareach), ncol = 1) +
+  labs (x = "", y = "Estimated number needed to vaccinate") +
+  scale_fill_manual ("Vaccination strategies compared to MCV1 only",
+                     values = custom_palette[1:2]) +
+  theme_bw () +
+  theme (legend.position = "top",
+         legend.text = element_text (size = 12),
+         legend.title = element_text (size = 13),
+         axis.title.y = element_text (size = 13.5, vjust = 2),
+         strip.text.x = element_text (size = 12),
+         axis.text.x = element_text (size = 12, angle = 60, hjust = 1),
+         axis.text.y = element_text (size = 10),
+         panel.grid.major = element_blank(),
+         panel.grid.minor = element_blank(),
+         panel.background = element_blank(),
+         plot.margin = margin (0, 0.2, 0, 0.6, "cm"))
+dev.off()
+
+
+# ------------------------------------------------------------------------------
+## plot case and nnv estimates by R0
+# ------------------------------------------------------------------------------
+# load data
+all_r0_senanl <- NULL
+for (ir0 in seq(6,26,2)) {
+  if (ir0 %in% c(6,26)) {
+    scns <- vac_stgs[c(2,3,4,5)]
+  } else {
+    scns <- vac_stgs[4]
+  }
+  for (iscn in scns){
+      outputs <- fread (paste0 (res_folder, "siareach_2/senanl_r0/central_burden_estimate_",
+                                iscn, "_r0-", ir0, ".csv"))
+      all_r0_senanl <- rbind (all_r0_senanl, outputs [, `:=` (r0 = ir0, scenario = iscn)])
+      remove(outputs)
+  }
+}
+# calculate burden
+all_r0_senanl [, `:=` (country_name = factor (country_names[country], levels = country_names),
+                       cases = cases0d + cases1d + cases2d,
+                       deaths = deaths0d + deaths1d + deaths2d)]
+cum_r0_senanl <- all_r0_senanl [, lapply (.SD, sum),
+                                .SDcols = c("pops", "cases", "deaths", "dalys", "doses"),
+                               by = c("year", "country", "country_name", "scenario", "r0")]
+setorder (cum_r0_senanl, r0, country, year)
+
+# calculate NNV and add results of the main scenarios
+nnv_r0_senanl <- NULL
+for (ir0 in c(6,26)){
+  output_nnv <- cum_r0_senanl [r0 == ir0 & scenario %in% vac_stgs[c(2,3,5)]]
+  output_nnv [, comp := scenario]
+  nnv_r0_senanl <- rbind (nnv_r0_senanl,
+                          cal_avtnnv (output_nnv, "mcv1", "mcv1-mcv2")[, r0 := ir0],
+                          cal_avtnnv (output_nnv, "mcv1", "mcv1-sia")[, r0 := ir0])
+  remove (output_nnv)
+}
+nnv_r0_senanl <- rbind (nnv_r0_senanl,
+                        all_avtnnv [comp_set %in% c("mcv1-mcv2_VS_mcv1", "mcv1-sia_VS_mcv1")][, r0 := 15.9])
+nnv_r0_senanl [, `:=` (comp_set = factor (comp_set, labels = c("MCV1 + MCV2", "MCV1 + SIAs")),
+                       plt_r0 = ifelse (r0 == 26, "R[0] *\" = 26\"",
+                                        ifelse (r0 == 6, "R[0] *\" = 6\"",
+                                                "R[0] *\" = 15.9 (main scenario)\"")))]
+
+
+# plot case estimates
+pdf (paste0 (res_folder, "figures/figS8_case-r0.pdf"), width = 14, height = 7)
+ggplot (data = cum_r0_senanl[scenario == "mcv1-mcv2-sia"] ) +
+  geom_line (size = 0.9, aes (x = year, y = cases/1e3, colour = r0,
+                              group = paste0 (country, "-", r0))) +
+  scale_x_continuous (breaks = scales::pretty_breaks ()) +
+  # scale_y_log10 (labels = format_num_plain) +
+  scale_colour_distiller (name = expression(R['0']), palette = "Blues", direction = 1) +
+  facet_wrap (vars(country_name), nrow = 3, scales = "free") +
+  labs (x = "Year", y = "Cases (thousands)") +
+  theme_bw () +
+  theme (legend.position = "bottom",
+         legend.text = element_text (size = 11.5),
+         legend.title = element_text (size = 12),
+         plot.margin = unit (c(0.1, 0.25, 0.1, 0.1), "cm"),
+         axis.title.x = element_text (size = 15, margin = margin(t = 15)),
+         axis.title.y = element_text (size = 15, margin = margin(r = 10)),
+         axis.text.x = element_text (size = 11),
+         axis.text.y = element_text (size = 11),
+         strip.text.x = element_text (size = 12.5)) +
+  ggnewscale::new_scale_color () +
+  geom_point (data = dat_WHOcase [notifs != 0][, `Data type` := "WHO reported cases"],
+              aes(x = year, y = notifs/1e3, shape = `Data type`),
+              size = 2, colour = custom_palette[7]) +
+  scale_shape_manual ("", values = 2) +
+  ggnewscale::new_scale_color () +
+       geom_pointrange (data = dat_IHME [, `Data type` := "IHME estimates"],
+                        shape = 20, size = 0.4,
+                        aes (x = year, y = est_cases/1e3,
+                             ymin = lower/1e3, ymax = upper/1e3, colour = `Data type`)) +
+   scale_colour_manual (name = " ", values = "#bdbdbd")
+dev.off()
+
+
+# # plot NNV estimates
+# pdf (paste0 (res_folder, "figures/figS9_nnv-r0.pdf"), width = 9, height = 7)
+# ggplot (data = nnv_r0_senanl [country != "Global"],
+#                aes(x = country_name, y = nnv)) +
+#   geom_col (aes(fill = comp_set), width = 0.8, colour = NA, size = 0,
+#             position = position_dodge()) +
+#   facet_wrap (vars(plt_r0), ncol = 1, scales = "free_y", labeller = label_parsed) +
+#   labs (x = "", y = "Estimated number needed to vaccinate") +
+#   scale_fill_manual ("Vaccination strategies compared to MCV1 only",
+#                      values = custom_palette[1:2]) +
+#   theme_bw () +
+#   theme (legend.position = "top",
+#          legend.text = element_text (size = 12),
+#          legend.title = element_text (size = 13),
+#          axis.title.y = element_text (size = 13.5, vjust = 2),
+#          strip.text.x = element_text (size = 12),
+#          axis.text.x = element_text (size = 12, angle = 60, hjust = 1),
+#          axis.text.y = element_text (size = 10),
+#          panel.grid.major = element_blank(),
+#          panel.grid.minor = element_blank(),
+#          panel.background = element_blank(),
+#          plot.margin = margin (0, 0.2, 0, 0.6, "cm"))
+# dev.off()
 
