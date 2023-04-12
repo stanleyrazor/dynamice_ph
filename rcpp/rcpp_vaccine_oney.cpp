@@ -61,12 +61,14 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 	double age_y = 1/tstep;  				              // annualy ageing rate per timestep
 	double wane = (12/6)/tstep;  		                  // waning rate maternal immunity per timestep (duration of 6 months)
 
-	int sia_index = 0;                                                 // index of SIA rounds in a single year
-	int sia_implement = as<int>(siaparm["sia_implement"]);             // method for distributing SIA doses; 0:No SIAs, 1:Portnoy's method, 2:7.7% never reached, 3:already-vaccinated first
-	IntegerVector alla0 = as<IntegerVector>(siaparm["a0"]);            // starting target age groups
-	IntegerVector alla1 = as<IntegerVector>(siaparm["a1"]);            // ending target age groups
-	NumericVector allsiacov = as<NumericVector>(siaparm["sia_cov"]);   // SIA coverage among total population
-	IntegerVector allsiamt = as<IntegerVector>(siaparm["sia_mt"]);     // SIA timesteps based on implementation month
+	int sia_index = 0;                                                     // index of SIA rounds in a single year
+	int sia_implement = as<int>(siaparm["sia_implement"]);                 // method for distributing SIA doses; 0:No SIAs, 1:Portnoy's method, 2:7.7% never reached, 3:already-vaccinated first
+	IntegerVector alla0 = as<IntegerVector>(siaparm["a0"]);                // starting target age groups
+	IntegerVector alla1 = as<IntegerVector>(siaparm["a1"]);                // ending target age groups
+	NumericVector allsiacov = as<NumericVector>(siaparm["siacov"]);       // SIA coverage among national/total population
+	NumericVector allsiacov_subnat = as<NumericVector>(siaparm["siacov_subnat"]);  // SIA coverage among subnational population
+	//IntegerVector allsiasubnat = as<IntegerVector>(siaparm["sia_subnat"]); // whether a campaign is at subnational level
+	IntegerVector allsiatstep = as<IntegerVector>(siaparm["sia_tstep"]);   // timesteps for strating SIAs
 	
     for (int t = t_start; t <= (t_start+tstep); ++t)
 	{
@@ -389,123 +391,134 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		
 		
 		// =================================================
-		// SIA with implementation years and months
+		// SIA with implementation years and days
 		// =================================================
 		if (sia_implement >= 1) 
 		{
-			if ((t - t_start + 1) >= allsiamt[sia_index])
+			if ((t - t_start + 1) >= allsiatstep[sia_index])
 			{
 				int a0 = alla0[sia_index];                // starting target age group for a specific SIA round
 				int a1 = alla1[sia_index];                // ending target age group for a specific SIA round
-				double siacov = allsiacov[sia_index];     // SIA coverage among total population for a specific SIA round
+				//int subnat = allsiasubnat[sia_index];     // whether a specific SIA round is at subnational level
+				double siacov = allsiacov[sia_index];     // SIA coverage among national population for a specific SIA round
+				double siacov_subnat = allsiacov_subnat[sia_index];     // SIA coverage among subnational population for a specific SIA round
 				in_Comp = clone(out_Comp);                // temporary compartments after including transmission and routine vaccination, 254 age groups, 14 states			
 				
-				Rcout << "time = " << t << ", SIA index = " << sia_index + 1 << "\n";
+				Rcout << "time = " << t << ", SIA index = " << sia_index + 1 << ", cov = " << siacov << "\n";
+				//if (sia_implement == 2 && subnat == 1){Rcout << "random reach, subnational campaign\n";}
+				//if (sia_implement == 2 && subnat == 0){Rcout << "7.7% less-likely-to-be-reached, national campaign\n";}
+				
+				double siadose = 0.0;                     // number of total SIA doses
+				double pop_0dose = 0.0, pop_vaced = 0.0;  // number of zero-dose and already-vaccinated populations 
 				
 				for (int a = (a0-1); a < a1; ++a) 
 				{
-					double siadose   = siacov*pop_full[a];                                                                    // number of total SIA doses
-					double pop_0dose = (in_Comp(a,i_M) + in_Comp(a,i_S) + in_Comp(a,i_I) + in_Comp(a,i_R))*pop_full[a];       // number of zero-dose population
-					double pop_vaced = (in_Comp(a,i_V1S) + in_Comp(a,i_V1I) + in_Comp(a,i_V1R) + 
-					                    in_Comp(a,i_V2S) + in_Comp(a,i_V2I) + in_Comp(a,i_V2R) + 
-										in_Comp(a,i_V3S) + in_Comp(a,i_V3I) + in_Comp(a,i_V3R))*pop_full[a]; // number of already-vaccinated population
-					double siacov1 = 0.0, siacov2 = 0.0;  // SIA coverages for zero-dose and already-vaccinated populations
-					
-					pop_0dose = pop_0dose + 1e-9;  // avoid zero population in coverage calculation
-					pop_vaced = pop_vaced + 1e-9;
+					siadose += siacov*pop_full[a];
+					pop_0dose += (in_Comp(a,i_M) + in_Comp(a,i_S) + in_Comp(a,i_I) + in_Comp(a,i_R))*pop_full[a];
+					pop_vaced += (in_Comp(a,i_V1S) + in_Comp(a,i_V1I) + in_Comp(a,i_V1R) + 
+					              in_Comp(a,i_V2S) + in_Comp(a,i_V2I) + in_Comp(a,i_V2R) + 
+							      in_Comp(a,i_V3S) + in_Comp(a,i_V3I) + in_Comp(a,i_V3R))*pop_full[a];
+				}
 				
-				    //	// SIA implementation based on the weighted logistic function using Portnoy's data
-				    //	if (sia_implement == 1)
-				    //	{
-				    //		double siacov_0dose = exp(-2.621733 + 5.238249*siacov)/(1.0 + exp(-2.621733 + 5.238249*siacov)); // estimated SIA coverage among zero-dose children
-				    //		double siadose_0dose = siacov_0dose*pop_0dose;  // number of zero-dose population receiving SIA
-				    //		
-				    //		if (siadose < siadose_0dose) 
-				    //		{
-				    //			siacov1 = siadose/pop_0dose;
-				    //			siacov2 = 0.0;  
-				    //		}
-				    //		else 
-				    //		{
-				    //			if ((siadose - siadose_0dose) >= pop_vaced)
-				    //			{
-				    //				siacov1 = (siadose-pop_vaced)/pop_0dose;
-				    //			    siacov2 = 1.0;
-				    //			}
-				    //			else
-				    //			{
-				    //				siacov1 = siacov_0dose;
-				    //				siacov2 = (siadose - siadose_0dose)/pop_vaced;
-				    //			}
-				    //		}
-				    //	} 
-					
-				    // SIA implementation assuming 7.7% of population are never reached				    
-                    if (sia_implement == 2)					
-				    {
-                        double pr_0dose = pop_0dose/(pop_0dose + pop_vaced);  // proportion of zero-dose population
-				    	
-				    	if ((siacov < 0.923) && (pr_0dose > 0.077))
-				    	{   // doses given randomly to the population except for the never-reached 
-				    		siacov1 = (siadose*(pr_0dose-0.077)/(1.0-0.077))/pop_0dose;
-				    		siacov2 = (siadose*(1.0-pr_0dose)/(1.0-0.077))/pop_vaced;						
-				    	}
-				    	else 
-				    	{   // doses first given to already-vaccinated and then to zero-dose populations				
-				    	    if (siadose > pop_vaced)
-				    		{
-				    			siacov1 = (siadose-pop_vaced)/pop_0dose; 
-				    			siacov2 = 1.0;
-				    		} 
-				    		else
-				    		{
-				    			siacov1 = 0.0; 
-				    			siacov2 = siadose/pop_vaced;
-				    		}
-				    	}
-				    }
+				// SIA coverages for zero-dose and already-vaccinated populations
+				// baseline assumption & for subnational campaigns: random reach
+				double siacov1 = siacov, siacov2 = siacov;  
+
+				if (siacov < 1.0 && siacov_subnat < 1.0)
+				{
+					// SIA implementation assuming 7.7% less likely to be reached at national level			    
+					if (sia_implement == 2)					
+					{
+						double pr_0dose = pop_0dose/(pop_0dose + pop_vaced);  // proportion of zero-dose population
+						
+						if (siacov < (1.0-0.077) && pr_0dose > 0.077)
+						{   // doses given randomly to the population except for the 7.7%
+							siacov1 = siadose*((pr_0dose-0.077)/(1.0-0.077))/pop_0dose;
+							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;						
+						}
+						else 
+						{   // doses first given to already-vaccinated and then to zero-dose populations				
+							if (siadose > pop_vaced)
+							{
+								siacov1 = (siadose-pop_vaced)/pop_0dose; 
+								siacov2 = 1.0;
+							} 
+							else
+							{
+								siacov1 = 0.0; 
+								siacov2 = siadose/pop_vaced;
+							}
+						}
+						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
+					}
 					
 					// SIA implementation assuming zero-dose first reached				    
-                    if (sia_implement == 3)					
-				    {
-                        if (siadose > pop_0dose)
-				    	{
-				    		siacov1 = 1.0; 
-				    		siacov2 = (siadose-pop_0dose)/pop_vaced;
-				    	} 
-				    	else
-				    	{
-				    		siacov1 = siadose/pop_0dose; 
-				    		siacov2 = 0.0;
-				    	}
-				    }
+					if (sia_implement == 3)					
+					{
+						if (siadose > pop_0dose)
+						{
+							siacov1 = 1.0; 
+							siacov2 = (siadose-pop_0dose)/pop_vaced;
+						} 
+						else
+						{
+							siacov1 = siadose/pop_0dose; 
+							siacov2 = 0.0;
+						}
+					}
 					
 					// SIA implementation assuming already-vaccinated first reached				    
-                    if (sia_implement == 4)					
-				    {
-                        if (siadose > pop_vaced)
-				    	{
-				    		siacov1 = (siadose-pop_vaced)/pop_0dose; 
-				    		siacov2 = 1.0;
-				    	} 
-				    	else
-				    	{
-				    		siacov1 = 0.0; 
-				    		siacov2 = siadose/pop_vaced;
-				    	}
-				    }
-				    //if (a == 100)
-					//{
-					//Rcout << "Age group = " << a+1 << ", total doses = " << siadose << "\n"; 
-					//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";      
-				    //}
+					if (sia_implement == 4)					
+					{
+						if (siadose > pop_vaced)
+						{
+							siacov1 = (siadose-pop_vaced)/pop_0dose; 
+							siacov2 = 1.0;
+						} 
+						else
+						{
+							siacov1 = 0.0; 
+							siacov2 = siadose/pop_vaced;
+						}
+					}
 					
-				    if (siacov1 > 1.0) {siacov1 = 1.0;} 
-				    if (siacov2 > 1.0) {siacov2 = 1.0;} 
+					// SIA implementation assuming 7.7% less likely to reached at 'subnational' population
+					if (sia_implement == 5)					
+					{
+						double pr_0dose = pop_0dose/(pop_0dose + pop_vaced);  // proportion of zero-dose population
+
+						if (siacov_subnat < (1.0-0.077) && pr_0dose > 0.077)
+						{   // doses given randomly to the population except for the 7.7%
+							siacov1 = siadose*((pr_0dose-0.077)/(1.0-0.077))/pop_0dose;
+							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;						
+						}
+						else 
+						{   // doses first given to already-vaccinated and then to zero-dose populations at 'subnational' level				
+							double pop_vaced_subnat = pop_vaced*(siacov/siacov_subnat);  //number of subnational already-vaccinated population
+							if (siadose > pop_vaced_subnat)
+							{
+								siacov1 = (siadose-pop_vaced_subnat)/pop_0dose; 
+								siacov2 = pop_vaced_subnat/pop_vaced;
+							} 
+							else
+							{
+								siacov1 = 0.0; 
+								siacov2 = siadose/pop_vaced;
+							}
+						}
+						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
+					}
+					
+					if (siacov1 > 1.0 || siacov2 > 1.0) 
+					{
+						Rcout << "warning! SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
+					} 
+				}
 				
-				    // campaign vaccination - SIA
-				    double n_eff = 0.0, n_v1 = 0.0, p_eff = 0.0, ve2 = 0.0;  // initialise for later calculations
-				    
+				// campaign vaccination - SIA
+				double n_eff = 0.0, n_v1 = 0.0, p_eff = 0.0, ve2 = 0.0;  // initialise for later calculations
+				for (int a = (a0-1); a < a1; ++a)
+				{					        
 					out_Comp(a,i_M)     = in_Comp(a,i_M)
 										- in_Comp(a,i_M)*siacov1;     
 									

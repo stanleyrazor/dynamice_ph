@@ -1,1 +1,1 @@
-vaccine,country_code,country,year,start_m,age_first,age_last,age_range_verbatim,target,coverage,a0,a1,reached
+vaccine,country_code,country,year,extent,mid_day,age_first,age_last,age_range_verbatim,target,coverage,coverage_subnat,a0,a1
