@@ -75,21 +75,20 @@ var <- list (
   countries                         = eva_countries
 )
 
-
 # prepare coverage inputs
-vaccine_strategies <- c("nomcv",                 # (1) no vaccination
-                        "mcv1",                  # (2) MCV1 only
-                        "mcv1-mcv2",             # (3) MCV1 + MCV2
-                        "mcv1-mcv2-sia",         # (4) MCV1 + MCV2 + SIA
-                        "mcv1-sia",              # (5) MCV1 + SIA
-                        "mcv1-mcv2alt1",         # (6) MCV1 + MCV2(early intro, fast rollout)
-                        "mcv1-mcv2alt1-sia",     # (7) MCV1 + MCV2(early intro, fast rollout) + SIA
-                        "mcv1-mcv2-siaalt1",     # (8) MCV1 + MCV2 + SIA(zero dose first)
-                        "mcv1-mcv2-siaalt2",     # (9) MCV1 + MCV2 + SIA(already vaccinated first)
-                        "mcv1-siaalt1",          # (10) MCV1 + SIA(zero dose first)
-                        "mcv1-siaalt2",          # (11) MCV1 + SIA(already vaccinated first)
-                        "mcv1-mcv2alt1-siaalt1", # (12) MCV1 + MCV2(early intro) + SIA(zero dose first)
-                        "mcv1-mcv2alt2"          # (13) MCV1 + MCV2(early intro, gradual rollout)
+vac_strategies <- c("nomcv",                 # (1) no vaccination
+                    "mcv1",                  # (2) MCV1 only
+                    "mcv1-mcv2",             # (3) MCV1 + MCV2
+                    "mcv1-mcv2-sia",         # (4) MCV1 + MCV2 + SIA
+                    "mcv1-sia",              # (5) MCV1 + SIA
+                    "mcv1-mcv2alt1",         # (6) MCV1 + MCV2(early intro, fast rollout)
+                    "mcv1-mcv2alt1-sia",     # (7) MCV1 + MCV2(early intro, fast rollout) + SIA
+                    "mcv1-mcv2-siaalt1",     # (8) MCV1 + MCV2 + SIA(zero dose first)
+                    "mcv1-mcv2-siaalt2",     # (9) MCV1 + MCV2 + SIA(already vaccinated first)
+                    "mcv1-siaalt1",          # (10) MCV1 + SIA(zero dose first)
+                    "mcv1-siaalt2",          # (11) MCV1 + SIA(already vaccinated first)
+                    "mcv1-mcv2alt1-siaalt1", # (12) MCV1 + MCV2(early intro) + SIA(zero dose first)
+                    "mcv1-mcv2alt2"          # (13) MCV1 + MCV2(early intro, gradual rollout)
 )
 
 # set SIAs implementation method for each scenario
@@ -119,7 +118,7 @@ if(adj.covfiles){
       vaccine_coverage_subfolder = var$vaccine_coverage_subfolder,
       coverage_prefix            = var$coverage_prefix,
       touchstone                 = var$touchstone,
-      scenario_name              = vaccine_strategies [index]
+      scenario_name              = vac_strategies [index]
     )
   }
 }
@@ -136,7 +135,7 @@ for (isia in c(1,2,5)){
 
   for (index in sel_scns){
 
-    scenario_name  <- vaccine_strategies [index]
+    scenario_name  <- vac_strategies [index]
     print (scenario_name)
     scenario_number <- sprintf ("scenario%02d", index)
 
@@ -157,14 +156,13 @@ for (isia in c(1,2,5)){
 
     # separately estimate dalys
     burden_estimate_file <- paste0 ("central_burden_estimate_",
-                                    scenario_name,
-                                    ".csv")
+                                    scenario_name, ".csv")
 
     # merge outputs into csv files
     get_burden_estimate (vaccine_coverage_folder    = var$vaccine_coverage_folder,
                          vaccine_coverage_subfolder = var$vaccine_coverage_subfolder,
-                         scenario_name              = vaccine_strategies [index],
-                         save_scenario              = sprintf ("scenario%02d", index),
+                         scenario_name              = vac_strategies [index],
+                         save_scenario              = scenario_number,
                          burden_estimate_folder     = var$burden_estimate_folder,
                          log_name                   = var$log_name,
                          vaccination                = set_vaccination [index],
@@ -174,14 +172,14 @@ for (isia in c(1,2,5)){
 
   }
     # move files to a specified folder
-    res_files <- list.files ("central_burden_estimate/")
+    res_files <- list.files (var$burden_estimate_folder)
     dir.create (paste0 ("previous_res/20230401/siareach_", isia, "/"))
-    file.rename (from = paste0 ("central_burden_estimate/", res_files),
+    file.rename (from = paste0 (var$burden_estimate_folder, res_files),
                  to = paste0 ("previous_res/20230401/siareach_", isia, "/", res_files))
 }
 
 # analyse burden estimates under different R0
-set_sia <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4, 3, 0) # set back to the orginal assumptions
+set_sia <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4, 3, 0) # set back to the oringinal assumptions
 
 for (ir0 in c(seq(6,26,2))) {
   # vary R0 values
@@ -196,7 +194,7 @@ for (ir0 in c(seq(6,26,2))) {
 
   for (index in sel_scns){
 
-    scenario_name  <- vaccine_strategies [index]
+    scenario_name   <- vac_strategies [index]
     scenario_number <- sprintf ("scenario%02d", index)
 
     # run model and estimate cases
@@ -214,14 +212,14 @@ for (ir0 in c(seq(6,26,2))) {
       sim_years                  = 1980:2020
     )
 
-    # separately estimate dalys
+    # separately estimate deaths
     burden_estimate_file <- paste0 ("central_burden_estimate_",
                                     scenario_name, ".csv")
 
     # merge outputs into csv files
     get_burden_estimate (vaccine_coverage_folder    = var$vaccine_coverage_folder,
                          vaccine_coverage_subfolder = var$vaccine_coverage_subfolder,
-                         scenario_name              = vaccine_strategies [index],
+                         scenario_name              = vac_strategies [index],
                          save_scenario              = sprintf ("scenario%02d", index),
                          burden_estimate_folder     = var$burden_estimate_folder,
                          log_name                   = var$log_name,
@@ -239,7 +237,7 @@ for (ir0 in c(seq(6,26,2))) {
   }
 }
 # move files to a specified folder
-res_files <- list.files ("central_burden_estimate/")
+res_files <- list.files (var$burden_estimate_folder)
 dir.create (paste0 ("previous_res/20230401/siareach_2/senanl_r0"))
-file.rename (from = paste0 ("central_burden_estimate/", res_files),
+file.rename (from = paste0 (var$burden_estimate_folder, res_files),
              to = paste0 ("previous_res/20230401/siareach_2/senanl_r0/", res_files))
