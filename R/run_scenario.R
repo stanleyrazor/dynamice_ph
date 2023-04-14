@@ -26,6 +26,11 @@ eva_countries <- c("IND", "NGA", "IDN", "ETH", "CHN",
                    "PHL", "UGA", "COD", "PAK", "AGO",
                    "MDG", "UKR", "MWI", "SOM")
 
+# # check percentage of birth cohorts
+# sum(data_pop [age_from == 0 & year %in% 2010:2019 & country_code %in% eva_ctries, value])/
+#   sum(data_pop [age_from == 0 & year %in% 2010:2019, value])
+# # 52.7%
+
 # add data for country-specific age at vaccination
 # https://immunizationdata.who.int/pages/schedule-by-disease/measles.html
 # input monthly age and then covert to weekly age for dynaMICE structure
