@@ -1,5 +1,5 @@
 # plot_results.R
-# update: 2023/04/12
+# update: 2023/06/19
 
 library(data.table)
 library(ggplot2)
@@ -383,14 +383,16 @@ fwrite (x = tab_sus,
 # ------------------------------------------------------------------------------
 ## calculate averted burden and number needed to vaccinate (NNV)
 # ------------------------------------------------------------------------------
-# check absolute and relative case reduction
+# check absolute case reduction
 sel_vacc_impact <- cal_avtnnv (cum_burden, "nomcv", "mcv1")
 setorder (sel_vacc_impact, pr_red_cases)
 sel_vacc_impact [country != "Global"]
 setorder (sel_vacc_impact, avt_cases)
 sel_vacc_impact [country != "Global"]
-sel_vacc_impact <- cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2alt1")
-# Global averted cases: 96804681
+
+cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2alt1") [country == "Global", avt_cases] # 96804681
+cal_avtnnv (cum_burden, "mcv1-mcv2", "mcv1-mcv2alt2") [country == "Global", avt_cases] # 74521266
+
 
 # combine results of all comparison pairs
 all_avtnnv <- rbind (cal_avtnnv (cum_burden, "nomcv", "mcv1"),
@@ -443,6 +445,7 @@ setorder (output_case, country)
 fwrite (x = output_case [, ..sel_cols_tab1],
         file = paste0 (output_folder, "tab1_avtcase.csv"))
 
+
 # Table S4: Averted deaths
 output_death [, (value_cols) := lapply (.SD, function (avt_burden){
   return (avt_burden/1000)}),
@@ -474,8 +477,21 @@ output_nnv [is.na(country), `:=` (country_name = "Median", country = "Median")]
 fwrite (x = output_nnv [country != "Global"],
         file = paste0 (output_folder, "tab2_nnv.csv"))
 
-median (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2alt1_VS_mcv1", nnv])
-median (all_avtnnv [country_name != "Global" & comp_set == "mcv1-siaalt1_VS_mcv1", nnv])
+# report IQRs for NNV estimates
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2_VS_mcv1", nnv],
+          prob = c(.25, .5, .75), na.rm = TRUE)
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-sia_VS_mcv1", nnv],
+          prob = c(.25, .5, .75))
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2-sia_VS_mcv1-mcv2", nnv],
+          prob = c(.25, .5, .75))
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2-sia_VS_mcv1-sia", nnv],
+          prob = c(.25, .5, .75), na.rm = TRUE)
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-mcv2alt1_VS_mcv1", nnv],
+          prob = c(.25, .5, .75), na.rm = TRUE)
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-siaalt1_VS_mcv1", nnv],
+          prob = c(.25, .5, .75))
+quantile (all_avtnnv [country_name != "Global" & comp_set == "mcv1-siaalt2_VS_mcv1", nnv],
+          prob = c(.25, .5, .75))
 
 
 # ------------------------------------------------------------------------------
