@@ -1,5 +1,5 @@
 # run_scenario
-# execute simulations for MR-MAPs scenarios
+# execute simulations for different vaccination scenarios
 # update: 2023/04/07
 
 rm(list = ls())
@@ -17,8 +17,8 @@ load(file = "data/data_pop.rda")
 load(file = "data/data_cfr_portnoy_21.rda")
 load(file = "data/data_contact_syn.rda")
 load(file = "data/data_r0.rda")
-load(file = "data/data_timeliness_maps.rda")
-load(file = "data/data_lexp_remain_maps.rda")
+load(file = "data/data_timeliness.rda")
+load(file = "data/data_lexp_remain.rda")
 load(file = "data/data_template.rda")
 
 # list countries for analysis
@@ -128,6 +128,9 @@ if(adj.covfiles){
   }
 }
 
+# create a folder for burden estimates results
+dir.create (file.path (paste0 (getwd(), "/", var$burden_estimate_folder)), recursive = T)
+
 # run model by different SIA methods
 for (isia in c(1,2,5)){
   if (isia == 2){
@@ -172,11 +175,11 @@ for (isia in c(1,2,5)){
                          log_name                   = var$log_name,
                          vaccination                = set_vaccination [index],
                          using_sia                  = set_sia         [index],
-                         folder_date                = "20230401",
+                         folder_date                = "20230401", # select the correct folder
                          sim_years                  = 1980:2020)
 
   }
-    # move files to a specified folder
+    # move files to a specified folder to avoid results being overwritten
     res_files <- list.files (var$burden_estimate_folder)
     dir.create (paste0 ("previous_res/20230401/siareach_", isia, "/"))
     file.rename (from = paste0 (var$burden_estimate_folder, res_files),
@@ -230,7 +233,7 @@ for (ir0 in c(seq(6,26,2))) {
                          log_name                   = var$log_name,
                          vaccination                = set_vaccination [index],
                          using_sia                  = set_sia         [index],
-                         folder_date                = "20230401",
+                         folder_date                = "20230401",  # select the correct folder
                          sim_years                  = 1980:2020)
 
     # rename file
