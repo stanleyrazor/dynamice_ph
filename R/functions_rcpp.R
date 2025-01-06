@@ -100,6 +100,7 @@ runCountry_rcpp <- function (
   # country-specific age at vaccination for MCV2
   parms_rcpp$vage2 <- as.integer (data_vage [country_code == iso3, "mcv2"])
 
+
   # expand 0-2 years old to weekly age strata
   s         <- 52 # number of finer stages within an age band (weekly ages, so 52)
   jt        <- 3  # how many ages to expand to s (or to weeks)
@@ -185,7 +186,8 @@ runCountry_rcpp <- function (
     # run spin-up period
     if (y == years[1]){
       out_Comp <- rcpp_spinup (init_Comp, parms_rcpp, beta_full, pop.vector_full, length(t_spinup))
-      # print ('Spin-up period finished')
+      save(out_Comp, file = paste0("spinoff_files/out_Comp_", iso3, ".RData"))
+      print ('Spin-up period finished')
     }
 
     if (vaccination >= 1) {
@@ -397,7 +399,7 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
 
   # create folders with correct name for in- and output data if not yet exists
   # typically foldername should not exist - but may come in handy when only processing results
-  if ( !exists("foldername_analysis") ) {
+  {if ( !exists("foldername_analysis") ) {
 
     foldername <- paste0 (
       format(Sys.time(),format="%Y%m%d"),
@@ -419,7 +421,7 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
     )
   } else {
     foldername <- foldername_analysis
-  }
+  }}
 
 
   # --------------------------------------------------------------------------
@@ -447,15 +449,17 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
   template    		  <- setDT (data_template)
 
   # use synthetic contact matrices
-  contact_list <- sapply (countries,
+  contact_list <- sapply ("KEN", # it should be `countries`
                           function(cty){data_contact_syn[[cty]]},
                           simplify = FALSE, USE.NAMES = TRUE)
+  # names(contact_list) <- countries
 
 
   # ----------------------------------------------------------------------------
   # Run model
   # ----------------------------------------------------------------------------
   for (iso3 in countries) {
+    message("Running region code: ", iso3)
     out_run <- runCountry_rcpp (iso3               = iso3,
                                 years              = as.numeric (sim_years),
                                 vaccination        = vaccination,
@@ -464,7 +468,8 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
                                 c_coverage_routine = coverage_routine[country_code == iso3,],
                                 c_coverage_sia     = coverage_sia[country_code == iso3 & coverage != 0,],
                                 c_timeliness       = timeliness[country_code == iso3,],
-                                c_contact          = contact_list[[iso3]],
+                                #* c_contact          = contact_list[[iso3]],
+                                c_contact          = contact_list[["KEN"]],
                                 c_rnought          = rnought[country_code == iso3, r0],
                                 c_population       = population[country_code == iso3,],
                                 save_scenario      = save_scenario,
@@ -527,15 +532,15 @@ runScenario_rcpp <- function (vaccine_coverage_folder    = "",
 #'   )
 #'   }
 get_burden_estimate <- function (vaccine_coverage_folder,
-                            vaccine_coverage_subfolder,
-                            scenario_name,
-                            save_scenario,
-                            burden_estimate_folder,
-                            log_name,
-                            vaccination,
-                            using_sia,
-                            folder_date,
-                            sim_years
+                                 vaccine_coverage_subfolder,
+                                 scenario_name,
+                                 save_scenario,
+                                 burden_estimate_folder,
+                                 log_name,
+                                 vaccination,
+                                 using_sia,
+                                 folder_date,
+                                 sim_years
 ) {
   # ----------------------------------------------------------------------------
   # merge and process results
@@ -653,17 +658,18 @@ get_burden_estimate <- function (vaccine_coverage_folder,
 
   min_year = min (all_runs [, year])
   max_year = max (all_runs [, year])
-  data_cfr_21 <- data_cfr_21 [year %in% min_year:max_year & country %in% sel_countries]
+  data_cfr_21 <- data_cfr_21 [year %in% min_year:max_year & country_code %in% sel_countries]
+  #* data_cfr_21 <- data_cfr_21 [year %in% min_year:max_year & country %in% sel_countries]
 
-  if (min_year < 1981) {
+  {if (min_year < 1981) {
     data_cfr_add <- rbindlist (lapply (min_year:1981, function(i) copy (data_cfr_21 [year == 1981, ])[, year := i]))
     data_cfr_21  <- rbind     (data_cfr_add, data_cfr_21, use.names = TRUE)
-  }
+  }}
 
-  if (max_year > 2020) {
+  {if (max_year > 2020) {
     data_cfr_add <- rbindlist (lapply (2021:max_year, function(i) copy (data_cfr_21 [year == 2020, ])[, year := i]))
     data_cfr_21  <- rbind     (data_cfr_21, data_cfr_add, use.names = TRUE)
-  }
+  }}
 
   data_cfr_21  <- rbind (data_cfr_21,
                          copy (data_cfr_21 [age == 99, ])[, age := 100],
@@ -674,9 +680,16 @@ get_burden_estimate <- function (vaccine_coverage_folder,
                            .(disease, year, age, country, country_name,
                              pops, pops0d, popsSus, cases0d, cases1d, cases2d, doses,
                              reachs0d, fvps, cfr, remain_lexp),
-                           on = .(country = country,
+                           on = .(country_code = country,
                                   year    = year,
                                   age     = age)]
+  #* all_runs <- data_cfr_21 [all_runs,
+  #*                          .(disease, year, age, country, country_name,
+  #*                            pops, pops0d, popsSus, cases0d, cases1d, cases2d, doses,
+  #*                            reachs0d, fvps, cfr, remain_lexp),
+  #*                          on = .(country = country,
+  #*                                 year    = year,
+  #*                                 age     = age)]
 
   # estimate deaths
   all_runs [, `:=` (deaths0d = cases0d * cfr,

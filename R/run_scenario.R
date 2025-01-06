@@ -25,6 +25,7 @@ load(file = "data/data_template.rda")
 eva_countries <- c("IND", "NGA", "IDN", "ETH", "CHN",
                    "PHL", "UGA", "COD", "PAK", "AGO",
                    "MDG", "UKR", "MWI", "SOM")
+eva_countries <- "CHN"
 
 # # check percentage of birth cohorts
 # sum(data_pop [age_from == 0 & year %in% 2010:2019 & country_code %in% eva_ctries, value])/
@@ -53,9 +54,9 @@ for (ictry in data_vage [mcv1 != 39, country_code]){
 # assume a fixed R0 for the central run
 # median R0 for least developed countries, vaccine era, from Guerra et al. (2017)
 adj.fixR0 = 15.9  # NA
-if (!is.na(adj.fixR0)){
+{if (!is.na(adj.fixR0)){
   data_r0 <- copy (data_r0 [country_code %in% eva_countries]) [ , r0 := adj.fixR0]
-}
+}}
 
 # load functions
 source ("R/logs.R")
@@ -115,7 +116,7 @@ set_vaccination <- c (0, 1, 2, 2, 1, 2, 2, 2, 2, 1, 1, 2, 2)
 
 # prepare coverage input data - update when the data are changed
 adj.covfiles <- FALSE
-if(adj.covfiles){
+{if(adj.covfiles){
   # generate 2 coverage input files for routine and SIA vaccination
   for (index in 1:length(vaccine_strategies)){
     create_vaccine_coverage_routine_sia (
@@ -126,7 +127,7 @@ if(adj.covfiles){
       scenario_name              = vac_strategies [index]
     )
   }
-}
+}}
 
 # create a folder for burden estimates results
 dir.create (file.path (paste0 (getwd(), "/", var$burden_estimate_folder)), recursive = T)
@@ -190,6 +191,7 @@ for (isia in c(1,2,5)){
 set_sia <- c (0, 0, 0, 2, 2, 0, 2, 3, 4, 3, 4, 3, 0) # set back to the oringinal assumptions
 
 for (ir0 in c(seq(6,26,2))) {
+
   # vary R0 values
   data_r0 <- copy (data_r0) [ , r0 := ir0]
   source ("R/functions_rcpp.R")

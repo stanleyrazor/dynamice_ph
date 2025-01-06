@@ -1,5 +1,5 @@
 #define _USE_MATH_DEFINES
-#include <math.h>  
+#include <math.h>
 #include <Rcpp.h>
 using namespace Rcpp;
 
@@ -8,7 +8,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 	NumericVector pop_full, NumericVector cov1, double cov2, int t_start)
 {
 	/* This function runs measles transmission, ageing, and vaccination at a specific age group and timestep
-	during calendar years for sumulation. 
+	during calendar years for sumulation.
 	chang log: 04 May 2022 - MCV2 given to one-dose population only*/
 
 	// =================================================
@@ -69,7 +69,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 	NumericVector allsiacov_subnat = as<NumericVector>(siaparm["siacov_subnat"]);  // SIA coverage among subnational population
 	//IntegerVector allsiasubnat = as<IntegerVector>(siaparm["sia_subnat"]); // whether a campaign is at subnational level
 	IntegerVector allsiatstep = as<IntegerVector>(siaparm["sia_tstep"]);   // timesteps for strating SIAs
-	
+
     for (int t = t_start; t <= (t_start+tstep); ++t)
 	{
 		// =================================================
@@ -88,8 +88,8 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 			newinfect_2d[a] += lambda*(in_Comp(a,i_V2S) + in_Comp(a,i_V3S));
             //Rcout << "Age group = " << a+1 << "\n" // print out FOI to check
             //      << "FOI = " << lambda << "\n";
-            //Rcout << "time = " << t << ", age = " << a+1 << ", newinfect = " << newinfect[a] << "\n"; 
-			
+            //Rcout << "time = " << t << ", age = " << a+1 << ", newinfect = " << newinfect[a] << "\n";
+
             trans_Comp(a,i_M)   = in_Comp(a,i_M);
             trans_Comp(a,i_S)   = in_Comp(a,i_S)   - lambda*in_Comp(a,i_S);
             trans_Comp(a,i_I)   = in_Comp(a,i_I)   + lambda*in_Comp(a,i_S)   - gamma*in_Comp(a,i_I);
@@ -125,28 +125,28 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				if (n_1dose > 0.0) {adjcov2 = cov2/n_1dose;}
 				//if (t == (t_start + tstep/2)) {Rcout << "MCV2 coverage for age " << a+1 << ": " << cov2 << " -> " << adjcov2 << "\n";}
 				if (adjcov2 > 1.0) {adjcov2 = 1.0;}
-				
+
 				out_Comp(vage2,i_M) = trans_Comp(vage2,i_M) - age_y*trans_Comp(vage2,i_M) + age_y*trans_Comp(vage2-1,i_M) - wane*trans_Comp(vage2,i_M);
 				out_Comp(vage2,i_S) = trans_Comp(vage2,i_S) - age_y*trans_Comp(vage2,i_S) + age_y*trans_Comp(vage2-1,i_S) + wane*trans_Comp(vage2,i_M);
 				out_Comp(vage2,i_I) = trans_Comp(vage2,i_I) - age_y*trans_Comp(vage2,i_I) + age_y*trans_Comp(vage2-1,i_I);
 				out_Comp(vage2,i_R) = trans_Comp(vage2,i_R) - age_y*trans_Comp(vage2,i_R) + age_y*trans_Comp(vage2-1,i_R);
-				
+
 				out_Comp(vage2,i_V1S) = trans_Comp(vage2,i_V1S)
 								- age_y*trans_Comp(vage2,i_V1S)
 								+ age_y*trans_Comp(vage2-1,i_V1S)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1I) = trans_Comp(vage2,i_V1I)
 								- age_y*trans_Comp(vage2,i_V1I)
 								+ age_y*trans_Comp(vage2-1,i_V1I)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1R) = trans_Comp(vage2,i_V1R)
 								- age_y*trans_Comp(vage2,i_V1R)
 								+ age_y*trans_Comp(vage2-1,i_V1R)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1F) = trans_Comp(vage2,i_V1F)
 								- age_y*trans_Comp(vage2,i_V1F)
 								+ age_y*trans_Comp(vage2-1,i_V1F)*(1.0-adjcov2);
-				
+
 				n_eff = out_Comp(vage2-1,i_V1F);  // number of children effectively protected by MCV1
 				n_v1 = out_Comp(vage2-1,i_V1S) + out_Comp(vage2-1,i_V1I) + out_Comp(vage2-1,i_V1R);  // number of children received MCV1
 				if (n_v1 > 0.0)
@@ -159,39 +159,39 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				{
 					ve2 = ve2plus;
 				}
-				
+
 				out_Comp(vage2,i_V2S) = trans_Comp(vage2,i_V2S)
 								- age_y*trans_Comp(vage2,i_V2S)
 								+ age_y*trans_Comp(vage2-1,i_V2S)
 								+ age_y*trans_Comp(vage2-1,i_V1S)*adjcov2*(1.0-ve2);
-				
+
 				out_Comp(vage2,i_V2I) = trans_Comp(vage2,i_V2I)
 								- age_y*trans_Comp(vage2,i_V2I)
 								+ age_y*trans_Comp(vage2-1,i_V2I)
 								+ age_y*trans_Comp(vage2-1,i_V1I)*adjcov2;
-				
+
 				out_Comp(vage2,i_V2R) = trans_Comp(vage2,i_V2R)
 								- age_y*trans_Comp(vage2,i_V2R)
 								+ age_y*trans_Comp(vage2-1,i_V2R)
 								+ age_y*trans_Comp(vage2-1,i_V1S)*adjcov2*ve2
 								+ age_y*trans_Comp(vage2-1,i_V1R)*adjcov2;
-				
+
 				// ve3 = 0, no additional protection for the third dose
 				out_Comp(vage2,i_V3S) = trans_Comp(vage2,i_V3S)
 								- age_y*trans_Comp(vage2,i_V3S)
 								+ age_y*trans_Comp(vage2-1,i_V3S);
-				
+
 				out_Comp(vage2,i_V3I) = trans_Comp(vage2,i_V3I)
 								- age_y*trans_Comp(vage2,i_V3I)
 								+ age_y*trans_Comp(vage2-1,i_V3I);
-				
+
 				out_Comp(vage2,i_V3R) = trans_Comp(vage2,i_V3R)
 								- age_y*trans_Comp(vage2,i_V3R)
 								+ age_y*trans_Comp(vage2-1,i_V3R);
-								
+
 				// calculate administrated doses and zero-dose population reached
-				newdose[vage2] += age_y*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;	
-				newfvp[vage2]  += age_y*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;	
+				newdose[vage2] += age_y*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;
+				newfvp[vage2]  += age_y*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;
 			}
 			else
 			{   // ageing only and no vaccination
@@ -225,41 +225,41 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				if (n_1dose > 0.0) {adjcov2 = cov2/n_1dose;}
 				//if (t == (t_start + tstep/2)) {Rcout << "MCV2 coverage for age " << a+1 << ": " << cov2 << " -> " << adjcov2 << "\n";}
 				if (adjcov2 > 1.0) {adjcov2 = 1.0;}
-				
+
 				out_Comp(vage2,i_M)   = trans_Comp(vage2,i_M)
 								- age_w*trans_Comp(vage2,i_M)
 								+ age_w*trans_Comp(vage2-1,i_M)
 								- wane *trans_Comp(vage2,i_M);
-				
+
 				out_Comp(vage2,i_S)   = trans_Comp(vage2,i_S)
 								- age_w*trans_Comp(vage2,i_S)
 								+ age_w*trans_Comp(vage2-1,i_S)
 								+ wane *trans_Comp(vage2,i_M);
-				
+
 				out_Comp(vage2,i_I)   = trans_Comp(vage2,i_I)
 								- age_w*trans_Comp(vage2,i_I)
 								+ age_w*trans_Comp(vage2-1,i_I);
-				
+
 				out_Comp(vage2,i_R)   = trans_Comp(vage2,i_R)
 								- age_w*trans_Comp(vage2,i_R)
 								+ age_w*trans_Comp(vage2-1,i_R);
-				
+
 				out_Comp(vage2,i_V1S) = trans_Comp(vage2,i_V1S)
 								- age_w*trans_Comp(vage2,i_V1S)
 								+ age_w*trans_Comp(vage2-1,i_V1S)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1I) = trans_Comp(vage2,i_V1I)
 								- age_w*trans_Comp(vage2,i_V1I)
 								+ age_w*trans_Comp(vage2-1,i_V1I)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1R) = trans_Comp(vage2,i_V1R)
 								- age_w*trans_Comp(vage2,i_V1R)
 								+ age_w*trans_Comp(vage2-1,i_V1R)*(1.0-adjcov2);
-				
+
 				out_Comp(vage2,i_V1F) = trans_Comp(vage2,i_V1F)
 								- age_w*trans_Comp(vage2,i_V1F)
 								+ age_w*trans_Comp(vage2-1,i_V1F)*(1.0-adjcov2);
-				
+
 				n_eff = out_Comp(vage2-1,i_V1F);  // number of children effectively protected by MCV1
 				n_v1 = out_Comp(vage2-1,i_V1S) + out_Comp(vage2-1,i_V1I) + out_Comp(vage2-1,i_V1R);  // number of children received MCV1
 				if (n_v1 > 0.0)
@@ -273,95 +273,95 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 					ve2 = ve2plus;
 				}
 				//Rcout << "\n2nd dose efficacy: " << ve2 << "\n ";
-				
+
 				out_Comp(vage2,i_V2S) = trans_Comp(vage2,i_V2S)
 								- age_w*trans_Comp(vage2,i_V2S)
 								+ age_w*trans_Comp(vage2-1,i_V2S)
 								+ age_w*trans_Comp(vage2-1,i_V1S)*adjcov2*(1.0-ve2);
-				
+
 				out_Comp(vage2,i_V2I) = trans_Comp(vage2,i_V2I)
 								- age_w*trans_Comp(vage2,i_V2I)
 								+ age_w*trans_Comp(vage2-1,i_V2I)
 								+ age_w*trans_Comp(vage2-1,i_V1I)*adjcov2;
-				
+
 				out_Comp(vage2,i_V2R) = trans_Comp(vage2,i_V2R)
 								- age_w*trans_Comp(vage2,i_V2R)
 								+ age_w*trans_Comp(vage2-1,i_V2R)
 								+ age_w*trans_Comp(vage2-1,i_V1S)*adjcov2*ve2
 								+ age_w*trans_Comp(vage2-1,i_V1R)*adjcov2;
-				
+
 				// ve3 = 0, no additional protection for the third dose
 				out_Comp(vage2,i_V3S) = trans_Comp(vage2,i_V3S)
 								- age_w*trans_Comp(vage2,i_V3S)
 								+ age_w*trans_Comp(vage2-1,i_V3S);
-				
+
 				out_Comp(vage2,i_V3I) = trans_Comp(vage2,i_V3I)
 								- age_w*trans_Comp(vage2,i_V3I)
 								+ age_w*trans_Comp(vage2-1,i_V3I);
-				
+
 				out_Comp(vage2,i_V3R) = trans_Comp(vage2,i_V3R)
 								- age_w*trans_Comp(vage2,i_V3R)
 								+ age_w*trans_Comp(vage2-1,i_V3R);
-								
-				// calculate administrated second doses 
+
+				// calculate administrated second doses
 				newdose[vage2] += age_w*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;
-				newfvp[vage2]  += age_w*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;				
+				newfvp[vage2]  += age_w*(trans_Comp(vage2-1,i_V1S)+trans_Comp(vage2-1,i_V1I)+trans_Comp(vage2-1,i_V1R))*adjcov2;
 			}
-			else 
+			else
 			{   // ageing only and no vaccination
 				out_Comp(a,i_M)   = trans_Comp(a,i_M)
 			                      - age_w*trans_Comp(a,i_M)
                 			      + age_w*trans_Comp(a-1,i_M)*(1.0-cov1[a-1])
            	    			      - wane*trans_Comp(a,i_M);
-           	    
+
            	    out_Comp(a,i_S)   = trans_Comp(a,i_S)
                                   - age_w*trans_Comp(a,i_S)
                                   + age_w*trans_Comp(a-1,i_S)*(1.0-cov1[a-1])
            	    			      + wane*trans_Comp(a,i_M);
-           	    
+
            	    out_Comp(a,i_I)   = trans_Comp(a,i_I)
                                   - age_w*trans_Comp(a,i_I)
            	    			      + age_w*trans_Comp(a-1,i_I)*(1.0-cov1[a-1]);
-           	    
+
            	    out_Comp(a,i_R)   = trans_Comp(a,i_R)
                                   - age_w*trans_Comp(a,i_R)
                 			      + age_w*trans_Comp(a-1,i_R)*(1.0-cov1[a-1]);
-           	    
+
            	    out_Comp(a,i_V1S) = trans_Comp(a,i_V1S)
                                   - age_w*trans_Comp(a,i_V1S)
                 	              + age_w*trans_Comp(a-1,i_V1S)
                 	              + age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S))*cov1[a-1]*(1.0-ve1[a-1]);
-           	    
+
            	    out_Comp(a,i_V1I) = trans_Comp(a,i_V1I)
                                   - age_w*trans_Comp(a,i_V1I)
                 	              + age_w*trans_Comp(a-1,i_V1I)
                 	              + age_w*trans_Comp(a-1,i_I)*cov1[a-1];
-           	    
+
            	    out_Comp(a,i_V1R) = trans_Comp(a,i_V1R)
                                   - age_w*trans_Comp(a,i_V1R)
                 	              + age_w*trans_Comp(a-1,i_V1R)
                 	              + age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S))*cov1[a-1]*ve1[a-1]
            	    	              + age_w*trans_Comp(a-1,i_R)*cov1[a-1];
-           	    
+
            	    out_Comp(a,i_V1F) = trans_Comp(a,i_V1F)
                                   - age_w*trans_Comp(a,i_V1F)
                                   + age_w*trans_Comp(a-1,i_V1F)
                 	              + age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S))*cov1[a-1]*ve1[a-1];
-           	    
+
            	    out_Comp(a,i_V2S) = trans_Comp(a,i_V2S) - age_w*trans_Comp(a,i_V2S) + age_w*trans_Comp(a-1,i_V2S);
                 out_Comp(a,i_V2I) = trans_Comp(a,i_V2I) - age_w*trans_Comp(a,i_V2I) + age_w*trans_Comp(a-1,i_V2I);
                 out_Comp(a,i_V2R) = trans_Comp(a,i_V2R) - age_w*trans_Comp(a,i_V2R) + age_w*trans_Comp(a-1,i_V2R);
                 out_Comp(a,i_V3S) = trans_Comp(a,i_V3S) - age_w*trans_Comp(a,i_V3S) + age_w*trans_Comp(a-1,i_V3S);
                 out_Comp(a,i_V3I) = trans_Comp(a,i_V3I) - age_w*trans_Comp(a,i_V3I) + age_w*trans_Comp(a-1,i_V3I);
                 out_Comp(a,i_V3R) = trans_Comp(a,i_V3R) - age_w*trans_Comp(a,i_V3R) + age_w*trans_Comp(a-1,i_V3R);
-            	
+
 				// calculate administrated doses and zero-dose population reached
 				newdose[a]  += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
 				newreach[a] += age_w*(trans_Comp(a-1,i_M)+trans_Comp(a-1,i_S)+trans_Comp(a-1,i_I)+trans_Comp(a-1,i_R))*cov1[a-1];
 				//Rcout << a+1 << " ";
 			}
 		}
-		
+
 		// weekly age group: 1 week at birth
 		// ageing only and no vaccination
 		pop_fert_SR = 0.0;
@@ -373,7 +373,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		}
 		prp_R = pop_fert_R/pop_fert_SR;  // Proportion of being born with maternal immunity
 		//Rcout << "Proportion of immune = " << prp_R*100 << "%%\n";
-	
+
 		out_Comp(0,i_M)   = trans_Comp(0,i_M)   - age_w*trans_Comp(0,i_M)   + age_w*prp_R;
 		out_Comp(0,i_S)   = trans_Comp(0,i_S)   - age_w*trans_Comp(0,i_S)   + age_w*(1.0-prp_R);
 		out_Comp(0,i_I)   = trans_Comp(0,i_I)   - age_w*trans_Comp(0,i_I)  ;
@@ -388,12 +388,12 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 		out_Comp(0,i_V3I) = trans_Comp(0,i_V3I) - age_w*trans_Comp(0,i_V3I);
 		out_Comp(0,i_V3R) = trans_Comp(0,i_V3R) - age_w*trans_Comp(0,i_V3R);
 		out_Comp(0,i_V1F) = trans_Comp(0,i_V1F) - age_w*trans_Comp(0,i_V1F);
-		
-		
+
+
 		// =================================================
 		// SIA with implementation years and days
 		// =================================================
-		if (sia_implement >= 1) 
+		if (sia_implement >= 1)
 		{
 			if ((t - t_start + 1) >= allsiatstep[sia_index])
 			{
@@ -402,152 +402,152 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 				//int subnat = allsiasubnat[sia_index];     // whether a specific SIA round is at subnational level
 				double siacov = allsiacov[sia_index];     // SIA coverage among national population for a specific SIA round
 				double siacov_subnat = allsiacov_subnat[sia_index];     // SIA coverage among subnational population for a specific SIA round
-				in_Comp = clone(out_Comp);                // temporary compartments after including transmission and routine vaccination, 254 age groups, 14 states			
-				
+				in_Comp = clone(out_Comp);                // temporary compartments after including transmission and routine vaccination, 254 age groups, 14 states
+
 				Rcout << "time = " << t << ", SIA index = " << sia_index + 1 << ", cov = " << siacov << "\n";
 				//if (sia_implement == 2 && subnat == 1){Rcout << "random reach, subnational campaign\n";}
 				//if (sia_implement == 2 && subnat == 0){Rcout << "7.7% less-likely-to-be-reached, national campaign\n";}
-				
+
 				double siadose = 0.0;                     // number of total SIA doses
-				double pop_0dose = 0.0, pop_vaced = 0.0;  // number of zero-dose and already-vaccinated populations 
-				
-				for (int a = (a0-1); a < a1; ++a) 
+				double pop_0dose = 0.0, pop_vaced = 0.0;  // number of zero-dose and already-vaccinated populations
+
+				for (int a = (a0-1); a < a1; ++a)
 				{
 					siadose += siacov*pop_full[a];
 					pop_0dose += (in_Comp(a,i_M) + in_Comp(a,i_S) + in_Comp(a,i_I) + in_Comp(a,i_R))*pop_full[a];
-					pop_vaced += (in_Comp(a,i_V1S) + in_Comp(a,i_V1I) + in_Comp(a,i_V1R) + 
-					              in_Comp(a,i_V2S) + in_Comp(a,i_V2I) + in_Comp(a,i_V2R) + 
+					pop_vaced += (in_Comp(a,i_V1S) + in_Comp(a,i_V1I) + in_Comp(a,i_V1R) +
+					              in_Comp(a,i_V2S) + in_Comp(a,i_V2I) + in_Comp(a,i_V2R) +
 							      in_Comp(a,i_V3S) + in_Comp(a,i_V3I) + in_Comp(a,i_V3R))*pop_full[a];
 				}
-				
+
 				// SIA coverages for zero-dose and already-vaccinated populations
 				// baseline assumption & for subnational campaigns: random reach
-				double siacov1 = siacov, siacov2 = siacov;  
+				double siacov1 = siacov, siacov2 = siacov;
 
 				if (siacov < 1.0 && siacov_subnat < 1.0)
 				{
-					// SIA implementation assuming 7.7% less likely to be reached at national level			    
-					if (sia_implement == 2)					
+					// SIA implementation assuming 7.7% less likely to be reached at national level
+					if (sia_implement == 2)
 					{
 						double pr_0dose = pop_0dose/(pop_0dose + pop_vaced);  // proportion of zero-dose population
-						
+
 						if (siacov < (1.0-0.077) && pr_0dose > 0.077)
 						{   // doses given randomly to the population except for the 7.7%
 							siacov1 = siadose*((pr_0dose-0.077)/(1.0-0.077))/pop_0dose;
-							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;						
+							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;
 						}
-						else 
-						{   // doses first given to already-vaccinated and then to zero-dose populations				
+						else
+						{   // doses first given to already-vaccinated and then to zero-dose populations
 							if (siadose > pop_vaced)
 							{
-								siacov1 = (siadose-pop_vaced)/pop_0dose; 
+								siacov1 = (siadose-pop_vaced)/pop_0dose;
 								siacov2 = 1.0;
-							} 
+							}
 							else
 							{
-								siacov1 = 0.0; 
+								siacov1 = 0.0;
 								siacov2 = siadose/pop_vaced;
 							}
 						}
-						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
+						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";
 					}
-					
-					// SIA implementation assuming zero-dose first reached				    
-					if (sia_implement == 3)					
+
+					// SIA implementation assuming zero-dose first reached
+					if (sia_implement == 3)
 					{
 						if (siadose > pop_0dose)
 						{
-							siacov1 = 1.0; 
+							siacov1 = 1.0;
 							siacov2 = (siadose-pop_0dose)/pop_vaced;
-						} 
+						}
 						else
 						{
-							siacov1 = siadose/pop_0dose; 
+							siacov1 = siadose/pop_0dose;
 							siacov2 = 0.0;
 						}
 					}
-					
-					// SIA implementation assuming already-vaccinated first reached				    
-					if (sia_implement == 4)					
+
+					// SIA implementation assuming already-vaccinated first reached
+					if (sia_implement == 4)
 					{
 						if (siadose > pop_vaced)
 						{
-							siacov1 = (siadose-pop_vaced)/pop_0dose; 
+							siacov1 = (siadose-pop_vaced)/pop_0dose;
 							siacov2 = 1.0;
-						} 
+						}
 						else
 						{
-							siacov1 = 0.0; 
+							siacov1 = 0.0;
 							siacov2 = siadose/pop_vaced;
 						}
 					}
-					
+
 					// SIA implementation assuming 7.7% less likely to reached at 'subnational' population
-					if (sia_implement == 5)					
+					if (sia_implement == 5)
 					{
 						double pr_0dose = pop_0dose/(pop_0dose + pop_vaced);  // proportion of zero-dose population
 
 						if (siacov_subnat < (1.0-0.077) && pr_0dose > 0.077)
 						{   // doses given randomly to the population except for the 7.7%
 							siacov1 = siadose*((pr_0dose-0.077)/(1.0-0.077))/pop_0dose;
-							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;						
+							siacov2 = siadose*((1.0-pr_0dose)/(1.0-0.077))/pop_vaced;
 						}
-						else 
-						{   // doses first given to already-vaccinated and then to zero-dose populations at 'subnational' level				
+						else
+						{   // doses first given to already-vaccinated and then to zero-dose populations at 'subnational' level
 							double pop_vaced_subnat = pop_vaced*(siacov/siacov_subnat);  //number of subnational already-vaccinated population
 							if (siadose > pop_vaced_subnat)
 							{
-								siacov1 = (siadose-pop_vaced_subnat)/pop_0dose; 
+								siacov1 = (siadose-pop_vaced_subnat)/pop_0dose;
 								siacov2 = pop_vaced_subnat/pop_vaced;
-							} 
+							}
 							else
 							{
-								siacov1 = 0.0; 
+								siacov1 = 0.0;
 								siacov2 = siadose/pop_vaced;
 							}
 						}
-						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
+						//Rcout << "SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";
 					}
-					
-					if (siacov1 > 1.0 || siacov2 > 1.0) 
+
+					if (siacov1 > 1.0 || siacov2 > 1.0)
 					{
-						Rcout << "warning! SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";   
-					} 
+						Rcout << "warning! SIA coverage = " << siacov1 << " (zero-dose), " << siacov2 << " (vaccinated)\n";
+					}
 				}
-				
+
 				// campaign vaccination - SIA
 				double n_eff = 0.0, n_v1 = 0.0, p_eff = 0.0, ve2 = 0.0;  // initialise for later calculations
 				for (int a = (a0-1); a < a1; ++a)
-				{					        
+				{
 					out_Comp(a,i_M)     = in_Comp(a,i_M)
-										- in_Comp(a,i_M)*siacov1;     
-									
-					out_Comp(a,i_S)     = in_Comp(a,i_S)   
-										- in_Comp(a,i_S)*siacov1;       
-					
-					out_Comp(a,i_I)     = in_Comp(a,i_I)   
-										- in_Comp(a,i_I)*siacov1; 
-									
-					out_Comp(a,i_R)     = in_Comp(a,i_R) 
-										- in_Comp(a,i_R)*siacov1; 
-									
-					out_Comp(a,i_V1S)   = in_Comp(a,i_V1S) 
+										- in_Comp(a,i_M)*siacov1;
+
+					out_Comp(a,i_S)     = in_Comp(a,i_S)
+										- in_Comp(a,i_S)*siacov1;
+
+					out_Comp(a,i_I)     = in_Comp(a,i_I)
+										- in_Comp(a,i_I)*siacov1;
+
+					out_Comp(a,i_R)     = in_Comp(a,i_R)
+										- in_Comp(a,i_R)*siacov1;
+
+					out_Comp(a,i_V1S)   = in_Comp(a,i_V1S)
 										- in_Comp(a,i_V1S)*siacov2
 										+ (in_Comp(a,i_M)+in_Comp(a,i_S))*siacov1*(1.0-ve1[a]);
-									
-					out_Comp(a,i_V1I)   = in_Comp(a,i_V1I) 
+
+					out_Comp(a,i_V1I)   = in_Comp(a,i_V1I)
 										- in_Comp(a,i_V1I)*siacov2
-										+ in_Comp(a,i_I)*siacov1; 
-									
-					out_Comp(a,i_V1R)   = in_Comp(a,i_V1R) 
+										+ in_Comp(a,i_I)*siacov1;
+
+					out_Comp(a,i_V1R)   = in_Comp(a,i_V1R)
 										- in_Comp(a,i_V1R)*siacov2
 										+ in_Comp(a,i_R)*siacov1
 										+ (in_Comp(a,i_M)+in_Comp(a,i_S))*siacov1*ve1[a];
-					
-					out_Comp(a,i_V1F)   = in_Comp(a,i_V1F) 
+
+					out_Comp(a,i_V1F)   = in_Comp(a,i_V1F)
 										- in_Comp(a,i_V1F)*siacov2
-										+ (in_Comp(a,i_M)+in_Comp(a,i_S))*siacov1*ve1[a];	
-					
+										+ (in_Comp(a,i_M)+in_Comp(a,i_S))*siacov1*ve1[a];
+
 					n_eff = out_Comp(a,i_V1F);  // number of children effectively protected by MCV1
 					n_v1 = out_Comp(a,i_V1S) + out_Comp(a,i_V1I) + out_Comp(a,i_V1R);  // number of children received MCV1
 					if (n_v1 > 0.0)
@@ -556,36 +556,36 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 						if (p_eff > ve2plus) {ve2 = 0.0;}  // vaccine efficacy of 2nd dose conditioned on 1st dose
 						else {ve2 = (ve2plus - p_eff)/(1.0 - p_eff);}
 					}
-					else 
+					else
 					{
 						ve2 = ve2plus;
 					}
-					
+
 					//Rcout << "\n2nd dose efficacy: " << ve2 << "\n ";
-					
-					out_Comp(a,i_V2S)   = in_Comp(a,i_V2S) 
+
+					out_Comp(a,i_V2S)   = in_Comp(a,i_V2S)
 										- in_Comp(a,i_V2S)*siacov2
 										+ in_Comp(a,i_V1S)*siacov2*(1.0-ve2);
-								
-					out_Comp(a,i_V2I)   = in_Comp(a,i_V2I) 
+
+					out_Comp(a,i_V2I)   = in_Comp(a,i_V2I)
 										- in_Comp(a,i_V2I)*siacov2
 										+ in_Comp(a,i_V1I)*siacov2;
-								
-					out_Comp(a,i_V2R)   = in_Comp(a,i_V2R) 
+
+					out_Comp(a,i_V2R)   = in_Comp(a,i_V2R)
 										- in_Comp(a,i_V2R)*siacov2
 										+ in_Comp(a,i_V1S)*siacov2*ve2
-										+ in_Comp(a,i_V1R)*siacov2;							
-					
-					// ve3 = 0, no additional protection for the third dose		
-					out_Comp(a,i_V3S)   = in_Comp(a,i_V3S) 
-										+ in_Comp(a,i_V2S)*siacov2;	
-								
-					out_Comp(a,i_V3I)   = in_Comp(a,i_V3I) 
+										+ in_Comp(a,i_V1R)*siacov2;
+
+					// ve3 = 0, no additional protection for the third dose
+					out_Comp(a,i_V3S)   = in_Comp(a,i_V3S)
+										+ in_Comp(a,i_V2S)*siacov2;
+
+					out_Comp(a,i_V3I)   = in_Comp(a,i_V3I)
 										+ in_Comp(a,i_V2I)*siacov2;
-								
-					out_Comp(a,i_V3R)   = in_Comp(a,i_V3R) 
+
+					out_Comp(a,i_V3R)   = in_Comp(a,i_V3R)
 										+ in_Comp(a,i_V2R)*siacov2;
-										
+
 					// calculate administrated doses and zero-dose population reached
 				    newdose[a] += siacov1*(in_Comp(a,i_M)+in_Comp(a,i_S)+in_Comp(a,i_I)+in_Comp(a,i_R))
 						        + siacov2*(in_Comp(a,i_V1S)+in_Comp(a,i_V1I)+in_Comp(a,i_V1R)
@@ -595,7 +595,7 @@ List rcpp_vaccine_oney(NumericMatrix in_Comp, List parm, List siaparm, NumericMa
 					newfvp[a] += siacov2*(in_Comp(a,i_V1S)+in_Comp(a,i_V1I)+in_Comp(a,i_V1R));
 					//if(a == 99 || a == 156) {Rcout << "age = " << a+1 << ", " << "newdose = " << newdose[a]*pop_full[a] << ", newreach = " << newreach[a]*pop_full[a] << "\n"; }
 				}
-                ++sia_index;				
+                ++sia_index;
 			}
 		}
 		in_Comp = clone(out_Comp);
